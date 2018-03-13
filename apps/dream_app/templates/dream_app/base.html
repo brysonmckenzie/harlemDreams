@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harlem Dreams</title>
+    {% load staticfiles %}
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="{% static '/dream_app/css/style000.css' %} ">
+    <!-- scroller -->
+    <script src="jquery.mousewheel.js"></script>
+    <script src="jquery.easing.1.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static '/dream_app/css/jquery.radiant_scroller.css' %}" media="all">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{% static '/dream_app/javascript/jquery.radiant_scroller.min.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            var sc = $('#myScroller').radiantScroller({
+                elementWidth: 400,
+                cols: 2,
+                rows: 2,
+                useMouseWheel: true,
+                addPagination: true
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var sc = $('#myScroller').radiantScroller({
+                cols: 2, // How many (maximum) columns should the scroller have
+                elementWidth: 200, // Width for the scroller's elements.
+                elementMargin: 10, // Horizontal (left/right) margin for the scroller's elements.
+                easingType: 'swing', // easing effects
+                animateDuration: 700,
+                rows: 2, // How many (maximum) rows should the scroller have
+                useMouseWheel: false, // Whether support for the mousewheel scrolling should be enabled.
+                addPagination: false, // Whether the scroller should have pagination (often displayed as small navigational dots) enabled.
+                nextButtonText: '', // Text to be shown on the "next" button.
+                prevButtonText: '' // Text to be shown on the "prev" button.
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#myScroller').radiantScroller({
+                elementWidth: 200,
+                elementMargin: 10,
+                cols: 3,
+                rows: 3
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#myScroller').radiantScroller({
+                elementWidth: 200,
+                elementMargin: 10,
+                cols: 3,
+                rows: 3
+            });
+        });
+    </script>
+    <script src="jquery.easing.1.3.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="pre-header">
+            believe in your team, harlem dreams
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Harlem Dreams</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+              
+            </div>
+
+
+        </nav>
+        <div class="row">
+            <p class="col-lg-2 social text-center"  id="phone">1-800-555-DREAMS</p>
+            <div class="col-lg-8 social"></div>
+            <ul class="col-lg-2 social list-inline text-center" id="social-links">
+                <li class="list-inline-item">Facebook</li>
+                <li class="list-inline-item">Instagram</li>
+                <li class="list-inline-item">Linkedin</li>
+            </ul>
+        </div>
+    </div>
+    {% block body %} 
+    
+    
+    
+    
+    {% endblock %}
+    <footer>
+    <div class="row">
+        
+        <div class="col-lg-4 footer-links center-block">
+            <table>
+                <tr>
+                    <th>
+                        <h1 class="text-center">Fan Club</h1>
+                    </th>
+                    <th>
+                        <h1 class="text-center">Say Hello!</h1>
+                    </th>
+                    <th>
+                        <h1 class="text-center">Got Talent!</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>dreamer@harlemdreams.com</p>
+                    </td>
+
+                    <td class="text-center">
+                        <p>497 Evergreen Rd. Roseville, CA 95673</p>
+                    </td>
+                    <td>
+                        <p>We are always looking for talent
+                        contact@harlemdreams.com</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4 footer-links ">
+            <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/Group_22.png' %}" style alt="Harlem Dreams Logo">
+        </div>
+        <div class="col-lg-4 footer-links social-links-f" style="padding: 80px;">
+            <ul>
+                <li><a href=""><img src="{% static 'dream_app/images/facebook-f.png' %}" alt=""/></a></li>
+                <li><a href=""><img src="{% static 'dream_app/images/instagram-f.png' %}" alt=""/></a></li>
+                <li><a href=""><img src="{% static 'dream_app/images/twitter-f.png' %}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

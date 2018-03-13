@@ -1,18 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-{% load static %}
+{% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
+<div class="container">
+        <div id="woodgrain-backdrop">
+    
+            <img id="dreams_logo" class="center" src="{% static 'dream_app/images/Group_22.png' %}" alt="Dream_Logo">
+        </div>
+    </div>
+    <!-- <div id="myScroller">
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/1" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/2" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/3" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/4" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/1" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/2" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/3" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/4" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/1" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/2" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/3" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/4" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/1" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/2" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/3" alt="Image" /></div>
+            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/4" alt="Image" /></div>
+            </div> -->
+{% endblock%}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Harlem Dreams</title>
-    <link rel="stylesheet" type="ccs/stylesheet" href="{% static " dream_app/css/style001.css " %}">
-
-</head>
-
-<body>
-    <h1>Harlem Dreams</h1>
-</body>
-
-</html>

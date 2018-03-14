@@ -83,94 +83,126 @@
 
 <body>
     <div class="container-fluid">
-        <div id="pre-header">
-            believe in your team, harlem dreams
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Harlem Dreams</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-              
-            </div>
-
-
-        </nav>
         <div class="row">
-            <p class="col-lg-2 social text-center"  id="phone">1-800-555-DREAMS</p>
+            <div class="col-lg-12" id="pre-header">
+                <h1>believe in your team, harlem dreams</h1>
+            </div>
+        </div>
+        <div class="row" style="height: 30px;">
+            <div class="col-lg-2 har-nav"></div>
+            <div class="col-lg-8 har-nav">
+                <div class="row text">
+                    <!-- <div class="col-lg-1"></div> -->
+                    <div class="col text-center hov h-25">
+                        <a href="">
+                            <p>Home</p>
+                        </a>
+                    </div>
+                    <div class="col text-center hov">
+                        <a href="">
+                            <p>About</p>
+                        </a>
+                    </div>
+                    <div class="col text-center hov">
+                        <a href="">
+                            <p>Events</p>
+                        </a>
+                    </div>
+                    <div class="col text-center hov">
+                        <a href="">
+                            <p>Players</p>
+                        </a>
+                    </div>
+                    <div class="col text-center hov h-25">
+                        <a href="">
+                            <p>Shop</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 har-nav"></div>
+        </div>
+        <div class="row">
+            <p class="col-lg-2 social text-center" id="phone">1-800-555-DREAMS</p>
             <div class="col-lg-8 social"></div>
             <ul class="col-lg-2 social list-inline text-center" id="social-links">
-                <li class="list-inline-item">Facebook</li>
-                <li class="list-inline-item">Instagram</li>
-                <li class="list-inline-item">Linkedin</li>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
+                        <img src="{% static 'dream_app/images/facebook.png' %}" alt="Harlem Dreams Facebook" />
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="http://instagram.com/theharlemdreams">
+                        <img src="{% static 'dream_app/images/instagram.png' %}" alt="Harlem Dreams Instagram " />
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/theharlemdreams">
+                        <img src="{% static 'dream_app/images/twitter.png' %}" alt="Harlem Dreams Twitter" />
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
-    {% block body %} 
-    
-    
-    
-    
-    {% endblock %}
+    {% block body %} {% endblock %}
     <footer>
-    <div class="row">
-        
-        <div class="col-lg-4 footer-links center-block">
-            <table>
-                <tr>
-                    <th>
-                        <h1 class="text-center">Fan Club</h1>
-                    </th>
-                    <th>
-                        <h1 class="text-center">Say Hello!</h1>
-                    </th>
-                    <th>
-                        <h1 class="text-center">Got Talent!</h1>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <p>dreamer@harlemdreams.com</p>
-                    </td>
+        <div class="row">
 
-                    <td class="text-center">
-                        <p>497 Evergreen Rd. Roseville, CA 95673</p>
-                    </td>
-                    <td>
-                        <p>We are always looking for talent
-                        contact@harlemdreams.com</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="col-lg-4 footer-links center-block">
+                <table>
+                    <tr>
+                        <th>
+                            <h1 class="text-center">Fan Club</h1>
+                        </th>
+                        <th>
+                            <h1 class="text-center">Say Hello!</h1>
+                        </th>
+                        <th>
+                            <h1 class="text-center">Got Talent!</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>dreamer@harlemdreams.com</p>
+                        </td>
+
+                        <td class="text-center">
+                            <p>497 Evergreen Rd. Roseville, CA 95673</p>
+                        </td>
+                        <td>
+                            <p>We are always looking for talent contact@harlemdreams.com
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-4 footer-links text-center">
+                <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/main_logo.png' %}" style alt="Harlem Dreams Logo">
+                <br>
+                <small>Powered by Six Eleven Web Design</small>
+            </div>
+            <div class="col-lg-4 footer-links social-links-f" style="padding: 80px;">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
+                            <img src="{% static 'dream_app/images/facebook-f.png' %}" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/theharlemdreams">
+                            <img src="{% static 'dream_app/images/instagram-f.png' %}" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/theharlemdreams">
+                            <img src="{% static 'dream_app/images/twitter-f.png' %}" alt="https://twitter.com/theharlemdreams"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-lg-4 footer-links ">
-            <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/Group_22.png' %}" style alt="Harlem Dreams Logo">
-        </div>
-        <div class="col-lg-4 footer-links social-links-f" style="padding: 80px;">
-            <ul>
-                <li><a href=""><img src="{% static 'dream_app/images/facebook-f.png' %}" alt=""/></a></li>
-                <li><a href=""><img src="{% static 'dream_app/images/instagram-f.png' %}" alt=""/></a></li>
-                <li><a href=""><img src="{% static 'dream_app/images/twitter-f.png' %}" alt=""/></a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 

@@ -19,136 +19,111 @@
         crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="{% static '/dream_app/css/style000.css' %} ">
-    <!-- scroller -->
-    <script src="jquery.mousewheel.js"></script>
-    <script src="jquery.easing.1.3.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static '/dream_app/css/jquery.radiant_scroller.css' %}" media="all">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{% static '/dream_app/javascript/jquery.radiant_scroller.min.js' %}"></script>
-    <script>
-        $(document).ready(function () {
-            var sc = $('#myScroller').radiantScroller({
-                elementWidth: 400,
-                cols: 2,
-                rows: 2,
-                useMouseWheel: true,
-                addPagination: true
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            var sc = $('#myScroller').radiantScroller({
-                cols: 2, // How many (maximum) columns should the scroller have
-                elementWidth: 200, // Width for the scroller's elements.
-                elementMargin: 10, // Horizontal (left/right) margin for the scroller's elements.
-                easingType: 'swing', // easing effects
-                animateDuration: 700,
-                rows: 2, // How many (maximum) rows should the scroller have
-                useMouseWheel: false, // Whether support for the mousewheel scrolling should be enabled.
-                addPagination: false, // Whether the scroller should have pagination (often displayed as small navigational dots) enabled.
-                nextButtonText: '', // Text to be shown on the "next" button.
-                prevButtonText: '' // Text to be shown on the "prev" button.
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('#myScroller').radiantScroller({
-                elementWidth: 200,
-                elementMargin: 10,
-                cols: 3,
-                rows: 3
-            });
-        });
-    </script>
 
-    <script>
-        $(document).ready(function () {
-            $('#myScroller').radiantScroller({
-                elementWidth: 200,
-                elementMargin: 10,
-                cols: 3,
-                rows: 3
-            });
-        });
-    </script>
-    <script src="jquery.easing.1.3.js"></script>
-    <script src="jquery.mousewheel.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
-
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'dream_app/css/demo.css' %}" /> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'dream_app/css/slicebox.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'dream_app/css/custom.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'dream_app/css/responsive.css' %}" />
+    <script type="text/javascript" src="{% static 'dream_app/javascript/modernizr.custom.46884.js' %}"></script>
 
 
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12" id="pre-header">
-                <h1>believe in your team, harlem dreams</h1>
-            </div>
-        </div>
-        <div class="row" style="height: 30px;">
-            <div class="col-lg-2 har-nav"></div>
-            <div class="col-lg-8 har-nav">
-                <div class="row text">
-                    <!-- <div class="col-lg-1"></div> -->
-                    <div class="col text-center hov h-25">
-                        <a href="">
-                            <p>Home</p>
-                        </a>
-                    </div>
-                    <div class="col text-center hov">
-                        <a href="">
-                            <p>About</p>
-                        </a>
-                    </div>
-                    <div class="col text-center hov">
-                        <a href="">
-                            <p>Events</p>
-                        </a>
-                    </div>
-                    <div class="col text-center hov">
-                        <a href="">
-                            <p>Players</p>
-                        </a>
-                    </div>
-                    <div class="col text-center hov h-25">
-                        <a href="">
-                            <p>Shop</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 har-nav"></div>
-        </div>
-        <div class="row">
-            <p class="col-lg-2 social text-center" id="phone">1-800-555-DREAMS</p>
-            <div class="col-lg-8 social"></div>
-            <ul class="col-lg-2 social list-inline text-center" id="social-links">
-                <li class="list-inline-item">
-                    <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
-                        <img src="{% static 'dream_app/images/facebook.png' %}" alt="Harlem Dreams Facebook" />
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="http://instagram.com/theharlemdreams">
-                        <img src="{% static 'dream_app/images/instagram.png' %}" alt="Harlem Dreams Instagram " />
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://twitter.com/theharlemdreams">
-                        <img src="{% static 'dream_app/images/twitter.png' %}" alt="Harlem Dreams Twitter" />
-                    </a>
-                </li>
-            </ul>
+<div class="container-fluid ">
+
+    <div class="row">
+        <div class="col-lg-12" id="pre-header">
+            <h1>believe in your team, harlem dreams</h1>
         </div>
     </div>
-    {% block body %} {% endblock %}
-    <footer>
+
+</div>
+
+
+
+<div class="contairner-fluid">
+    <!-- 
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark" role="navigation">
+        <a href="/"> <img src="{% static 'dream_app/images/main_logo.png'%}" alt="logo" style="width:50px;"></a>
+      
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse mr-auto" id="collapsibleNavbar">
+            
+            <ul class="navbar-nav mr-auto abs-center-x">
+                <li class="nav-item ">
+                    <a class="nav-link center" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center" href="#">Players</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link center" href="#">Shop</a>
+                </li>
+            </ul>
+        </div> 
+        </div> 
+      </nav>  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark indigo">
+        <a href="/">
+            <img src="{% static 'dream_app/images/dLogo_bw.jpg'%}" alt="logo" style="width:50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link center" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center" href="#">Players</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link center" href="#">Shop</a>
+                </li>
+            </ul>
+          
+        </div>
+
+</div>
+
+{% block body %} {% endblock %}
+
+<footer>
         <div class="row">
 
-            <div class="col-lg-4 footer-links center-block">
+            <div class="col-lg-4 footer-links center-block d-none d-sm-block">
                 <table>
                     <tr>
                         <th>
@@ -181,7 +156,7 @@
                 <br>
                 <small>Powered by Six Eleven Web Design</small>
             </div>
-            <div class="col-lg-4 footer-links social-links-f" style="padding: 80px;">
+            <div class="col-sm-4 footer-links social-links-f d-none d-sm-block d-lg-block d-m-block" style="padding: 80px;">
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
@@ -203,7 +178,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

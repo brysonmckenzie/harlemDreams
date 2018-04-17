@@ -1,0 +1,78 @@
+@media screen and (max-width:996px) {
+    .hide{
+        display: none;
+    }
+}
+@media screen and (min-width) and (max-width:996px) {
+    .hide{
+        display: none;
+    }
+    #dreams_logo{
+        width:50%;
+
+    }
+}
+@media screen and (max-width:560px){
+    
+    .hide-2{
+        diplay: none;
+    }
+    
+    #dreams_logo{
+        width:40%;
+        height:40%
+
+    }
+    #pre-header{
+        background-color: white
+    }
+    /* .base{
+        background:url('/static/dream_app/images/hoop_dreams.png');
+        background-repeat: no-repeat;
+        background-size:cover
+    } */
+    .nav-navbar-na{
+        z-index: 1000;
+    }
+    .hide {
+        position:static;
+    }
+
+    #collapseNavbar {
+        position: absolute;
+        z-index: 1;
+      }
+
+    nav{
+        padding-bottom: 100px;
+        z-index:1000;
+    }
+    .nav-item{
+        width: 100%
+    }
+    #team-shot{
+
+    }
+    #footer-logo{
+        width: 20%;
+    }
+}
+    @media screen and (max-width:1169px){
+   
+     .sb-description{
+        display:none;
+     }
+     #springz{
+        display:none;
+     }
+     #hoop{
+        display:none;
+     }
+     #lefty{
+        width:80%;
+        margin-bottom:200px;
+        position: unset;
+    
+        
+ 
+}

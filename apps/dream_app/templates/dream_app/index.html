@@ -1,30 +1,264 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12"></div>
-        <div id="woodgrain-backdrop">
 
-            <img id="dreams_logo" class="center" src="{% static 'dream_app/images/main_logo.png' %}" alt="Dream_Logo">
-        </div>
+<div class="container back-drop">
+  <div class="row">
+    <div class="col-lg-12 ">
+      <div id="woodgrain-backdrop">
+        <img id="dreams_logo" class="center" src="{% static 'dream_app/images/main_logo.png' %}" alt="Harlem Dream Logo">
+      </div>
     </div>
-    </div>
+  </div>
 </div>
-<!-- <div id="myScroller">
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/1" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/2" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/3" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/animals/4" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/1" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/2" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/3" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/nature/4" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/1" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/2" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/3" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/people/4" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/1" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/2" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/3" alt="Image" /></div>
-            <div class="scroller-el"><img src="http://lorempixel.com/400/400/food/4" alt="Image" /></div>
-            </div> -->
-{% endblock%}
+<div class="container-fluid hd-media-content">
+  <div class="row">
+    <div class="col-sm-3 "></div>
+
+    <iframe class="col-sm-6 harlem-media" width="560" height="315" src="https://www.youtube.com/embed/J7wx-U_3AeI?autoplay=1"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+
+    </div>
+    <!-- <div class="col-sm-4">
+      <div id="basket">
+        <ul class="db">
+          <li>
+            <img class="ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt="">
+          </li>
+          Welcome to the Harlem Dream
+          <li>
+            <img class="ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt="">
+          </li>
+        </ul>
+
+      </div>
+    </div> -->
+    <div class="col-sm-4">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <img id="hoop" class="center-block" src="{% static 'dream_app/images/hoop.png' %}" alt="">
+      <img id="springz" class="center-block" src="{% static 'dream_app/images/springz.png' %}" alt="">
+    </div>
+    <div class="col-sm-4">
+      <div>
+        <div id="left-fanbox">
+          <h1>Showtime!</h1>
+          <p>Come Join The Fun!</p>
+            <a href=""><p class="center-block" id="btn-newsletter" style="margin-bottom: 5px">Join Our Free News Letter</p></a>
+        </div>
+        <img id="left-fan" class="center-block" src="{% static 'dream_app/images/lefty-fan.jpg' %}" alt="">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div id="lefty-profile">
+
+        <h1 style="font-family: 'Luckiest Guy', cursive;">#42 Lefty Williams</h1>
+        <p style="width:150px; margin: 30px 0px 0px 50px;">
+          <span style="font-weight:bold; font-size:11px">Position: Showman</span>
+          <br>
+          <span style="
+          font-family:Open sans; font-size:11px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officia fuga voluptate ipsam iure eveniet ea
+            accusantium pariatur repellendus voluptates!</span>
+        </p>
+        <img id="lefty" class="center-block" src="{% static 'dream_app/images/lefty.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="wrapper">
+    <ul id="sb-slider" class="sb-slider" style="max-width: 700px; overflow: hidden;">
+      <li>
+        <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
+        <div class="sb-description">
+          <h3>Dreams on Fox News 26</h3>
+        </div>
+      </li>
+      <li>
+        <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank">
+          <img src="{% static 'dream_app/images/2.jpg' %}" alt="image2" />
+        </a>
+        <div class="sb-description">
+          <h3>Dreamers Ready for the Show Case</h3>
+        </div>
+      </li>
+      <li>
+        <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank">
+          <img src="{% static 'dream_app/images/3.jpg' %}" alt="image3" />
+        </a>
+        <div class="sb-description">
+          <h3>Brave Astronaut</h3>
+        </div>
+      </li>
+      <li>
+        <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank">
+          <img src="{% static 'dream_app/images/4.jpg' %}" alt="image4" />
+        </a>
+        <div class="sb-description">
+          <h3>Affectionate Decision Maker</h3>
+        </div>
+      </li>
+      <li>
+        <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank">
+          <img src="{% static 'dream_app/images/1.jpg' %}" alt="image5" />
+        </a>
+        <div class="sb-description">
+          <h3>Springz Ready for Take-Off</h3>
+        </div>
+      </li>
+      <li>
+        <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
+          <img src="{% static 'dream_app/images/6.jpg' %}" alt="image6" />
+        </a>
+        <div class="sb-description">
+          <h3>Groundbreaking Artist</h3>
+        </div>
+      </li>
+      <li>
+        <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank">
+          <img src="{% static 'dream_app/images/7.jpg' %}" alt="image7" />
+        </a>
+        <div class="sb-description">
+          <h3>Selfless Philantropist</h3>
+        </div>
+      </li>
+    </ul>
+    <div id="shadow" class="shadow" style="display: block;"></div>
+    <!-- <div id="nav-arrows" class="nav-arrows">
+      <a href="#">Next</a>
+      <a href="#">Previous</a>
+    </div> -->
+    <div id="nav-dots" class="nav-dots">
+      <span class="nav-dot-current"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 center-block d-none d-sm-block">
+      <img id="team-pic" class="center-block" src="{% static 'dream_app/images/team_shot.png' %}" alt="Dream Team Shot">
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid counter">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 style="margin-top:20px; text-align: center;font-family: 'Luckiest Guy', cursive;">Visitors</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 center-block">
+      <div align="center">
+        <a href="http://www.amazingcounters.com">
+          <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221763&c=9665602" alt="AmazingCounters.com">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- /wrapper -->
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
+<script type="text/javascript">
+  $(function () {
+
+    var Page = (function () {
+
+      var $navArrows = $('#nav-arrows').hide(),
+        $navDots = $('#nav-dots').hide(),
+        $nav = $navDots.children('span'),
+        $shadow = $('#shadow').hide(),
+        slicebox = $('#sb-slider').slicebox({
+          onReady: function () {
+
+            $navArrows.show();
+            $navDots.show();
+            $shadow.show();
+
+          },
+          onBeforeChange: function (pos) {
+
+            $nav.removeClass('nav-dot-current');
+            $nav.eq(pos).addClass('nav-dot-current');
+
+          }
+        }),
+
+        init = function () {
+
+          initEvents();
+
+        },
+        initEvents = function () {
+
+          // add navigation events
+          $navArrows.children(':first').on('click', function () {
+
+            slicebox.next();
+            return false;
+
+          });
+
+          $navArrows.children(':last').on('click', function () {
+
+            slicebox.previous();
+            return false;
+
+          });
+
+          $nav.each(function (i) {
+
+            $(this).on('click', function (event) {
+
+              var $dot = $(this);
+
+              if (!slicebox.isActive()) {
+
+                $nav.removeClass('nav-dot-current');
+                $dot.addClass('nav-dot-current');
+
+              }
+
+              slicebox.jump(i + 1);
+              return false;
+
+            });
+
+          });
+
+        };
+
+      return { init: init };
+
+    })();
+
+    Page.init();
+
+  });
+
+</script> {% endblock %}

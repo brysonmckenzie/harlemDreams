@@ -11,13 +11,16 @@
 </div>
 <div class="container-fluid hd-media-content">
   <div class="row">
-    <div class="col-sm-3 "></div>
+    <div class="col-sm-3 b-background">
+      <img class="fix-ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt="">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/J7wx-U_3AeI?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-    <iframe class="col-sm-6 harlem-media" width="560" height="315" src="https://www.youtube.com/embed/J7wx-U_3AeI?autoplay=1"
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+    <div class="col-sm-3 d-none d-sm-block b-background">
+      <img class="fix-ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt="">
+    </div>
   </div>
-  <div class="col-sm-3"></div>
 </div>
 <div class="container-fluid">
   <div class="row">
@@ -52,7 +55,9 @@
         <div id="left-fanbox">
           <h1>Showtime!</h1>
           <p>Come Join The Fun!</p>
-            <a href=""><p class="center-block" id="btn-newsletter" style="margin-bottom: 5px">Join Our Free News Letter</p></a>
+          <a href="">
+            <p class="center-block" id="btn-newsletter" style="margin-bottom: 5px">Join Our Free News Letter</p>
+          </a>
         </div>
         <img id="left-fan" class="center-block" src="{% static 'dream_app/images/lefty-fan.jpg' %}" alt="">
       </div>

@@ -55,6 +55,15 @@ body{
     width: 400px;
 }
 
+.mage{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
 .center-block{
     display: block;
     margin-right: auto;
@@ -150,7 +159,7 @@ table {
 } */
 
 #footer-logo {
-    width: 25%;
+    width: 50%;
     margin-top: 60px;
 }
 
@@ -171,6 +180,19 @@ table {
     margin-left: 50px;
     font-size: 0.5em;
     color: #ffffff
+}
+.b-background{
+    background-image: url('/static/dream_app/images/OLO2ED0.jpg');
+    background-size: cover;
+    /* position: static; */
+    background-attachment: fixed
+}
+
+.fix-ball{
+    /* margin: 0 auto; */
+    width: 100%;
+    /* position: relative; */
+    
 }
 
 /* .center-block {
@@ -267,7 +289,7 @@ p:hover {
     /* background-image: url('/static/dream_app/images/OLO2ED0.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
-    background: #000099;
+    background: #000000;
     height:315px;
 }
 .harlem-media iframe{

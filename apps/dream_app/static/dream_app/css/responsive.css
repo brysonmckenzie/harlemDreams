@@ -56,6 +56,11 @@
     #footer-logo{
         width: 20%;
     }
+    #left-fan{
+    position: absolute;
+    top: 206px;
+    left: 36px;
+    }
 }
     @media screen and (max-width:1169px){
    

@@ -5,4 +5,4 @@ Project was for a Show Ball team based in California. They travel around the cou
     Was installed using Ubuntu 16.04
 ![Dream Site1](./site/pic1.png/)
 ![Cont'd](./site/pic2.png/)
-![Con'd](./site/pic4.png/)
+![Con'd](./site/pic3.png/)

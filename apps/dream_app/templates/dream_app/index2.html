@@ -1,176 +1,24 @@
 
-        <div class="col-xs-12">
-      
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval='4000'>
-            <ol class="carousel-indicators">
-              <li data-target="" data-slide-to="0" class="active" data-interval='3500'></li>
-              <li data-target="" data-slide-to="1" data-interval='3500'></li>
-              <li data-target="" data-slide-to="2" data-interval='3500'></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <%= image_tag 'Site15.JPG', class:"d-block w-100 carousel-image" %>
-              </div>
-              <div class="carousel-item">
-                <%= image_tag 'site14.JPG', class:"d-block w-100 carousel-image" %>
-              </div>
-              <div class="carousel-item">
-                <%= image_tag 'Site4.JPG', class:"d-block w-100 carousel-image" %>
-              </div>
-            </div>
-            <a class="carousel-control-prev"  role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" id="next-img"aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-      
-          <script>
-              $(document).ready(function(){
-                  window.setInterval(cycle,1000);
-      
-                  function cycle(){
-                      $("#next-img").click();
-                  }
-      
-      
-      
-              });
-          </script>
-      
-      
-      
-          <!-- About Me -->
-      
-          <section id="about">
-            <div class="Why">
-              <div  id="heading">
-                <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
-                  <h3 style="font-family: Oswald; font-size: 44px; color: #36ab9f;
-      
-                      line-height: 50px;">About Me</h3>
-                  <p>"Talk is cheap. Show me the code."
-                    - Linus Torvalds </p>
-                  <hr style="border-top: 2px solid goldenrod;" class="full">
-                  <br/>
-                </div>
-              </div>	<!-- row -->
-      
-              <div class="col-md-8 col-md-offset-2">
-                <p class="text-center">Former middle school teacher turned tech enthusiast, Scott Tillman is a Web Developer living in Chicago, IL.
-                  He fell in love with Web Development after attending a Hackaton a few years ago out of curiosity. Scott has a diverse background in
-                  different areas of Web Development from backend programming (Django/Python, .Net, Ruby on Rails) to frontend engineering (HTML, CSS,
-                  and jQuery/Javascript). He is passionate about learning and growing in his knowledge of different technologies and is also a full
-                  time Graduate Student at DePaul University studying Software Engineering. Outside of coding everyday, Scott loves Traveling, Mentoring,
-                  Netflix binging, people watching, exploring new restaurants, working out, laughing, and talking about himself in third person.</p>
-              </div>
-              <!-- row -->
-      
-      
-              <br><hr style="border: 2px dashed goldenrod;"><br>
-      
-              <div class="container">
-      
-                <br><br>
-      
-      
-                <h2 class="section-title">Portfolio</h2>
-      
-                <div class="thumbnails recentworks row">
-      
-                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <a class="thumbnail" href="https://demo-back-yards-coffee.herokuapp.com/">
-      <span class="img">
-      <%= image_tag 'Bofyards.png' %>
-        <span class="cover"><span class="more">See details &rarr;</span></span>
-      </span>
-                      <span class="title">Back Of The Yards Coffee</span>
-                    </a>
-                    <span class="details"><a href="https://demo-back-yards-coffee.herokuapp.com/">BackEnd</a> | <a href="https://demo-back-yards-coffee.herokuapp.com/">Rails</a></span>
-      
-                  </div>
-      
-                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <a class="thumbnail" href="https://qa-san-jose.herokuapp.com">
-      <span class="img">
-      <%= image_tag 'Sjm.png' %>
-        <span class="cover"><span class="more">See details &rarr;</span></span>
-      </span>
-                      <span class="title">San Jose Obrero Mission</span>
-                    </a>
-                    <span class="details"><a href="https://qa-san-jose.herokuapp.com">FrontEnd/BackEnd</a> | <a href="https://qa-san-jose.herokuapp.com">HTML, CSS, JavaScript, & Rails</a></span>
-      
-                  </div>
-      
-                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <a class="thumbnail" a href="https://github.com/Stillman23">
-      <span class="img">
-      <%= image_tag 'catninja.PNG' %>
-        <span class="cover"><span class="more">See details &rarr;</span></span>
-      </span>
-                      <span class="title">Cat or Ninja Puzzle</span>
-                    </a>
-                    <span class="details">FrontEnd | HTML, CSS, & JavaScript</span>
-      
-                  </div>
-      
-                </div>
-      
-      
-                <!-- Blog-->
-      
-                <div id="blog">
-      
-      
-                  <br><hr style="border: 2px dashed goldenrod;"><br>
-      
-      
-      
-                  <div class="content-block" id="blog">
-      
-      
-                    <header class="block-heading cleafix">
-      
-                      <h2 class="section-title" a href="/posts">TE<span style="color:#a31b1b;">C</span>HNI<span style="color:#a31b1b;">C</span>ALLY BLAC<span style="color:#36ab9f;">K</span> Blog</h2>
-                      <p><a href="/posts" class="btn btn-o btn-lg pull-right">View All Blog Post</a></p>
-                    </header>
-                    <section class="block-body">
-      
-      
-                      <div class="col-sm-4 blog-post">
-                  
-                      <a href="#"><h2></h2></a>
-                      <div class="date"></div>
-                      <p></p>
-                      <a href=""></a>
-                      </div>
-                      <div class="col-sm-4 blog-post">
-                        <a href="posts/10"><%= image_tag 'Post6.JPG', :class => "bloghomepic" %></a>
-                        <a href="posts/10"><h2 style="color:#a31b1b; text-align: center;">My Post Coding Bootcamp Life</h2></a>
-                        <div class="date">20 March, 2018</div>
-                        <p class = "blogsnippet">AFTER I GRADUATED FROM MY CODING BOOTCAMP IN LATE OCTOBER OF LAST YEAR, I HAD NO TIME TO STOP AND CELEBRATE MY ACCOMPLISHMENT. IN MY MIND, I NEEDED TO BUILD OFF THE MOMENTUM OF MY 70-90 HOUR CODING WEEK AND DID NOT WANT A CELEBRATORY BREAK TO SLOW ME DOWN. I WAS DETERMINED TO TAKE MY BOOTCAMP EXPERIENCE AND TURN IT INTO SOMETHING MEANINGFUL AND LASTING. BY MEANINGFUL AND LASTING, I MEAN TURN IT INTO A FULL TIME JOB...
-      
-                        </p>
-                        <a href="posts/10">Read More</a>
-                      </div>
-      
-                      <div class="col-sm-4 blog-post">
-      
-                        <a href="#"><h2></h2></a>
-                        <div class="date"></div>
-                        <p></p>
-                        <a href=""></a>
-                      </div>
-                  </div>
-                </div><!-- #blog -->
-          </section>
-      
-      
-      
-          <br><br>
-        </div>
-      </div>
-      
+
+<body>
+<div id="good">
+<H1>Bryson</H1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae explicabo omnis expedita reprehenderit. In esse repudiandae excepturi porro sequi dolorem qui deleniti, consequatur quis nihil inventore hic saepe iste corrupti, quaerat veritatis culpa laudantium, ipsam rem quisquam repellendus tempore quasi aliquam? Maiores beatae fugit labore sequi minus. Dolor eum eius magni necessitatibus laborum sit ipsum doloribus. Dolore odio at, nulla, incidunt saepe recusandae iste dicta voluptate cum fuga optio asperiores exercitationem magnam dignissimos impedit, voluptatibus provident repellat aspernatur similique sunt accusamus? Eos error, a temporibus est praesentium alias ratione qui dicta nam soluta sint, aliquid ut, totam dolorem laudantium inventore cumque optio ab nihil voluptates. Numquam reiciendis nostrum in quia dolore soluta perspiciatis animi aperiam facere asperiores consectetur exercitationem explicabo eligendi magnam accusamus odio vel quisquam cumque, sunt unde nisi vero? Nulla quisquam consequuntur, ex qui non labore, vel quod rerum incidunt assumenda quia! Id deserunt nobis, illum at voluptatum aliquam hic expedita quo autem ullam culpa voluptate repellendus ex dolore ratione alias iure laborum inventore rerum omnis officiis repellat! Nemo animi voluptates incidunt porro iure rerum quos itaque, deserunt quod libero mollitia repudiandae voluptate praesentium est rem dolores dicta magnam inventore. Illum nostrum nam illo tempore porro beatae, delectus aspernatur laboriosam qui? Ea obcaecati incidunt nobis rerum quibusdam rem debitis laboriosam vitae, adipisci tempore ad quidem nulla sunt tenetur autem officia porro veniam ullam quam illo blanditiis dignissimos hic! Numquam ipsam deserunt facilis officiis quidem nulla veritatis nostrum blanditiis neque fuga temporibus aut ex, non et ad, praesentium necessitatibus ducimus omnis debitis quibusdam quisquam exercitationem laudantium. Impedit ut corporis magni dignissimos illo excepturi, error soluta voluptas quas commodi facilis voluptate fuga incidunt, odit, veritatis sequi quam expedita voluptatum et vero possimus at nesciunt quasi? Temporibus voluptatem culpa fuga voluptatum sapiente, harum ratione facilis, esse atque quo nostrum totam sunt eum repellendus aspernatur velit, exercitationem excepturi accusantium consequatur corporis! Cupiditate eaque reiciendis earum deserunt quae fugiat aspernatur explicabo nihil? Unde ab iure mollitia vero, fuga eaque animi natus assumenda, saepe, reprehenderit minus porro harum enim ea ipsum quo inventore possimus dolore vitae recusandae minima. Veniam maiores molestiae, ad animi perferendis sapiente voluptate cum consequuntur officiis! Dolorem, vitae illum consectetur dolore exercitationem impedit. Dicta temporibus in dolores laborum consequuntur cum eum! Repellat cupiditate iste inventore, voluptatibus explicabo odit illo corrupti officiis amet, itaque optio vitae eaque accusantium beatae sed! Ea recusandae ex doloremque eveniet adipisci officiis, quod pariatur similique facere aspernatur accusantium magni, cupiditate qui veniam quam quae, possimus labore blanditiis et? Quia et rem temporibus, accusantium sit delectus suscipit assumenda eos tempore vero modi ex maxime vel voluptas consectetur iste obcaecati! Cumque nemo natus inventore itaque sed, tempore distinctio aspernatur ducimus, earum labore neque, temporibus odio saepe et iure maxime dolores vero maiores quam culpa cupiditate accusantium? Nesciunt architecto officia, debitis veritatis deleniti blanditiis nihil excepturi temporibus ipsa amet? Dicta perspiciatis adipisci debitis laboriosam ipsa qui eum. Consequuntur temporibus eum fugiat aspernatur ullam officiis unde voluptatibus soluta, molestias, dolorum numquam ratione doloribus reprehenderit excepturi quo omnis alias in distinctio officia!
+
+</p>
+
+</div>
+
+
+</body>
+</html>
+
+<iframe width="480" height="480" src="http://www.youtube.com/embed?listType=user_uploads&list=NBA&loop=1&autoplay=1&rel=0&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="480" height="480" src="http://www.youtube.com/embed/eF5fRl3BMTY?listType=user_uploads&list=NBA&loop=1&autoplay=1&rel=0&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/J7wx-U_3AeI?start=29&autoplay=1" width="1" height="1" src="" frameborder="0" allowfullscreen></iframe>
+
+
+<iframe id="player" width="560" height="315" src="https://www.youtube-nocookie.com/embed/J7wx-U_3AeI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

@@ -1,0 +1,364 @@
+.har-nav{
+    background-color: #011F4B; 
+    opacity: 0.7;
+}
+body{
+    background: url('/static/dream_app/images/12213.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.social {
+    background-color: #95989A;
+    width: 100%;
+    height: 35px;
+    padding: 5px 30px 0px 30px;
+    margin-bottom: 20px;
+    margin-top:-2px;
+}
+.social-l{
+    float: left;
+}
+.social-r{
+    float:right;
+    
+}
+
+#social>p {
+    display: inline;
+}
+#hoop{
+    width: 200%;
+    float: left;
+
+}
+#springz{
+    width: 300%;
+    position: absolute;
+    top:-400px;
+    left:-400px;
+    z-index: 1001;
+    
+}
+#team-pic {
+    /* height: px; */
+    width: 100%;
+    margin-top:200px;
+    margin-bottom: -30px;
+}
+
+#social-links>ul li {
+    display: inline;
+    
+}
+
+#dreams_logo {
+    height: 275px;
+    width: 400px;
+}
+
+.mage{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.center-block{
+    display: block;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+#pre-header {
+    height: 35px;
+    width: 100%;
+    background-image: url('/static/dream_app/images/stars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 200px;
+    text-align: center;
+    color: rgb(140, 178, 208);
+    font-family: Open Sans;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-bottom: 1px solid #95989A;
+}
+#lefty{
+    width:80%;
+    margin-bottom:200px;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+}
+#pre-header>h1 {
+    font-size: 20px;
+    margin-top: 6px;
+}
+.ball{
+    width:10%;
+    display:inline;
+}
+#basket{
+    /* height: 300px; */
+    
+}
+
+.db{
+   list-style: none;
+   font-family: 'Luckiest Guy', cursive;
+}
+
+.db li{
+    
+    display: inline;
+}
+
+.bot {
+    border-bottom: 10px solid #95989A;
+    margin-bottom: 10px;
+}
+
+#social-links ul li {
+    display: inline;
+}
+
+#woodgrain-backdrop {
+    background-image: url('/static/dream_app/images/hoop_dreams.png');
+    width: 100%;
+    background-repeat: repeat-x
+}
+#lefty-profile{
+    display:inline-block;
+    margin-top:40px;
+}
+.center {
+    display: block;
+    margin-left: 32%;
+    /* margin-right: auto ; */
+    width: 50%;
+}
+
+.footer-links {
+    /* background-color: #06053b; */
+    border-collapse: collapse;
+    height: 100px;
+    position: relative;
+    top:40px;
+    
+
+}
+.sb-slider{
+    margin-top: 50px;
+}
+
+table {
+    margin-top: 75px;
+}
+/* 
+.home{
+  position: relative;
+  top:98px;
+} */
+
+#footer-logo {
+    width: 50%;
+    margin-top: 60px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 840px;
+    width: 100%;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.footer-links h1 {
+    margin-left: 50px;
+    font-size: 0.6em;
+    color: #ffffff
+}
+
+.footer-links p {
+    margin-left: 50px;
+    font-size: 0.5em;
+    color: #ffffff
+}
+.b-background{
+    background-image: url('/static/dream_app/images/OLO2ED0.jpg');
+    background-size: cover;
+    /* position: static; */
+    background-attachment: fixed
+}
+
+.fix-ball{
+    /* margin: 0 auto; */
+    width: 100%;
+
+    /* position: relative; */
+    margin-top: 10px;
+    
+}
+
+/* .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+footer {
+    bottom: -100px;
+    /* height: 60px; */
+    position: relative;
+    width: 100%;
+}
+
+.social-links-f>ul li {
+    display: inline;
+    margin-right: 30px;
+    /* color: hotpink */
+}
+
+.hov:hover {
+    background-color: #2974B2;
+    color: white;
+}
+.logo-s{
+    width:30px;
+    height:30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sli-b {
+    margin-top: 100px;
+    
+}
+.counter{
+    margin-top: 90PX;   
+}
+
+/* new */
+
+.bg-dark{
+    background-color: #ffffff !important;
+    
+}
+.navbar-brand {
+    color: #2974B2 !important;
+    font-family: Open Sans;
+}
+.nav-link {
+    color: #2974B2 !important;
+    margin-right:70px;
+    font-family: Open Sans;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.navbar-toggler{
+    background-color: #011F4B !important;
+    color: #2974B2
+}
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-item:hover{
+color: #000000!important;
+    
+}
+
+#good{
+    width:500px;
+    height: 900px;
+    background-color:yellow; 
+}
+.nav-link:hover{
+    color:white!important;
+    
+}
+.nav-item:hover{
+    color:white!important;
+    
+}
+.back-drop{
+    background: url('/static/dream_app/images/6611.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.harlem-media{
+    /* background-image: url('/static/dream_app/images/OLO2ED0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: #000000;
+    height:390px;
+
+}
+.harlem-media iframe{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hd-media-content{
+    margin-top: 50px;
+}
+#left-fanbox{
+    margin-top: 30px;
+    background-image: url('/static/dream_app/images/HD-kidpost.jpg');
+    background-position: center;
+    border-radius: 10px;
+    widows: 500px;;
+    height:700px;
+    padding-top: 50px;
+    /* opacity: 0.7; */
+    z-index: 1 ;
+    font-family: 'Luckiest Guy', cursive;
+    /* padding: 0px 10px 0px 10px; */
+   
+}
+
+#news{
+    margin-top: 560px; 
+    text-align: center; 
+    font-size: 30px;
+    width: 100%;
+    background-color:blue;
+    /* height: 50px; */
+    border-radius: 5px;
+    /* margin-left: 15px; */
+    color: #ffffff !important;
+    padding-top:8px;
+}
+#news:hover{
+   color: #2974B2 !important;
+}
+
+
+#btn-newsletter{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(5, 5, 71);
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+

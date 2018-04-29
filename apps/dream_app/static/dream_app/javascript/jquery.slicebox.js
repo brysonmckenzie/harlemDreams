@@ -189,7 +189,7 @@
 
 	$.Slicebox.defaults = {
 		// (v)ertical, (h)orizontal or (r)andom
-		orientation : 'h',
+		orientation : 'v',
 		// perspective value
 		perspective : 1200,
 		// number of slices / cuboids
@@ -199,7 +199,7 @@
 		cuboidsRandom : false,
 		// the range of possible number of cuboids if cuboidsRandom is true
 		// it is strongly recommended that you do not set a very large number :)
-		maxCuboidsCount : 7,
+		maxCuboidsCount : 5,
 		// each cuboid will move x pixels left / top (depending on orientation). The middle cuboid doesn't move. the middle cuboid's neighbors will move disperseFactor pixels
 		disperseFactor : 0,
 		// color of the hidden sides
@@ -213,7 +213,7 @@
 		// transition easing
 		easing : 'ease',
 		// if true the slicebox will start the animation automatically
-		autoplay : false,
+		autoplay : true,
 		// time (ms) between each rotation, if autoplay is true
 		interval: 3000,
 		// the fallback will just fade out / fade in the items

@@ -25,7 +25,7 @@ SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['167.99.145.193']
+ALLOWED_HOSTS = ['harlemdreams.net']
 
 
 # Application definition
@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['167.99.145.193']
 INSTALLED_APPS = [
     'apps.dream_app',
     'django.contrib.admin',
-    'django.contrib.auth',
+    'djan
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',

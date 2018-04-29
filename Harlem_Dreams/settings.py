@@ -23,12 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [ 'harlemdreams.net',
 		'www.harlemdreams.net',
 		'theharlemdreams.net',
-		'www.theharlmedreams.net',
+		'www.theharlemdreams.net',
 		'167.99.145.193',		
 		]
 

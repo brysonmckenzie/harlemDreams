@@ -132,7 +132,7 @@ body{
 }
 #lefty-profile{
     display:inline-block;
-    margin-top:40px;
+    /* margin-top:444px; */
 }
 .center {
     display: block;
@@ -330,10 +330,11 @@ color: #000000!important;
     /* opacity: 0.7; */
     z-index: 1 ;
     font-family: 'Luckiest Guy', cursive;
-    /* padding: 0px 10px 0px 10px; */
-   
+    margin-bottom: 50px;
 }
-
+.dowwn{
+    margin-top:100px;
+}
 #news{
     margin-top: 560px; 
     text-align: center; 

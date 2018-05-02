@@ -6,6 +6,6 @@ def index(request):
     
     return render(request, 'dream_app/index.html')
 
-def page2(request):
+def about(request):
 
-    return render(request, 'dream_app/index2.html')
+    return render(request, 'dream_app/about.html')

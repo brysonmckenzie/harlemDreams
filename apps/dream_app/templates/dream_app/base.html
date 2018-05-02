@@ -53,6 +53,9 @@
     <script type="text/javascript" src="{% static 'dream_app/javascript/modernizr.custom.46884.js' %}"></script>
     <script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
+
 
 </head>
 
@@ -87,7 +90,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link center" href="#">About</a>
+                            <a class="nav-link center" href="/about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link center" href="#">Events</a>
@@ -238,17 +241,19 @@
             <div class="footer-copy">
                 <div class="container-fluid"></div>
                 <div class="row">
-                    <div class="col-sm-12">
-                        <p style="display:inline">© 2018 Harlem Dreams </p>
-
-                        <a href="http://www.brysonmckenzie.com">
-                            <p class="center" style="display:inline;text-align: center; color: black;">Six Eleven Web Design&#169;</p>
-                        </a>
-
-
+                    <div class="col-sm-2">
+                        <p class="center" style="display:inline">© 2018 Harlem Dreams </p>
                     </div>
-
+                    <div class="col-sm-8">
+                        <a href="http://www.brysonmckenzie.com">
+                            <p class="center" style="text-align: center; color: black;">Six Eleven Web Design&#169;</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-2 d-none d-sm-block"></div>
                 </div>
+
+
+            </div>
         </footer>
 </body>
 

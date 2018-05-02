@@ -28,7 +28,6 @@
 <div class="container-fluid ">
   <div class="row">
     <div class="col-sm-4">
-
     </div>
     <!-- <div class="col-sm-4">
       <div id="basket">
@@ -54,7 +53,7 @@
       <img id="springz" class="center-block" src="{% static 'dream_app/images/springz.png' %}" alt="">
     </div>
     
-      <div class="col-sm-4 col-m-4" id="left-fanbox">
+      <div class=" col-sm-4" id="left-fanbox">
         <a href="">
           <p class="center-block" id="news">Join Our Newsletter!</p>
         </a>
@@ -65,7 +64,7 @@
 
         <h1 style="font-family: 'Luckiest Guy', cursive;">#42 Lefty Williams</h1>
         <p style="width:150px; margin: 30px 0px 0px 50px;">
-          <span style="font-weight:bold; font-size:14px">Position: Showman</span>
+          <span style="font-weight:bold;font-family: 'Luckiest Guy', cursive;font-size:14px">Position: Showman</span>
           <br>
           <!-- <span style="
           font-family:Open sans; font-size:11px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officia fuga voluptate ipsam iure eveniet ea
@@ -185,15 +184,14 @@
 
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
+
 <script type="text/javascript">
   
   $(function() {
 
 var Page = (function() {
 
-  var $navArrows = $( '#nav-arrows' ).hide(),
+  var $navArrows = $(    '#nav-arrows' ).hide(),
     $navDots = $( '#nav-dots' ).hide(),
     $nav = $navDots.children( 'span' ),
     $shadow = $( '#shadow' ).hide(),

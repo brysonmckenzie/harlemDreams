@@ -1,54 +1,57 @@
-.har-nav{
-    background-color: #011F4B; 
+.har-nav {
+    background-color: #011F4B;
     opacity: 0.7;
 }
-body{
+
+body {
     background: url('/static/dream_app/images/12213.jpg');
     background-position: center;
     background-size: cover;
 }
+
 .social {
     background-color: #95989A;
     width: 100%;
     height: 35px;
     padding: 5px 30px 0px 30px;
     margin-bottom: 20px;
-    margin-top:-2px;
+    margin-top: -2px;
 }
-.social-l{
+
+.social-l {
     float: left;
 }
-.social-r{
-    float:right;
-    
+
+.social-r {
+    float: right;
 }
 
 #social>p {
     display: inline;
 }
-#hoop{
+
+#hoop {
     width: 200%;
     float: left;
-
 }
-#springz{
+
+#springz {
     width: 300%;
     position: absolute;
-    top:-400px;
-    left:-400px;
+    top: -400px;
+    left: -400px;
     z-index: 1001;
-    
 }
+
 #team-pic {
     /* height: px; */
     width: 100%;
-    margin-top:200px;
+    margin-top: 200px;
     margin-bottom: -30px;
 }
 
 #social-links>ul li {
     display: inline;
-    
 }
 
 #dreams_logo {
@@ -56,7 +59,7 @@ body{
     width: 400px;
 }
 
-.mage{
+.mage {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -65,10 +68,10 @@ body{
     -ms-filter: "FlipH";
 }
 
-.center-block{
+.center-block {
     display: block;
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
 }
 
 #pre-header {
@@ -86,33 +89,35 @@ body{
     text-transform: capitalize;
     border-bottom: 1px solid #95989A;
 }
-#lefty{
-    width:80%;
-    margin-bottom:200px;
+
+#lefty {
+    width: 80%;
+    margin-bottom: 200px;
     position: absolute;
     top: 65px;
     right: 20px;
 }
+
 #pre-header>h1 {
     font-size: 20px;
     margin-top: 6px;
 }
-.ball{
-    width:10%;
-    display:inline;
+
+.ball {
+    width: 10%;
+    display: inline;
 }
-#basket{
+
+#basket {
     /* height: 300px; */
-    
 }
 
-.db{
-   list-style: none;
-   font-family: 'Luckiest Guy', cursive;
+.db {
+    list-style: none;
+    font-family: 'Luckiest Guy', cursive;
 }
 
-.db li{
-    
+.db li {
     display: inline;
 }
 
@@ -130,10 +135,12 @@ body{
     width: 100%;
     background-repeat: repeat-x
 }
-#lefty-profile{
-    display:inline-block;
+
+#lefty-profile {
+    display: inline-block;
     /* margin-top:444px; */
 }
+
 .center {
     display: block;
     margin-left: 32%;
@@ -146,17 +153,17 @@ body{
     border-collapse: collapse;
     height: 100px;
     position: relative;
-    top:40px;
-    
-
+    top: 40px;
 }
-.sb-slider{
+
+.sb-slider {
     margin-top: 50px;
 }
 
 table {
     margin-top: 75px;
 }
+
 /* 
 .home{
   position: relative;
@@ -175,6 +182,7 @@ table {
     padding: 0 50px;
     margin: 0 auto;
 }
+
 .footer-links h1 {
     margin-left: 50px;
     font-size: 0.6em;
@@ -186,20 +194,19 @@ table {
     font-size: 0.5em;
     color: #ffffff
 }
-.b-background{
+
+.b-background {
     background-image: url('/static/dream_app/images/OLO2ED0.jpg');
     background-size: cover;
     /* position: static; */
     background-attachment: fixed
 }
 
-.fix-ball{
+.fix-ball {
     /* margin: 0 auto; */
     width: 100%;
-
     /* position: relative; */
     margin-top: 10px;
-    
 }
 
 /* .center-block {
@@ -225,9 +232,10 @@ footer {
     background-color: #2974B2;
     color: white;
 }
-.logo-s{
-    width:30px;
-    height:30px;
+
+.logo-s {
+    width: 30px;
+    height: 30px;
 }
 
 a {
@@ -245,115 +253,125 @@ p:hover {
 
 .sli-b {
     margin-top: 100px;
-    
 }
-.counter{
-    margin-top: 90PX;   
+
+.counter {
+    margin-top: 90PX;
 }
 
 /* new */
 
-.bg-dark{
+.bg-dark {
     background-color: #ffffff !important;
-    
 }
+
 .navbar-brand {
     color: #2974B2 !important;
     font-family: Open Sans;
 }
+
 .nav-link {
     color: #2974B2 !important;
-    margin-right:70px;
+    margin-right: 70px;
     font-family: Open Sans;
     font-size: 1.5em;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: #011F4B !important;
     color: #2974B2
 }
+
 .abs-center-x {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-.nav-item:hover{
-color: #000000!important;
-    
+
+.nav-item:hover {
+    color: #000000!important;
 }
 
-#good{
-    width:500px;
+#good {
+    width: 500px;
     height: 900px;
-    background-color:yellow; 
+    background-color: yellow;
 }
-.nav-link:hover{
-    color:white!important;
-    
+
+.nav-link:hover {
+    color: white!important;
 }
-.nav-item:hover{
-    color:white!important;
-    
+
+.nav-item:hover {
+    color: white!important;
 }
-.back-drop{
+
+.back-drop {
     background: url('/static/dream_app/images/6611.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat-y;
 }
-.harlem-media{
+
+.harlem-media {
     /* background-image: url('/static/dream_app/images/OLO2ED0.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
     background: #000000;
-    height:390px;
-
+    height: 390px;
 }
-.harlem-media iframe{
+
+.harlem-media iframe {
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
-.hd-media-content{
+
+.hd-media-content {
     margin-top: 50px;
 }
-#left-fanbox{
+
+#left-fanbox {
     margin-top: 30px;
     background-image: url('/static/dream_app/images/HD-kidpost.jpg');
-    background-position: center;
-    background-re÷peat: no-repeat;
+    /* background-position: cover; */
+    background-attachment: fixed background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 10px;
-    widows: 500px;;
-    height:700px;
+    widows: 500px;
+    ;
+    height: 700px;
     padding-top: 50px;
     /* opacity: 0.7; */
-    z-index: 1 ;
+    z-index: 1;
     font-family: 'Luckiest Guy', cursive;
     margin-bottom: 50px;
 }
-.dowwn{
-    margin-top:100px;
+
+.down {
+    margin-top: 100px;
 }
-#news{
-    margin-top: 560px; 
-    text-align: center; 
+
+#news {
+    margin-top: 560px;
+    text-align: center;
     font-size: 30px;
     width: 100%;
-    background-color:blue;
+    background-color: blue;
     /* height: 50px; */
     border-radius: 5px;
     /* margin-left: 15px; */
     color: #ffffff !important;
-    padding-top:8px;
-}
-#news:hover{
-   color: #2974B2 !important;
+    padding-top: 8px;
 }
 
+#news:hover {
+    color: #2974B2 !important;
+}
 
-#btn-newsletter{
+#btn-newsletter {
     width: 300px;
     height: 30px;
     background-color: gray;
@@ -363,14 +381,39 @@ color: #000000!important;
     font-weight: bolder;
 }
 
-.about{
-    height:900px;
-    background: black;
-    text-align: center;
-    padding: 100px;
-    opacity: 0.7;
+.about {
+    width: 100%;
+    height: 50px;
+    background: #2974b2;
+    /* text-align: center; */
+    /* padding: 100px; */
+    /* opacity: 0.7; */
     color: white;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    margin-top: 20px;
 }
 
+.about-content {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 925px; */
+    background-color: #ffffff;
+    padding:50px;
+    width: 100%;
+    /* opacity: 0.6; */
+    /* margin-bottom: 50px; */
 
+}
+
+.about-content > p {
+    font-size: 25px;
+}
+
+.about-txt{
+    font-size: 30px;
+    font-family: Open sans;
+}
+#harlem-group2{
+    margin-top:30px;
+    margin-bottom: 30px;
+}

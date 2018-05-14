@@ -54,13 +54,13 @@
     <script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
+    <script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
 
 
 </head>
 
 <body>
-    <div class="container-fluid ">
+    <div class="container-fluid">
 
         <!-- <div class="row">
         <div class="col-lg-12" id="pre-header">
@@ -76,7 +76,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-dark indigo">
                 <a href="/">
-                    <img src="{% static 'dream_app/images/dLogo_bw.jpg'%}" alt="logo" style="width:50px;">
+                    <img class="k" src="{% static 'dream_app/images/blue-logo.png'%}" alt="logo" style="width:50px;"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -85,31 +85,57 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link center" href="#">Home
+                            <a class="nav-link " href="/">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link center" href="/about">About</a>
+                            <a class="nav-link" href="/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link center" href="#">Events</a>
+                            <a class="nav-link" href="'/events'">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link center" href="#">Players</a>
+                            <a class="nav-link" href="#">Players</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link center" href="#">Shop</a>
+                            <a class="nav-link" href="shop">Shop</a>
                         </li>
                     </ul>
 
                 </div>
 
         </div>
+        <div class="row" >
+            <div class="col-sm-6 social-bar d-none d-sm-block" id="phone">
+                <span class="fa fa-phone "></span> 1-800-888-DREAMS
+            </div>
+            <div class="col-sm-6 social-bar d-none d-sm-block" id="social-v2">
+                <ul id="top-social">
+                    <li>
+                        <a href="">
+                            <img src="{% static 'dream_app/images/instagram.png' %}" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img  src="{% static 'dream_app/images/twitter.png' %}" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="{% static 'dream_app/images/facebook.png' %}" alt=""/>
+                        </a>
+                    </li>
 
-        {% block body %} {% endblock %}
+                </ul>
+            </div>
+        </div>
+    </div>
 
-        <!-- <footer>
+    {% block body %} {% endblock %}
+
+    <!-- <footer>
         <div class="row">
 
             <div class="col-lg-4 footer-links center-block d-none d-sm-block">
@@ -168,93 +194,92 @@
         </div>
     </footer> -->
 
-        <footer id="myFooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <h2 class="logo">
-                            <a href="#">
-                                <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/main_logo.png' %}" style alt="Harlem Dreams Logo">
-                            </a>
-                        </h2>
-                    </div>
-                    <div class="col-sm-2">
-                        <h5>Get started</h5>
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Newsletter</a>
-                            </li>
-                            <li>
-                                <a href="#">Events</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <h5>About us</h5>
-                        <ul>
-                            <li>
-                                <a href="#">Company Information</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact us</a>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a>
-                            </li>
-                            <!-- <li><a href="#">Reviews</a></li> -->
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <h5>Support</h5>
-                        <ul>
-                            <!-- <li><a href="#">FAQ</a></li> -->
-                            <li>
-                                <a href="#">Help</a>
-                            </li>
-                            <!-- <li><a href="#">Forums</a></li> -->
-                        </ul>
-                    </div>
-                    <div class="col-sm-3 footer-links social-links-f ">
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
-                                    <img class="logo-s" src="{% static 'dream_app/images/facebook.png' %}" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://instagram.com/theharlemdreams">
-                                    <img class="logo-s" src="{% static 'dream_app/images/instagram.png' %}" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/theharlemdreams">
-                                    <img class="logo-s" src="{% static 'dream_app/images/twitter.png' %}" alt="https://twitter.com/theharlemdreams" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copy">
-                <div class="container-fluid"></div>
-                <div class="row">
-                    <div class="col-sm-2">
-                        <p class="center" style="display:inline">© 2018 Harlem Dreams </p>
-                    </div>
-                    <div class="col-sm-8">
-                        <a href="http://www.brysonmckenzie.com">
-                            <p class="center" style="text-align: center; color: black;">Six Eleven Web Design&#169;</p>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo">
+                        <a href="#">
+                            <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/main_logo.png' %}" style alt="Harlem Dreams Logo">
                         </a>
-                    </div>
-                    <div class="col-sm-2 d-none d-sm-block"></div>
+                    </h2>
                 </div>
-
-
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Newsletter</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Company Information</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <!-- <li><a href="#">Reviews</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <!-- <li><a href="#">FAQ</a></li> -->
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <!-- <li><a href="#">Forums</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-sm-3 footer-links social-links-f ">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
+                                <img class="logo-s" src="{% static 'dream_app/images/facebook.png' %}" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/theharlemdreams">
+                                <img class="logo-s" src="{% static 'dream_app/images/instagram.png' %}" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/theharlemdreams">
+                                <img class="logo-s" src="{% static 'dream_app/images/twitter.png' %}" alt="https://twitter.com/theharlemdreams" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </footer>
+        </div>
+        <div class="footer-copy">
+            <div class="container-fluid"></div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p class="footer-sz" style="display:inline">© 2018 Harlem Dreams </p>
+                </div>
+                <div class="col-sm-8">
+                    <a href="http://www.brysonmckenzie.com">
+                        <p class="footer-sz blue" style="text-align: center; color: black;">Designed by Six Eleven Web Design&#169;</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
 </body>
 
 </html>

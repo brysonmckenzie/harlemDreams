@@ -29,13 +29,16 @@ ALLOWED_HOSTS = [ 'harlemdreams.net',
 		'www.harlemdreams.net',
 		'theharlemdreams.net',
 		'www.theharlemdreams.net',
-		'167.99.145.193',		
+		'167.99.145.193',
+        'harlemdreams.com',
+        'www.harlemdreams.com,'		
 		]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    # 'apps.newsletter',
     'apps.dream_app',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -1,4 +1,4 @@
-ss/* Slicebox Style */
+/* Slicebox Style */
 .sb-slider {
 	margin: 10px auto;
 	position: relative;
@@ -27,19 +27,16 @@ ss/* Slicebox Style */
 	display: block;
 }
 
-
 .sb-description {
 	padding: 20px;
-	bottom: 100px;
-	left: 130px;
-	right: 130px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
 	z-index: 1000;
 	position: absolute;
 	background: #CBBFAE;
-	/*background: rgba(190,176,155, 0.4);*/
-	background: rgba(140,140,140, 0.3);
-	border-left: 6px solid rgba(102,154,204,0.7);
-/*	border-left: 6px solid rgba(8,107,128,0.7);*/
+	background: rgba(190,176,155, 0.4);
+	border-left: 4px solid rgba(255,255,255,0.7);
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);	
 	opacity: 0;

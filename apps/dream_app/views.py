@@ -16,8 +16,12 @@ def shop(request):
 
 def events(request):
     
-        return render(request, 'dream_app/events.html')
+    return render(request, 'dream_app/events.html')
 
 def newsletter(request):
     
-        return render(request, 'dream_app/newsletter.html')
+    return render(request, 'dream_app/newsletter.html')
+    
+def players(request):
+    
+    return render(request, 'dream_app/players.html')

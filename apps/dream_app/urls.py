@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^shop$', views.shop),
     url(r'^newsletter$', views.newsletter),
     url(r'^events$', views.events),
+    url(r'^players$', views.players),
 ]

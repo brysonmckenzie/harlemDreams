@@ -27,13 +27,13 @@ DEBUG = False
 
 ALLOWED_HOSTS = [ 'harlemdreams.net',
 		'www.harlemdreams.net',
-		'theharlemdreams.net',
+		'harlemdreams.net',
 		'www.theharlemdreams.net',
+		'theharlemdreams.net',
 		'167.99.145.193',
-        'harlemdreams.com',
-        'www.harlemdreams.com,'		
+        'theharlemdreams.com',
+        'www.theharlemdreams.com,'		
 		]
-
 
 # Application definition
 

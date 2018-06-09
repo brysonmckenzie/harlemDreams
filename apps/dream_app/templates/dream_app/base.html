@@ -56,6 +56,13 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+
+    <!-- marqee -->
+
+    <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
+
+
 
 </head>
 
@@ -74,9 +81,9 @@
 
         <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg navbar-dark indigo">
+            <nav class="navbar head navbar-expand-lg navbar-dark indigo">
                 <a href="/">
-                    <img class="k" src="{% static 'dream_app/images/blue-logo.png'%}" alt="logo" style="width:50px;"/>
+                    <img class="k" src="{% static 'dream_app/images/blue-logo.png'%}" alt="logo" style="width:50px;" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -106,25 +113,26 @@
                 </div>
 
         </div>
-        <div class="row" >
-            <div class="col-sm-6 social-bar d-none d-sm-block" id="phone">
-                <span class="fa fa-phone   "></span> (702) 608-3191
+        <div class="row">
+            <div class="col-sm-4 social-bar d-none d-sm-block" id="phone">
+                <span class="fa fa-phone"></span> (702) 608-3191
             </div>
-            <div class="col-sm-6 social-bar d-none d-sm-block" id="social-v2">
+            <div class="col-sm-4 social-bar text-center "></div>
+            <div class="col-sm-4 social-bar d-none d-sm-block" id="social-v2">
                 <ul id="top-social">
                     <li>
                         <a href="https://instagram.com/theharlemdreams">
-                            <img src="{% static 'dream_app/images/instagram.png' %}" alt=""/>
+                            <img src="{% static 'dream_app/images/instagram.png' %}" alt="" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/theharlemdreams">
-                            <img  src="{% static 'dream_app/images/twitter.png' %}" alt=""/>
+                        <a style="margin-left:6px;" href="https://twitter.com/theharlemdreams">
+                            <img src="{% static 'dream_app/images/twitter.png' %}" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
-                            <img src="{% static 'dream_app/images/facebook.png' %}" alt=""/>
+                            <img src="{% static 'dream_app/images/facebook.png' %}" alt="" />
                         </a>
                     </li>
 
@@ -132,6 +140,14 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row" style="text-align: center">
+            <div class="col-lg-12 vcenter2" id="event_list">
+                <span style="font-family: 'Krona One', sans-serif;">{{message}}</span>
+            </div>
+        </div>
+    </div>
+    
 
     {% block body %} {% endblock %}
 
@@ -200,7 +216,7 @@
                 <div class="col-sm-3">
                     <h2 class="logo">
                         <a href="#">
-                            <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/main_logo.png' %}" style alt="Harlem Dreams Logo">
+                            <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/blue-logo.png' %}" style alt="Harlem Dreams Logo">
                         </a>
                     </h2>
                 </div>
@@ -208,13 +224,13 @@
                     <h5>Get started</h5>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="#">Newsletter</a>
+                            <a href="/newsletter">Newsletter</a>
                         </li>
                         <li>
-                            <a href="#">Events</a>
+                            <a href="/events">Events</a>
                         </li>
                     </ul>
                 </div>
@@ -225,23 +241,23 @@
                             <a href="#">Company Information</a>
                         </li>
                         <li>
-                            <a href="#">Contact us</a>
+                            <a href="/contact-page">Contact us</a>
                         </li>
                         <li>
-                            <a href="#">Careers</a>
+                            <a href="/job-openings">Job Openings</a>
                         </li>
                         <!-- <li><a href="#">Reviews</a></li> -->
                     </ul>
                 </div>
                 <div class="col-sm-2">
-                    <h5>Support</h5>
+                    <!-- <h5>Support</h5>
                     <ul>
-                        <!-- <li><a href="#">FAQ</a></li> -->
+                        <li><a href="#">FAQ</a></li>
                         <li>
                             <a href="#">Help</a>
                         </li>
-                        <!-- <li><a href="#">Forums</a></li> -->
-                    </ul>
+                        <li><a href="#">Forums</a></li>
+                    </ul> -->
                 </div>
                 <div class="col-sm-3 footer-links social-links-f ">
                     <ul>
@@ -281,5 +297,12 @@
         </div>
     </footer>
 </body>
+<script>
+    $(function () {
+        $('#event_list').marquee({
+            duration: 8000
+        });
+    });
+</script>
 
 </html>

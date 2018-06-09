@@ -1,0 +1,39 @@
+{% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="col-sm-12" id="contact">
+            <div class="form-group">
+                <form action="/process" method="post">
+                    {% csrf_token %}
+
+                    <label for="name">Name</label>
+                    <br>
+                    <input class="form-control" type="text" name="client_name" placeholder="Enter Name">
+                    <br>
+                    <label for="subject">Subject</label>
+                    <br>
+                    <input class="form-control" type="text" name="client_subject" placeholder="Enter Name">
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input class="form-control" type="text" name="client_email" placeholder="Enter Email">
+                    <br>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="client_message" placeholder="Enter Message" class="form-control" id="" cols="10" rows="10">
+                    </textarea>
+                    <br>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

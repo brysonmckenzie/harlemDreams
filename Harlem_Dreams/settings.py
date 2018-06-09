@@ -23,23 +23,22 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [ 'harlemdreams.net',
 		'www.harlemdreams.net',
-		'harlemdreams.net',
 		'www.theharlemdreams.net',
 		'theharlemdreams.net',
 		'167.99.145.193',
         'theharlemdreams.com',
-        'www.theharlemdreams.com,'		
+        'www.theharlemdreams.com',		
 		]
 
 # Application definition
 
 INSTALLED_APPS = [
-    # 'apps.newsletter',
     'apps.dream_app',
+    'apps.newsletters',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -136,3 +135,11 @@ STATICFILES_DIR = (os.path.join(BASE_DIR, "/dream_app/static"))
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+
+# SMTP
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'brysdolla@gmail.com'
+EMAIL_HOST_PASSWORD = 'Kujo1776!'

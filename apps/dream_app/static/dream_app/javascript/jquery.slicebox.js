@@ -189,7 +189,7 @@
 
 	$.Slicebox.defaults = {
 		// (v)ertical, (h)orizontal or (r)andom
-		orientation : 'v',
+		orientation : 'h',
 		// perspective value
 		perspective : 1200,
 		// number of slices / cuboids

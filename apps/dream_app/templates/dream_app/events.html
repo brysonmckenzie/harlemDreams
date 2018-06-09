@@ -1,25 +1,100 @@
 {% extends 'dream_app/base.html'%}{% block body %}{% load staticfiles %}
-
-<!-- <div class="container">
-
-    <div class="event-content">
-
-        <div id="date-content">
-            <h1>Month Date</h1>
-        </div>
-
-    </div>
-
-</div> -->
-
-
+<style>
+    body {
+        height: 100%;
+    }
+</style>
 <div class="container">
-        <div class="row">
-    
-            <div class="col-sm-12 shop">
-                <h1>Coming Soon!</h1>
+    <div class="row ">
+
+        <div class="col-sm-12 text-center" style="color:steelblue; font-family: Luckiest Guy, cursive; margin-top: 30px; margin-bottom: 30px;">
+            <h1>Coming to a city Near you</h1>
+        </div>
+    </div>
+    {% if events|length != 0 %} {% for e in events %}
+    <div class="row push">
+        <div class="event-box">
+            <div class="container">
+                <div class="row">
+                    <div id="date-border">
+                        <div class="col-sm-12 text-center style2" style="padding: 2px 0px 2px 0px">
+                            {{e.date}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height: 100px;">
+                    <div class="col-sm-4 text-center">
+                        <div class="row vcenter">
+                            <div class="col-sm-4">
+                                <img class="k" src="{% static 'dream_app/images/blue-logo.png'%}" alt="logo" style="width:70px;" />
+                            </div>
+                            <div class="col-sm-8 style2">
+                                <h3 class="vcenter">Harlem Dreams</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center  style1" style="font-size: 50px; padding:20px;">
+                        <span class="">VS.</span>
+                    </div>
+                    <div class="col-sm-4 text text-center">
+                        <div class="row vcenter">
+                            <div class="col-sm-4">
+                                <img class="k" src="{% static 'dream_app/images/mad_ball.png'%}" alt="logo" style="width:70px;" />
+                            </div>
+                            <div class="col-sm-8 style2">
+                                <h3 class="vcenter">{{ e.opponent }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row time-location">
+                    <div class="col-sm-4" id="hoop-left">
+                    </div>
+                    <div class="col-sm-4 time-location style2 text-center half-court">
+                        <div class=" l-center">
+                            <h1>{{e.location}} </h1>
+                            <h1>@ {{e.time}}</h1>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4" id="hoop-right">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="vcenter text-center" style=" background: white; font-family: Luckiest Guy, cursive;">{{e.address}} {{e.city}}, {{e.state}}</p>
+                </div>
             </div>
         </div>
     </div>
 
+    {% endfor %}{% else %}
+    <div id="no-event">{{no_event}}</div>
+    {% endif %}
+</div>
+<!-- <script language="javascript">
+    function autoResizeDiv() {
+        document.getElementById('no-event').style.height = window.innerHeight + 'px';
+    }
+    window.onresize = autoResizeDiv;
+    autoResizeDiv();
+</script> -->
+<style type="text/css">
+    body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #no-event {
+        height: 350px;
+        padding: 50px;
+        font-family: 'Krona One', sans-serif;
+        background: rgba(255, 255, 255, 0.5)
+    }
+</style>
 {% endblock %}

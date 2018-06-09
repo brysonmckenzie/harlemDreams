@@ -7,3 +7,23 @@ class NewsletterUser(models.Model):
 
     def __str__(self):
         return self.email
+
+class Event(models.Model):
+    opponent = models.CharField(max_length=30)
+    date = models.CharField(max_length=30)
+    city = models.CharField(max_length=30)
+    address = models.CharField(max_length=30)
+    state = models.CharField(max_length=30)
+    time = models.CharField(max_length=30)
+    location = models.CharField(max_length=50)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now = True)
+
+
+class Message(models.Model):
+    name = models.CharField(max_length=30)
+    email = models.CharField(max_length=30)
+    subject = models.CharField(max_length=30)
+    message = models.TextField(max_length=300)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now = True)

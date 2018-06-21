@@ -95,8 +95,8 @@ a.nav-link{
 
 .center-block {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
 }
 
 #pre-header {
@@ -119,7 +119,7 @@ a.nav-link{
     width: 80%;
     margin-bottom: 200px;
     position: absolute;
-    top: 65px;
+    top: 95px;
     right: 20px;
 }
 
@@ -168,8 +168,8 @@ a.nav-link{
 
 .center {
     display: block;
-    margin-left: 32%;
-    /* margin-right: auto ; */
+    margin-left: auto;
+    margin-right: auto ;
     width: 50%;
 }
 
@@ -375,7 +375,12 @@ a:hover {
     /* margin-bottom: 50px; */
     background: white;
     z-index: 1500;
+    /* background-image: url('/static/dream_app/images/cj-harvey.jpg');
+    background-repeat: no-repeat;
+    background-size: 67%;
+    background-position: 111px 376px; */
 }
+
 
 #left-fanbox>h1 {
     font-family: Luckiest Guy, cursive;

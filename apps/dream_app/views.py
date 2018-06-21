@@ -9,7 +9,7 @@ from django.conf import settings
 
 
 def index(request):
-    event_message = 'Join us, in Lorem, CA at Chex Arena, check Events for more information'
+    event_message = 'Join us, check Events for more information'
 
     context = {
         'message' : event_message

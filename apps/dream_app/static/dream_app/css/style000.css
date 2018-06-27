@@ -2,7 +2,9 @@
     background-color: #011F4B;
     opacity: 0.7;
 }
-
+.sub-row{
+    height: 50px;
+}
 body {
     background: url('/static/dream_app/images/12213.jpg');
     background-position: center;
@@ -12,7 +14,7 @@ body {
 .social {
     background-color: #95989A;
     width: 100%;
-    height: 35px;
+    height: 100%;
     padding: 5px 30px 0px 30px;
     margin-bottom: 20px;
     margin-top: -2px;
@@ -119,10 +121,18 @@ a.nav-link{
     width: 80%;
     margin-bottom: 200px;
     position: absolute;
-    top: 95px;
+    top: 150px;
     right: 20px;
 }
-
+.event-desc::before{
+    content: "Address:";
+    color: white;
+}
+.event-description{
+    text-align:center;
+    font-family: 'Krona One', sans-serif;
+    
+}
 #pre-header>h1 {
     font-size: 20px;
     margin-top: 6px;
@@ -171,6 +181,12 @@ a.nav-link{
     margin-left: auto;
     margin-right: auto ;
     width: 50%;
+}
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    width: 100%;
 }
 
 .footer-links {
@@ -365,20 +381,17 @@ a:hover {
 
 #left-fanbox {
     margin-top: 40px;
-    margin-left: 0px;
-    border-radius: 10px;
-    width: 500px;
-    /* height: 800px; */
-    padding-top: 50px;
+    height: 100%;
+    padding-top: 15px;
     z-index: 1;
     font-family: 'Luckiest Guy', cursive;
-    /* margin-bottom: 50px; */
     background: white;
     z-index: 1500;
-    /* background-image: url('/static/dream_app/images/cj-harvey.jpg');
-    background-repeat: no-repeat;
-    background-size: 67%;
-    background-position: 111px 376px; */
+
+}
+.cj-btn-box{
+    /* height:50px; */
+    padding: 25px;
 }
 
 
@@ -533,14 +546,23 @@ a:hover {
   }
 
  #cj{
-    position:absolute; 
-    bottom:470px; 
-    right:100px;
     color:black;
     font-size:50px;
     font-family: Open sans;
-
  }
+ .cj-txt{
+    width: 100%;
+    margin-top: 75px;
+ }
+
+ #cj-btn {
+    background-color: #011F4B;
+    padding: 15px 70px 15px 70px;
+    border-radius: 5px;
+    font-size: 13pt;
+    /* margin-bottom: 50px; */
+    text-align: center;
+}
  #contact{
      font-family: Open sans;
     float: left;
@@ -592,11 +614,16 @@ a:hover {
  .vcenter{
     position: relative;
     top: 50%;
-    transform: translateY(-45%);
+    transform: translateY(-50%);
  }
  .vcenter2{
     position: relative;
     top: 25%;
+    transform: translateY(-50%);
+ }
+ .vcenter3{
+    position: relative;
+    top: 50%;
     transform: translateY(-50%);
  }
  .pad{

@@ -61,6 +61,7 @@
     <!-- marqee -->
 
     <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -68,9 +69,69 @@
 
 <body>
     <div class="container-fluid">
-       
+        <nav class="navbar navbar-expand-lg navbar-dark indigo">
+            <a href="/">
+                <img src="{% static 'dream_app/images/dLogo_bw.jpg'%}" alt="logo" style="width:50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link center" href="/">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link center" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link center" href="/events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link center" href="/players">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link center" href="/shop">Shop</a>
+                    </li>
+                </ul>
+
+            </div>
+
     </div>
-    
+    <div class="row sub-row">
+        <div class="col-sm-6 col-md-6 social d-none d-sm-block" style="font-family: Arial, Helvetica, sans-serif">
+            <div class="phone-f vcenter3">
+                <i class="fa fa-phone" style="color: white;"></i>
+                <span id="phone">(702) 608-3191</span>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 social d-none d-sm-block">
+            <ul id="top-social" class="vcenter2">
+                <li>
+                    <a href="">
+                        <img src="{% static 'dream_app/images/facebook.png' %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{% static 'dream_app/images/twitter.png' %}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{% static 'dream_app/images/instagram.png' %}" alt="">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
 
     {% block body %} {% endblock %}
 

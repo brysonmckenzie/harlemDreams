@@ -118,7 +118,7 @@
    
 }
 
-@media screen and (max-width:1130px) {
+@media screen and (max-width:1160px) {
     .sb-description {
         display: none;
     }
@@ -136,4 +136,12 @@
     #news {
         font-size: 25px;
     }
+
 }
+
+/* @media screen and (max-width: 1160px) and (min-width: 561px){
+    .cj-txt{
+        font-size: 5pt;
+
+    }
+} */

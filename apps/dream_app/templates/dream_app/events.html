@@ -65,8 +65,11 @@
 
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <p class="vcenter text-center" style=" background: white; font-family: Luckiest Guy, cursive;">{{e.address}} {{e.city}}, {{e.state}}</p>
+                <div class="col-sm-12" style="padding:25px;">
+                    <p class="vcenter event-desc" style=" font-family: 'Krona One', sans-serif"> {{e.address}} {{e.city}}, {{e.state}}</p><br><br>    
+                    <div class="event-description">
+                        {{e.desc}}
+                    </div>
                 </div>
             </div>
         </div>

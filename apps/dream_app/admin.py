@@ -10,6 +10,6 @@ admin.site.register(NewsletterUser, NewsletterAdmin)
 
 class EventAdmin(admin.ModelAdmin):
     class Meta:
-        list_display = ("__unicode__","timestamp")
+        list_display = ("__unicode__","timestamp", "opponent")
         # model = Event
         admin.site.register(Event)

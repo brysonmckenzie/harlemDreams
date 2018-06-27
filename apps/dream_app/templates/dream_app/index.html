@@ -1,12 +1,12 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
 
 <div class="container"></div>
-    <div class="col-lg-12 ">
-      <div id="woodgrain-backdrop">
-        <img id="dreams_logo" class="center" src="{% static 'dream_app/images/blue-logo.png' %}" alt="Harlem Dream Logo">
-      </div>
-    </div>
+<div class="col-lg-12 ">
+  <div id="woodgrain-backdrop">
+    <img id="dreams_logo" class="center" src="{% static 'dream_app/images/blue-logo.png' %}" alt="Harlem Dream Logo">
   </div>
+</div>
+</div>
 </div>
 <div class="container-fluid hd-media-content">
   <div class="row">
@@ -55,9 +55,9 @@
 
     <!-- LITTLE BIGSHOTS KID -->
 
-    <div class="col-sm-4" id="left-fanbox">
+    <!-- <div class="col-sm-4" id="left-fanbox">
       <h1>SHOWTIME!</h1>
-      <!-- <p class="showtime" id="cj">"CJ"</p> -->
+      <p class="showtime" id="cj">"CJ"</p>
       <P style="margin-left: 50px; font-family: 'Krona One', sans-serif;
       "><span>C. </span><span>J. </span>On Steve Harvey's
         <br>&nbsp;&nbsp;&nbsp; "Little Big Shots"</P>
@@ -65,9 +65,39 @@
       <p class="center-block" id="news">
         <a href="/newsletter">Join Our Newsletter!</a>
       </p>
-    </div>
+    </div> -->
+    <div class="col-sm-4" id="left-fanbox">
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="{% static 'dream_app/images/cj-harvey.jpg' %}" width="100%" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 d-none d-xl-block">
+          <img class="center" src="{% static 'dream_app/images/left-fanboy.png' %}" width="100px" alt="">
+        </div>
+        <div class="col-sm-6 col-md-6 center2">
+          <div class="row">
+            <div class="cj-txt col-md-12 ">
+              <P style="font-family: 'Krona One', sans-serif; text-align:center;">
+                <span>C</span>
+                <span>J </span>On Steve Harvey's
+                <br> "Little Big Shots"</P>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 cj-btn-box ;">
+          <a id="cj-btn" class="center2" href="">Check Me Out!</a>
+        </div>
+      </div>
 
-    <div class="col-sm-4 " style="margin-top: 50px;">
+
+
+
+    </div>
+    <div class="col-sm-4"style="padding-top:50px;">
       <div id="lefty-profile ">
 
         <h1 style="font-family: 'Luckiest Guy', cursive;">#42 Lefty Williams</h1>
@@ -83,8 +113,7 @@
     </div>
   </div>
 </div>
-</div>
-</div>
+
 
 <div class="container">
   <div class="wrapper down">
@@ -272,7 +301,4 @@
     Page.init();
 
   });
-</script> 
-
-
-{% endblock %}
+</script> {% endblock %}

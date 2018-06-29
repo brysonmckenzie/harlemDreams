@@ -48,7 +48,7 @@ def shop(request):
 
 def events(request):
     
-    no_event_message = "Sorry, no events have been scheduled as of yet"
+    no_event_message = "Updates are coming soon!"
 
     context = {
         'events': Event.objects.all(),

@@ -2,24 +2,29 @@
     background-color: #011F4B;
     opacity: 0.7;
 }
-.mazu{
+
+.mazu {
     width: 150px;
 }
-.sub-row{
+
+.sub-row {
     height: 50px;
     margin-bottom: 30px;
 }
+
 body {
     background: url('/static/dream_app/images/blue-back.jpg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+    overflow-x: hidden
 }
-.foot-bord{
+
+.foot-bord {
     background: rgba(0, 0, 0, 0.5);
 }
+
 .social {
     background-color: #95989A;
     width: 100%;
@@ -28,29 +33,30 @@ body {
     margin-bottom: 20px;
     margin-top: -2px;
 }
-#top-social > li{
+
+#top-social>li {
     display: inline;
     float: right;
     margin-left: 30px;
-    
-}
-#top-social img{
-    width:50%
 }
 
-a.nav-link{
+#top-social img {
+    width: 50%
+}
+
+a.nav-link {
     text-align: center;
 }
 
-#phone{
+#phone {
     /* display: inline-block; */
     font-size: 20px;
     color: #ffffff;
 }
-.social-bar{
+
+.social-bar {
     padding: 10px 10px 10px 10px;
     background: rgba(90, 90, 90, 0.4);
-
     margin-bottom: 30px;
 }
 
@@ -133,15 +139,17 @@ a.nav-link{
     top: 150px;
     right: 20px;
 }
-.event-desc::before{
+
+.event-desc::before {
     content: "Address:";
     color: white;
 }
-.event-description{
-    text-align:center;
+
+.event-description {
+    text-align: center;
     font-family: 'Krona One', sans-serif;
-    
 }
+
 #pre-header>h1 {
     font-size: 20px;
     margin-top: 6px;
@@ -190,19 +198,21 @@ a.nav-link{
 .center {
     display: block;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
     width: 50%;
 }
+
 .center5 {
     display: block;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
     width: 70%
 }
+
 .center2 {
     display: block;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
     width: 100%;
 }
 
@@ -259,13 +269,16 @@ table {
     /* position: static; */
     background-attachment: fixed
 }
-#myFooter{
+
+#myFooter {
     padding-top: 50px;
 }
-.about-contain{
-    padding:50px;
-    background: rgba(225,225,225, 0.5)
+
+.about-contain {
+    padding: 50px;
+    background: rgba(225, 225, 225, 0.5)
 }
+
 .fix-ball {
     /* margin: 0 auto; */
     width: 100%;
@@ -298,8 +311,9 @@ footer {
 }
 
 .logo-s {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
 }
 
 a {
@@ -324,8 +338,6 @@ a:hover {
 }
 
 /* new */
-
-
 
 .bg-dark {
     background-color: #ffffff !important;
@@ -398,7 +410,8 @@ a:hover {
 .hd-media-content {
     margin-top: 50px;
 }
-.push{
+
+.push {
     margin-bottom: 70px;
 }
 
@@ -410,13 +423,12 @@ a:hover {
     font-family: 'Luckiest Guy', cursive;
     background: white;
     z-index: 1500;
-
 }
-.cj-btn-box{
+
+.cj-btn-box {
     /* height:50px; */
     padding: 25px;
 }
-
 
 #left-fanbox>h1 {
     font-family: Luckiest Guy, cursive;
@@ -453,7 +465,7 @@ a:hover {
 }
 
 #news:hover {
-    color: #fff ;
+    color: #fff;
     z-index: 1005;
 }
 
@@ -502,14 +514,14 @@ a:hover {
 #harlem-group2 {
     width: 95%;
     position: sticky;
-    top:200px;
+    top: 200px;
     /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
     border: 3px solid #fff;
     /* padding-left: 5px */
-
 }
-#harlem-group3{
+
+#harlem-group3 {
     background-image: url('/static/dream_app/images/white_hoop.jpg');
     background-size: cover;
     background-position: center;
@@ -517,25 +529,76 @@ a:hover {
 
 .shop {
     padding: 50px;
+    width:100%;
     height: 595px;
-    background: white;
+    background: rgba(225, 225, 225, 0.5);
     font-family: Luckiest Guy, cursive;
+    /* color: white; */
+    display: block;
+    position: relative;
+
 }
 
+.shop::after {
+    content: '';
+    background-image: url(/static/dream_app/images/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    opacity: 0.5;
+    /* z-index: -1; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    /* width:100px */
+}
 
-.side-about{
+.sponsor-shop {
+    padding: 50px 50px 20px 50px;
+    /* min-height: 595px; */
+    background: rgba(225, 225, 225, 0.5);
+    font-family: Luckiest Guy, cursive;
+    color: white;
+}
+
+.shop-cs {
+    /* position: relative; */
+    top: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* transform: translateY(-50%); */
+    /* position: fixed; */
+    /* background-image:url(/static/dream_app/images/logo2.png) */
+}
+
+.sponsor-cs {
+    position: relative;
+    top: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.side-about {
     border-left: 5px;
-
 }
-.left-col{
+
+.left-col {
     padding: 0px 50px 0px 50px;
-    font-size:20px;  
+    font-size: 20px;
 }
 
-.left-col  p{
-    font-size:18px;
+.left-col p {
+    font-size: 18px;
 }
-.goals{
+
+.goals {
     /* width: 600px; */
     font-size: 16px;
     columns: blue;
@@ -544,8 +607,9 @@ a:hover {
 .ps-top-to-bottom {
     position: relative;
     /* border-top: 3px solid #2974b2; */
-  }
-  .ps-top-to-bottom:before, .ps-top-to-bottom:after {
+}
+
+.ps-top-to-bottom:before, .ps-top-to-bottom:after {
     content: "";
     position: absolute;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2974b2), to(transparent));
@@ -556,24 +620,27 @@ a:hover {
     top: -3px;
     bottom: -3px;
     width: 3px;
-  }
-  .ps-top-to-bottom:before {
+}
+
+.ps-top-to-bottom:before {
     /* left: -3px; */
-  }
-  .ps-top-to-bottom:after {
+}
+
+.ps-top-to-bottom:after {
     /* right: -3px; */
-  }
+}
 
-  .showtime{
-      margin-left:50px;
-  }
+.showtime {
+    margin-left: 50px;
+}
 
- #cj{
-    color:black;
-    font-size:50px;
+#cj {
+    color: black;
+    font-size: 50px;
     font-family: Open sans;
- }
- .cj-txt p {
+}
+
+.cj-txt p {
     width: 100%;
     margin-top: 75px;
     font-size: 18pt;
@@ -582,7 +649,7 @@ a:hover {
     top: 40px;
 }
 
- #cj-btn {
+#cj-btn {
     background-color: #011F4B;
     padding: 15px 70px 15px 70px;
     border-radius: 5px;
@@ -590,84 +657,89 @@ a:hover {
     /* margin-bottom: 50px; */
     text-align: center;
 }
- #contact{
-     font-family: Open sans;
+
+#contact {
+    font-family: Open sans;
     float: left;
-    background-color: rgba(225,225,225, 0.5);
+    background-color: rgba(225, 225, 225, 0.5);
     width: 700px
- }  
+}
 
- #contact{
+#contact {
     padding: 50px;
- }
+}
 
- .head{
-     position: static;
-     top: 0;
- }
+.head {
+    position: static;
+    top: 0;
+}
 
- .event-box{
-    background-color: rgba(1,42,179,0.5);
-    height:100%;
-    width:100%;
+.event-box {
+    background-color: rgba(1, 42, 179, 0.5);
+    height: 100%;
+    width: 100%;
+}
 
- }
+#date-border {
+    width: 100%;
+    background-color: #ffffff;
+    vertical-align: top;
+    font-size: 30px;
+}
 
- #date-border{
-     width:100%;    
-     background-color: #ffffff; 
-     vertical-align: top; 
-     font-size: 30px;
-     
- }
- .style1{
+.style1 {
     font-family: 'Luckiest Guy', cursive;
     color: white;
 }
- .style2{
+
+.style2 {
     font-family: 'Luckiest Guy', cursive;
     color: #012ab3;
     /* vertical-align: middle; */
- }
- .time-location{
-     /* padding:50px; */
-     background-color: white;
-     height: 300px;
-     /* background-size: cover; */
-     left: 0
+}
 
- }
+.time-location {
+    /* padding:50px; */
+    background-color: white;
+    height: 300px;
+    /* background-size: cover; */
+    left: 0
+}
 
- .vcenter{
+.vcenter {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
- }
- .vcenter2{
+}
+
+.vcenter2 {
     position: relative;
     top: 25%;
     transform: translateY(-50%);
- }
- .vcenter3{
+}
+
+.vcenter3 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
- }
- .pad{
-     padding: 50%
- }
- .l-center > h1{
-     display: inline-block;
-     font-size:20px;
-     padding-top:20px;
-    
+}
 
- }
- #hoop-left{
+.pad {
+    padding: 50%
+}
+
+.l-center>h1 {
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#hoop-left {
     background-image: url('/static/dream_app/images/white_hoop2.jpg');
     background-size: cover;
-} 
-#hoop-right{
+}
+
+#hoop-right {
     background-image: url('/static/dream_app/images/white_hoop2.jpg');
     background-size: cover;
     -moz-transform: scaleX(-1);
@@ -677,13 +749,14 @@ a:hover {
     filter: FlipH;
     -ms-filter: "FlipH";
 }
-.half-court{
+
+.half-court {
     background-image: url('/static/dream_app/images/blue-logo.png');
     background-position: center;
-    background-size:55%;
+    background-size: 55%;
     background-repeat: no-repeat;
 }
-#event_list{
-    background-color:rgba(225,225,225, 0.5)
-}
 
+#event_list {
+    background-color: rgba(225, 225, 225, 0.5)
+}

@@ -1,0 +1,29 @@
+{% extends 'dream_app/base.html' %}{% block body %}{% load staticfiles %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 sponsor-shop">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Harlem Dreams Sponsors</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="border-right:1px #ffffff solid;">
+                    <img src="{% static 'dream_app/images/mazu.png' %}" width="100%" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, vero. Ipsum eos quam incidunt, at molestiae adipisci blanditiis quisquam nesciunt.</p>
+                </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="{% static 'dream_app/images/logo2.png' %}" style="z-index: -1 ; display: block; margin-left: auto;margin-right: auto; margin-top: 10px" width="40px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

@@ -71,6 +71,10 @@ def contact(request):
     
     return render(request, 'dream_app/contact.html')
 
+def sponsors(request):
+    
+    return render(request, 'dream_app/sponsors.html')
+
 def process_contact(request):
     
     if request.method == 'POST': 

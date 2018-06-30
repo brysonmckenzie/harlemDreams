@@ -175,9 +175,11 @@ a.nav-link{
 }
 
 #woodgrain-backdrop {
-    background-image: url('/static/dream_app/images/hoop_dreams.png');
+    background-image: url('/static/dream_app/images/OLO2ED0.jpg');
+    background-attachment: fixed;
     width: 100%;
-    background-repeat: repeat-x
+    /* background-repeat: repeat-x */
+    padding: 50px 0px 50px 0px;
 }
 
 #lefty-profile {

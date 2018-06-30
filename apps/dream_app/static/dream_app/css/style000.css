@@ -10,11 +10,16 @@
     margin-bottom: 30px;
 }
 body {
-    background: url('/static/dream_app/images/12213.jpg');
-    background-position: center;
+    background: url('/static/dream_app/images/blue-back.jpg');
+    background-position: top;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
-
+.foot-bord{
+    background: rgba(0, 0, 0, 0.5);
+}
 .social {
     background-color: #95989A;
     width: 100%;
@@ -199,7 +204,7 @@ a.nav-link{
     width: 100%;
 }
 
-.footer-links {
+.links {
     /* background-color: #06053b; */
     border-collapse: collapse;
     height: 100px;
@@ -252,7 +257,13 @@ table {
     /* position: static; */
     background-attachment: fixed
 }
-
+#myFooter{
+    padding-top: 50px;
+}
+.about-contain{
+    padding:50px;
+    background: rgba(225,225,225, 0.5)
+}
 .fix-ball {
     /* margin: 0 auto; */
     width: 100%;

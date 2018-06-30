@@ -5,11 +5,14 @@
 
 .mazu {
     width: 150px;
+    /* display: blo ck; */
+    margin-top: 25px;
 }
 
 .sub-row {
     height: 50px;
-    margin-bottom: 30px;
+    /* position: relative; */
+    /* top: 100px; */
 }
 
 body {
@@ -240,7 +243,7 @@ table {
 
 #footer-logo {
     width: 50%;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 .wrapper {

@@ -9,8 +9,9 @@
     </div>
     <div class="row">
         <div class="col-sm-6" id="contact">
-            <div class="form-group">
-                <form action="/process" method="post">
+            <form action="/process" method="post">
+                <div class="form-group">
+
                     {% csrf_token %}
 
                     <label for="name">Name</label>
@@ -31,8 +32,9 @@
                     </textarea>
                     <br>
                     <button>Submit</button>
-                </form>
-            </div>
+
+                </div>
+            </form>
         </div>
         <div class="col-sm-6"></div>
     </div>

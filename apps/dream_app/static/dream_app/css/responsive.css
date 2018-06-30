@@ -130,7 +130,7 @@
     }
     #lefty {
         width: 80%;
-        margin-bottom: 200px;
+        /* margin-bottom: 200px; */
         position: unset;
     }
     #news {
@@ -172,6 +172,14 @@
         margin-right: 0 auto;
         position: unset;
         
+    }
+    .mazu{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
     }
     #no-event{
         font-size:12pt;

@@ -89,10 +89,11 @@ a.nav-link {
 }
 
 #team-pic {
-    /* height: px; */
+    height: 300px;
     width: 100%;
-    margin-top: 200px;
-    margin-bottom: -30px;
+    margin-top: 50px;
+    /* margin-bottom: -30px; */
+    padding: 0;
 }
 
 #social-links>ul li {
@@ -279,7 +280,8 @@ table {
 
 .about-contain {
     padding: 50px;
-    background: rgba(225, 225, 225, 0.5)
+    background: rgba(225, 225, 225, 0.3);
+    color:white;
 }
 
 .fix-ball {
@@ -318,7 +320,11 @@ footer {
     height: 25px;
     margin-top: 50px;
 }
+.logo-s:hover{
+    width:35px;
+    height: 35px;
 
+}
 a {
     text-decoration: none;
 }
@@ -411,7 +417,9 @@ a:hover {
 }
 
 .hd-media-content {
-    margin-top: 50px;
+    margin-top: 0px;
+    border-top: 5px #fff solid;
+    border-bottom: 5px #fff solid;
 }
 
 .push {
@@ -451,7 +459,8 @@ a:hover {
 }
 
 .down {
-    margin-top: 100px;
+   
+    
 }
 
 #news {
@@ -560,9 +569,10 @@ a:hover {
 }
 
 .sponsor-shop {
+    margin-top: 50px;
     padding: 50px 50px 20px 50px;
     /* min-height: 595px; */
-    background: rgba(225, 225, 225, 0.5);
+    background: rgba(225, 225, 225, 0.3);
     font-family: Luckiest Guy, cursive;
     color: white;
 }
@@ -682,6 +692,12 @@ a:hover {
     height: 100%;
     width: 100%;
 }
+.event-sec{
+    margin-top:75px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding:10px 0px 10px 0px !important;
+    width: 100 !important;
+}
 
 #date-border {
     width: 100%;
@@ -707,6 +723,10 @@ a:hover {
     height: 300px;
     /* background-size: cover; */
     left: 0
+}
+.vid{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .vcenter {

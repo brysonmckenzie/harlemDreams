@@ -1,10 +1,8 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
 
 <div class="container"></div>
-<div class="col-lg-12 ">
-  <div id="woodgrain-backdrop">
-    <img id="dreams_logo" class="center" src="{% static 'dream_app/images/logo2.png' %}" alt="Harlem Dream Logo">
-  </div>
+<div class="col-lg-12" id="woodgrain-backdrop" style="margin-top: -1px;">
+  <img id="dreams_logo" class="center" src="{% static 'dream_app/images/logo2.png' %}" alt="Harlem Dream Logo">
 </div>
 </div>
 </div>
@@ -25,7 +23,7 @@
   </div>
 </div>
 </div>
-<div class="container-fluid ">
+<di v class="container-fluid ">
   <div class="row">
     <div class="col-sm-4">
     </div>
@@ -81,7 +79,7 @@
             <div class="cj-txt col-md-12 ">
               <P style="font-family: 'Krona One', sans-serif; text-align:center; font-size: ">
                 Brand Ambassador CJ on NBC Hit Show Little Big Shots With Steve Harvey</p>
-              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -110,73 +108,74 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
 
-<div class="container">
-  <div class="wrapper down">
-    <ul id="sb-slider" class="sb-slider" style="max-width: 700px; overflow: hidden;">
-      <li>
-        <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
-        <div class="sb-description">
-          <h3>Dreams on Fox News 26</h3>
-        </div>
-      </li>
-      <li>
-        <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank">
-          <img src="{% static 'dream_app/images/2.jpg' %}" alt="image2" />
-        </a>
-        <div class="sb-description">
-          <h3>Dreamers Ready for the Show Case</h3>
-        </div>
-      </li>
-      <li>
-        <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank">
-          <img src="{% static 'dream_app/images/3.jpg' %}" alt="image3" />
-        </a>
-        <div class="sb-description">
-          <h3>Hanging Out With the Team</h3>
-        </div>
-      </li>
-      <li>
-        <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank">
-          <img src="{% static 'dream_app/images/4.jpg' %}" alt="image4" />
-        </a>
-        <div class="sb-description">
-          <h3>Lefty Talking To Campers</h3>
-        </div>
-      </li>
-      <li>
-        <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank">
-          <img src="{% static 'dream_app/images/1.jpg' %}" alt="image5" />
-        </a>
-        <div class="sb-description">
-          <h3>Springz Ready for Take-Off</h3>
-        </div>
-      </li>
-      <li>
-        <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
-          <img src="{% static 'dream_app/images/6.jpg' %}" alt="image6" />
-        </a>
-        <div class="sb-description">
-          <h3>The Dream Showing Off Tricks</h3>
-        </div>
-      </li>
-      <li>
-        <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank">
-          <img src="{% static 'dream_app/images/7.jpg' %}" alt="image7" />
-        </a>
-        <div class="sb-description">
-          <h3>Family Photo with Springz</h3>
-        </div>
-      </li>
-    </ul>
-    <div id="shadow" class="shadow" style="display: block;"></div>
-    <!-- <div id="nav-arrows" class="nav-arrows">
+  <div class="container event-sec">
+    <div class="row">
+      <div class="col-sm-12">
+        <ul id="sb-slider" class="sb-slider" style="max-width: 700px; overflow: hidden;">
+          <li>
+            <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
+            <div class="sb-description">
+              <h3>Dreams on Fox News 26</h3>
+            </div>
+          </li>
+          <li>
+            <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank">
+              <img src="{% static 'dream_app/images/2.jpg' %}" alt="image2" />
+            </a>
+            <div class="sb-description">
+              <h3>Dreamers Ready for the Show Case</h3>
+            </div>
+          </li>
+          <li>
+            <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank">
+              <img src="{% static 'dream_app/images/3.jpg' %}" alt="image3" />
+            </a>
+            <div class="sb-description">
+              <h3>Hanging Out With the Team</h3>
+            </div>
+          </li>
+          <li>
+            <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank">
+              <img src="{% static 'dream_app/images/4.jpg' %}" alt="image4" />
+            </a>
+            <div class="sb-description">
+              <h3>Lefty Talking To Campers</h3>
+            </div>
+          </li>
+          <li>
+            <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank">
+              <img src="{% static 'dream_app/images/1.jpg' %}" alt="image5" />
+            </a>
+            <div class="sb-description">
+              <h3>Springz Ready for Take-Off</h3>
+            </div>
+          </li>
+          <li>
+            <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
+              <img src="{% static 'dream_app/images/6.jpg' %}" alt="image6" />
+            </a>
+            <div class="sb-description">
+              <h3>The Dream Showing Off Tricks</h3>
+            </div>
+          </li>
+          <li>
+            <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank">
+              <img src="{% static 'dream_app/images/7.jpg' %}" alt="image7" />
+            </a>
+            <div class="sb-description">
+              <h3>Family Photo with Springz</h3>
+            </div>
+          </li>
+        </ul>
+        <div id="shadow" class="shadow" style="display: block;"></div>
+        <!-- <div id="nav-arrows" class="nav-arrows">
       <a href="#">Next</a>
       <a href="#">Previous</a>
     </div> -->
-    <!-- <div id="nav-dots" class="nav-dots">
+        <!-- <div id="nav-dots" class="nav-dots">
       <span class="nav-dot-current"></span>
       <span></span>
       <span></span>
@@ -185,19 +184,22 @@
       <span></span>
       <span></span>
     </div> -->
-  </div>
+      </div>
+    </div>
 
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 center-block d-none d-sm-block">
-      <img id="team-pic" class="center-block" src="{% static 'dream_app/images/team_shot.png' %}" alt="Dream Team Shot">
+  </div>
+  <div class="container-fluid center3 d-none d-sm-block">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm  -8">
+        <img id="team-pic" class="center" src="{% static 'dream_app/images/team_shot.png' %}" alt="Dream Team Shot">
+      </div>
+      <div class="col-sm-2"></div>
     </div>
   </div>
-</div>
 
 
-<!-- <div class="container-fluid counter">
+  <!-- <div class="container-fluid counter">
   <div class="row">
     <div class="col-sm-12">
       <h1 style="margin-top:20px; text-align: center;font-family: 'Luckiest Guy', cursive;">Visitors</h1>
@@ -217,86 +219,86 @@
 
 
 
-<!-- /wrapper -->
+  <!-- /wrapper -->
 
 
 
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-  $(function () {
+    $(function () {
 
-    var Page = (function () {
+      var Page = (function () {
 
-      var $navArrows = $('#nav-arrows').hide(),
-        $navDots = $('#nav-dots').hide(),
-        $nav = $navDots.children('span'),
-        $shadow = $('#shadow').hide(),
-        slicebox = $('#sb-slider').slicebox({
-          onReady: function () {
+        var $navArrows = $('#nav-arrows').hide(),
+          $navDots = $('#nav-dots').hide(),
+          $nav = $navDots.children('span'),
+          $shadow = $('#shadow').hide(),
+          slicebox = $('#sb-slider').slicebox({
+            onReady: function () {
 
-            $navArrows.show();
-            $navDots.show();
-            $shadow.show();
+              $navArrows.show();
+              $navDots.show();
+              $shadow.show();
+
+            },
+            onBeforeChange: function (pos) {
+
+              $nav.removeClass('nav-dot-current');
+              $nav.eq(pos).addClass('nav-dot-current');
+
+            }
+          }),
+
+          init = function () {
+
+            initEvents();
 
           },
-          onBeforeChange: function (pos) {
+          initEvents = function () {
 
-            $nav.removeClass('nav-dot-current');
-            $nav.eq(pos).addClass('nav-dot-current');
+            // add navigation events
+            $navArrows.children(':first').on('click', function () {
 
-          }
-        }),
-
-        init = function () {
-
-          initEvents();
-
-        },
-        initEvents = function () {
-
-          // add navigation events
-          $navArrows.children(':first').on('click', function () {
-
-            slicebox.next();
-            return false;
-
-          });
-
-          $navArrows.children(':last').on('click', function () {
-
-            slicebox.previous();
-            return false;
-
-          });
-
-          $nav.each(function (i) {
-
-            $(this).on('click', function (event) {
-
-              var $dot = $(this);
-
-              if (!slicebox.isActive()) {
-
-                $nav.removeClass('nav-dot-current');
-                $dot.addClass('nav-dot-current');
-
-              }
-
-              slicebox.jump(i + 1);
+              slicebox.next();
               return false;
 
             });
 
-          });
+            $navArrows.children(':last').on('click', function () {
 
-        };
+              slicebox.previous();
+              return false;
 
-      return { init: init };
+            });
 
-    })();
+            $nav.each(function (i) {
 
-    Page.init();
+              $(this).on('click', function (event) {
 
-  });
-</script> {% endblock %}
+                var $dot = $(this);
+
+                if (!slicebox.isActive()) {
+
+                  $nav.removeClass('nav-dot-current');
+                  $dot.addClass('nav-dot-current');
+
+                }
+
+                slicebox.jump(i + 1);
+                return false;
+
+              });
+
+            });
+
+          };
+
+        return { init: init };
+
+      })();
+
+      Page.init();
+
+    });
+  </script> {% endblock %}

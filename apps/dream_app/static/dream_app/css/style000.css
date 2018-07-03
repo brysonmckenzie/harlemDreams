@@ -820,3 +820,38 @@ a:hover {
 #event_list {
     background-color: rgba(225, 225, 225, 0.5)
 }
+.contactus {
+    color: white;
+}
+
+.contactus h1 {
+    border-bottom: 2px solid white;
+}
+
+.contact-bar {
+    font-family: Open, sans-serif;
+    color: white;
+    margin-top: 100px;
+
+}
+
+.contact-bar h1{
+    border-bottom: 2px white solid;
+    font-size: 30pt;
+}
+
+.contact-bar h4 {
+    font-size: 18pt;
+    margin-top:50px;
+    font-weight: bolder
+
+}
+.contact-message{
+    color: white;
+    font-size: 14pt;
+    font-family: Open, sans-serif;
+}
+.contact-bar p {
+    font-size: 14pt
+}
+

@@ -1,40 +1,5 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
 <style>
-    .contactus {
-        color: white;
-    }
-
-    .contactus h1 {
-        border-bottom: 2px solid white;
-    }
-
-    .contact-bar {
-        font-family: Open, sans-serif;
-        color: white;
-        margin-top: 100px;
-
-    }
-
-    .contact-bar h1{
-        border-bottom: 2px white solid;
-        font-size: 30pt;
-    }
-
-    .contact-bar h4 {
-        font-size: 18pt;
-        margin-top:50px;
-        font-weight: bolder
-
-    }
-    .contact-message{
-        color: white;
-        font-size: 14pt;
-        font-family: Open, sans-serif;
-    }
-    .contact-bar p {
-        font-size: 14pt
-    }
-
     .sexy-line {
         /* margin: 25px 0; */
         height: 2px;
@@ -55,10 +20,12 @@
     </div>
 </div>
 <div class="row" style="padding:0px;">
-    <div class="col-sm-12">
+    <div class="col-sm-12" style="border-right: 2px white solid;">
         <div class="row">
             <div class="col-sm-12 contact-message" style="padding: 0px 50px 0px 50px">
-                <p>We the Harlem Dreams truly appreciate our fans and support. Feel free to contact us for any help or questions that you may have. We look forward to hearing from you or seeing you at one of our future events. Thank you for visiting the Harlem Dreams website and we look forward to getting back to you soon.</p>
+                <p>We the Harlem Dreams truly appreciate our fans and support. Feel free to contact us for any help or questions
+                    that you may have. We look forward to hearing from you or seeing you at one of our future events. Thank
+                    you for visiting the Harlem Dreams website and we look forward to getting back to you soon.</p>
             </div>
         </div>
         <div class="row">
@@ -93,14 +60,16 @@
             <div class="col-sm-4 contact-bar">
                 <h1>Contact Us</h1>
                 <h4>Phone</h4>
-                <p>(702) 608-3191</p>
+                <p>
+                    <i class="fa fa-phone" style="color: white;"></i> (702) 608-3191</p>
                 <h4>Email</h4>
-                <p>info@harlemdreams.net</p>
+                <p>
+                    <i class="fa fa-envelope" style="color: white;"></i> info@harlemdreams.net</p>
             </div>
             <div class="sexy-line"></div>
         </div>
         <div class="row ">
-            <div class="col-sm-12" style="margin-bottom: -60px; ">
+            <div class="col-sm-12" style="margin-bottom: -30px;">
                 <img src="{% static 'dream_app/images/logo2.png' %} " style="z-index: -1; display: block; margin-left: auto;margin-right:auto; margin-top: 25px"
                     width="40px" alt=" ">
             </div>

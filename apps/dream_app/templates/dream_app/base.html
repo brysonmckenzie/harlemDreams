@@ -90,9 +90,9 @@
                     <li class="nav-item">
                         <a class="nav-link center" href="/events">Events</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link center" href="/players">Players</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link center" href="/shop">Shop</a>
                     </li>
@@ -101,34 +101,7 @@
             </div>
 
     </div>
-    <div class="row sub-row">
-        <div class="col-sm-6 col-md-6 social  d-none d-sm-block" style="font-family: Arial, Helvetica, sans-serif">
-            <div class="phone-f vcenter">
-                <i class="fa fa-phone" style="color: white;"></i>
-                <span id="phone">(702) 608-3191</span>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-6 social d-none d-sm-block">
-            <ul id="top-social" class="vcenter2">
-                <li>
-                    <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
-                        <img src="{% static 'dream_app/images/facebook.png' %}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://instagram.com/theharlemdreams">
-                        <img src="{% static 'dream_app/images/twitter.png' %}" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/theharlemdreams">
-                        <img src="{% static 'dream_app/images/instagram.png' %}" alt="">
-                    </a>
-                </li>
 
-            </ul>
-        </div>
-    </div>
     {% block body %} {% endblock %}
 
     <!-- <footer>
@@ -193,16 +166,16 @@
     <footer class="foot-bord" id="myFooter">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <h2 class="logo">
-                        <a href="#">
+                        <a href="/" target="_blank">
                             <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/logo2.png' %}" style alt="Harlem Dreams Logo">
                         </a>
                     </h2>
                 </div>
                 <div class="col-sm-2">
                     <h5 style="color: #fff">Get started</h5>
-                    <ul>
+                    <ul style="color: white;">
                         <li>
                             <a href="/">Home</a>
                         </li>
@@ -217,18 +190,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <h5 style="color: #fff">About us</h5>
-                    <ul>
+                    <ul style="color:white;">
                         <li>
                             <a href="about">Team Information</a>
                         </li>
                         <li>
                             <a href="/contact-page">Contact us</a>
                         </li>
-                        <li>
-                            <a href="/job-openings">Job Openings</a>
-                        </li>
+                        <!-- <li>
+                            <a href="/careers">Careers</a>
+                        </li> -->
                         <!-- <li><a href="#">Reviews</a></li> -->
                     </ul>
                 </div>
@@ -236,24 +209,26 @@
                 <div class="col-sm-3 footer-links social-links-f ">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246">
+                            <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246" target="_blank">
                                 <img class="logo-s" src="{% static 'dream_app/images/facebook.png' %}" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com/theharlemdreams">
+                            <a href="http://instagram.com/theharlemdreams" target="_blank">
                                 <img class="logo-s" src="{% static 'dream_app/images/instagram.png' %}" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/theharlemdreams">
+                            <a href="https://twitter.com/theharlemdreams" target="_blank">
                                 <img class="logo-s" src="{% static 'dream_app/images/twitter.png' %}" alt="https://twitter.com/theharlemdreams" />
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
-                        <a href="https://mazufamily.com/partners/" target="_blank"><img class="mazu" src="{% static 'dream_app/images/mazu.jpg' %}" alt=""></a>
+                    <a href="https://mazufamily.com/partners/" target="_blank">
+                        <img class="mazu" src="{% static 'dream_app/images/mazu.jpg' %}" alt="">
+                    </a>
                     </div>
             </div>
         </div>
@@ -261,11 +236,12 @@
             <div class="container-fluid"></div>
             <div class="row">
                 <div class="col-sm-4">
-                    <p class="footer-sz" style="display:inline; color:white">© 2014 - <script>document.write(new Date().getFullYear());</script> Harlem Dreams</p>
+                    <p class="footer-sz" style="display:inline; color:white">©
+                        <script>document.write(new Date().getFullYear());</script> Harlem Dreams</p>
                 </div>
                 <div class="col-sm-4">
                     <a href="http://www.brysonmckenzie.com">
-                        <p class="footer-sz blue" style="text-align: center; color: white;">Six Eleven Web Design&#169;</p>
+                        <p class="footer-sz blue" style="text-align: center; color: white;">Designed by Six Eleven Solutions, LLC &#169;</p>
                     </a>
                 </div>
                 <div class="col-sm-4"></div>

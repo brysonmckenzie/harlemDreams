@@ -1,5 +1,16 @@
 {% extends 'dream_app/base.html'%}{% block body %}{% load staticfiles %}
-
+<style>
+    .sexy-line {
+        /* margin: 25px 0; */
+        height: 2px;
+        background: black;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(225, 225, 225, 0.1)), to(rgba(225, 225, 225, 0.1)), color-stop(50%, white));
+        width: 100%;
+        display: block;
+        margin-top: 30px
+        /* float: right; */
+    }
+</style>
 
 <style>
     .star-l {
@@ -22,26 +33,54 @@
         font-size: 16pt;
     }
 
-    .player-img {
+    /* .player-img {
         background-image: url('/static/dream_app/images/lefty-player.jpg');
         background-size: cover;
         background-repeat: no-repeat;
 
-    }
-    .player-img2{
+    } */
+
+    .player-img2 {
         background-image: url('/static/dream_app/images/springz-player.jpg');
         background-size: cover;
         background-repeat: no-repeat;
 
     }
+
     .player-img3 {
         background-image: url('/static/dream_app/images/pope-player.jpg');
         background-size: cover;
         background-repeat: no-repeat;
 
     }
-    .player-back{
-        background: #ffffff
+
+    .player-white {
+        background: rgba(225, 225, 225, 0.3);
+        padding: 20px;
+        /* padding-top: 50px; */
+    }
+
+    .player-img {
+        border: 10px rgba(225, 225, 225, 0.7) solid;
+        background: white;
+    }
+
+    .player-profile {
+        color: white;
+    }
+
+    .player-profile p {
+        font-size: 13pt;
+    }
+
+    .boot {
+        margin-bottom: 50px;
+    }
+  
+    .roster h1{
+        border-bottom: 2px solid white;
+        color: white;
+        margin-bottom: 50px;
     }
 </style>
 
@@ -51,8 +90,73 @@
             <h1 style="font-family: 'Luckiest Guy', cursive; text-align: center; color: #214F74; margin-top: 25px;">Your Harlem Dreams</h1>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12 player-white">
+                <div class="row">
+                        <div class="col-sm-12 roster">
+                            <h1>Players</h1>
+                        </div>
+                    </div>
+            <div class="row boot">
+                <div class="col-sm-4">
+                    <img class="player-img" src="{% static 'dream_app/images/lefty-mug.png' %}" width="300px" height="300px" alt="">
+                </div>
+                <div class="col-sm-8 player-profile" style="border-left: white 1px solid;">
+                    <h2 style="color: white; border-bottom: 1px solid white; margin-bottom: 20px;">#42 Lefty Williams</h2>
+                    <p>Position: Showman</p>
+                    <p>Hometown: Harlem, New York</p>
+                    <p>Bio: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, consequuntur. Deserunt impedit
+                        consequuntur cupiditate molestiae consequatur totam ea autem dolorem officia aut iure beatae sed
+                        a et laboriosam maxime sequi sint architecto, excepturi eaque accusamus modi reprehenderit quasi!
+                        Et similique illo ad cumque, accusantium pariatur? Iusto eligendi quas quam id?</p>
+                        <div class="sexy-line"></div>
+                </div>
+                
+
+            </div>
+            <div class="row boot">
+                <div class="col-sm-4">
+                    <img class="player-img" src="{% static 'dream_app/images/slamer.png' %}" width="300px" height="300px" alt="">
+                </div>
+                <div class="col-sm-8 player-profile" style="border-left: white 1px solid;">
+                    <h2 style="color: white; border-bottom: 1px solid white; margin-bottom: 20px;">#2 Pope</h2>
+                    <p>Position: Guard</p>
+                    <p>Hometown: Lorem, Epsum</p>
+                    <p>Bio: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, consequuntur. Deserunt impedit
+                        consequuntur cupiditate molestiae consequatur totam ea autem dolorem officia aut iure beatae sed
+                        a et laboriosam maxime sequi sint architecto, excepturi eaque accusamus modi reprehenderit quasi!
+                        Et similique illo ad cumque, accusantium pariatur? Iusto eligendi quas quam id?</p>
+                        <div class="sexy-line"></div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="player-img" src="{% static 'dream_app/images/slamer2.png' %}" width="300px" height="300px" alt="">
+                </div>
+                <div class="col-sm-8 player-profile" style="border-left: white 1px solid;">
+                    <h2 style="color: white; border-bottom: 1px solid white; margin-bottom: 20px;">#20 Springz</h2>
+                    <p>Position: Foward</p>
+                    <p>Hometown: Lorem, Epsum</p>
+                    <p>Bio: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, consequuntur. Deserunt impedit
+                        consequuntur cupiditate molestiae consequatur totam ea autem dolorem officia aut iure beatae sed
+                        a et laboriosam maxime sequi sint architecto, excepturi eaque accusamus modi reprehenderit quasi!
+                        Et similique illo ad cumque, accusantium pariatur? Iusto eligendi quas quam id?</p>
+                        <div class="sexy-line"></div>
+
+                </div>
+                <div class="sexy-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="{% static 'dream_app/images/logo2.png' %}" style="z-index: -1 ; display: block; margin-left: auto;margin-right: auto; margin-top: 25px" width="40px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="container" style=" text-align:center; background: #ffffff; font-family: 'Luckiest Guy', cursive;">
+
+<!-- <div class="container" style=" text-align:center; background: #ffffff; font-family: 'Luckiest Guy', cursive;">
     <div class="row">
         <div class="col-sm-12">
             <div class="row">
@@ -102,7 +206,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 

@@ -66,7 +66,9 @@
             </div>
             <div class="row">
                 <div class="col-sm-12" style="padding:25px;">
-                    <p class="vcenter event-desc" style=" font-family: 'Krona One', sans-serif"> {{e.address}} {{e.city}}, {{e.state}}</p><br><br>    
+                    <p class="vcenter event-desc" style=" font-family: 'Krona One', sans-serif"> {{e.address}} {{e.city}}, {{e.state}}</p>
+                    <br>
+                    <br>
                     <div class="event-description">
                         {{e.desc}}
                     </div>
@@ -94,10 +96,27 @@
     }
 
     #no-event {
-        height: 600px;
+        height: 700px;
         padding: 50px;
         font-family: 'Krona One', sans-serif;
-        background: rgba(255, 255, 255, 0.5)
+        background-color: rgba(255, 255, 255, 0.3);
+        position: relative;
+        display: block;
+
+    }
+
+    #no-event::after {
+        content: '';
+        background-image: url(/static/dream_app/images/logo2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
     }
 </style>
 {% endblock %}

@@ -1,16 +1,12 @@
 {% extends 'dream_app/base.html' %}{% block body %}{% load staticfiles %}
-<style>
-    .shop-cs{
 
-    }
-</style>
 
 <div class="container">
-        <div class="row">
-                <div class="col-sm-12">
-                    <h2 style="margin-top:25px; font-family: 'Luckiest Guy', cursive; text-align: center; font-size:35pt; color:#214F74;">Harlem Dreams Shop</h2>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 style="margin-top:25px; font-family: 'Luckiest Guy', cursive; text-align: center; font-size:35pt; color:#214F74;">Harlem Dreams Shop</h2>
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm-12 shop">
             <div class="row">
@@ -18,12 +14,13 @@
                     <p style="font-family: 'Krona One', sans-serif; font-size: 16pt; color: #000;">Coming Soon!</p>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-sm-12">
-                    <img class="shop-cs" src="{% static 'dream_app/images/logo2.png' %}" width="200px" alt="">
-                </div>
-            </div> -->
         </div>
     </div>
+    <!-- <div class="row">
+        <div class="col-sm-12" style="background-color:rgba(225,225,225,0.3);">
+            <img src="{% static 'dream_app/images/logo2.png' %}" style="padding:25px 0px 25px 0px; z-index: -1 ; display: block; margin-left: auto;margin-right: auto; margin-top: 10px"
+                width="40px" alt="">
+        </div>
+    </div> -->
 </div>
 {% endblock%}

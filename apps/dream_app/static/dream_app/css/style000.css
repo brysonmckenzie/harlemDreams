@@ -2,7 +2,17 @@
     background-color: #011F4B;
     opacity: 0.7;
 }
-
+.back-vid {
+    background-image: url(/static/dream_app/images/OLO2ED0.jpg);
+    background-color: gray;
+    background-size: cover;
+    padding-bottom: 25px;
+    background-attachment: fixed;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .mazu {
     width: 150px;
     /* display: blo ck; */
@@ -103,6 +113,8 @@ a.nav-link {
 #dreams_logo {
     height: 275px;
     width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .mage {
@@ -135,14 +147,37 @@ a.nav-link {
     text-transform: capitalize;
     border-bottom: 1px solid #95989A;
 }
+.career-logo{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 
-#lefty {
-    width: 80%;
-    margin-bottom: 200px;
-    position: absolute;
-    top: 150px;
-    right: 20px;
 }
+.cbox1{
+    background: yellow;
+    width:200px;
+    height: 300px;
+    padding-left:10px;
+    padding-right:10px;
+    /* margin-bottom: 20px; */
+
+}
+.cbox1:nth-last-of-type(n){
+    margin-bottom:20px;
+    margin-left:10px;
+}
+
+
+
+ #lefty {
+    width: 85%;
+    margin-top: 55px;    
+    /* margin-bottom: 200px; */
+    /* position: absolute; */
+    /* top: 150px; */
+    /* right: 20px; */
+} 
 
 .event-desc::before {
     content: "Address:";
@@ -189,8 +224,10 @@ a.nav-link {
 #woodgrain-backdrop {
     background-image: url('/static/dream_app/images/OLO2ED0.jpg');
     background-attachment: fixed;
+    background-size: cover;
+
     width: 100%;
-    /* background-repeat: repeat-x */
+    background-repeat: no-repeat
     padding: 50px 0px 50px 0px;
 }
 
@@ -243,7 +280,7 @@ table {
 } */
 
 #footer-logo {
-    width: 50%;
+    width: 90%;
     /* margin-top: 60px; */
 }
 
@@ -275,7 +312,7 @@ table {
 }
 
 #myFooter {
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .about-contain {
@@ -298,7 +335,7 @@ table {
 } */
 
 footer {
-    bottom: -100px;
+    bottom: -60px;
     /* height: 60px; */
     position: relative;
     width: 100%;
@@ -418,8 +455,8 @@ a:hover {
 
 .hd-media-content {
     margin-top: 0px;
-    border-top: 5px #fff solid;
-    border-bottom: 5px #fff solid;
+    /* border-top: 5px #fff solid; */
+    border-bottom: 7px #fff solid;
 }
 
 .push {
@@ -543,9 +580,8 @@ a:hover {
     padding: 50px;
     width:100%;
     height: 595px;
-    background: rgba(225, 225, 225, 0.5);
+    background: rgba(225, 225, 225, 0.3);
     font-family: Luckiest Guy, cursive;
-    /* color: white; */
     display: block;
     position: relative;
 
@@ -675,7 +711,8 @@ a:hover {
     font-family: Open sans;
     float: left;
     background-color: rgba(225, 225, 225, 0.5);
-    width: 700px
+    width: 700px;
+    margin: 25px 50px;
 }
 
 #contact {

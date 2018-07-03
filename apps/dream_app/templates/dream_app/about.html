@@ -1,5 +1,16 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
-
+<style>
+    .sexy-line {
+        /* margin: 25px 0; */
+        height: 2px;
+        background: black;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(225, 225, 225, 0.1)), to(rgba(225, 225, 225, 0.1)), color-stop(50%, white));
+        width: 100%;
+        display: block;
+        margin-top: 30px
+        /* float: right; */
+    }
+</style>
 
 <div class="container" style="font-family: Open sans;">
     <div class="row">
@@ -138,22 +149,16 @@
                                 opportunities in professional sports and life.</p>
 
                         </ul>
+                        <div class="sexy-line"></div>
                     </div>
                 </div>
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="#" src="{% static 'dream_app/images/logo2.png' %}" style="z-index: -1 ; display: block; margin-left: auto; margin-right: auto; margin-top: 40px"
+                        width="40px" alt="">
+                </div>
+            </div>
         </div>
 
 

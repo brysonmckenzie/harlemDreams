@@ -2,6 +2,7 @@
     background-color: #011F4B;
     opacity: 0.7;
 }
+
 .back-vid {
     background-image: url(/static/dream_app/images/OLO2ED0.jpg);
     background-color: gray;
@@ -13,6 +14,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .mazu {
     width: 150px;
     /* display: blo ck; */
@@ -73,6 +75,34 @@ a.nav-link {
     margin-bottom: 30px;
 }
 
+.basket{
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/dream_app/images/hoop.png);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+/* .basket::after{
+    content: '';
+    background-image: url(/static/dream_app/images/springz3.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 200%;
+    background-attachment: absolute ;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+} */
+
 .social-l {
     float: left;
 }
@@ -85,21 +115,17 @@ a.nav-link {
     display: inline;
 }
 
-#hoop {
-    width: 200%;
-    float: left;
-}
+
 
 #springz {
-    width: 300%;
+    width: 100%;
     position: absolute;
-    top: -400px;
-    left: -400px;
+    /* top: -400px;
+    left: -400px; */
     z-index: 500;
 }
 
-#team-pic {
-    height: 300px;
+#team-pic {500px;
     width: 100%;
     margin-top: 50px;
     /* margin-bottom: -30px; */
@@ -147,37 +173,36 @@ a.nav-link {
     text-transform: capitalize;
     border-bottom: 1px solid #95989A;
 }
-.career-logo{
-    display: block; 
+
+.career-logo {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-
 }
-.cbox1{
+
+.cbox1 {
     background: yellow;
-    width:200px;
+    width: 200px;
     height: 300px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     /* margin-bottom: 20px; */
-
-}
-.cbox1:nth-last-of-type(n){
-    margin-bottom:20px;
-    margin-left:10px;
 }
 
+.cbox1:nth-last-of-type(n) {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
 
-
- #lefty {
+#lefty {
     width: 85%;
-    margin-top: 55px;    
+    margin-top: 55px;
     /* margin-bottom: 200px; */
     /* position: absolute; */
     /* top: 150px; */
     /* right: 20px; */
-} 
+}
 
 .event-desc::before {
     content: "Address:";
@@ -199,9 +224,7 @@ a.nav-link {
     display: inline;
 }
 
-#basket {
-    /* height: 300px; */
-}
+
 
 .db {
     list-style: none;
@@ -225,10 +248,8 @@ a.nav-link {
     background-image: url('/static/dream_app/images/OLO2ED0.jpg');
     background-attachment: fixed;
     background-size: cover;
-
     width: 100%;
-    background-repeat: no-repeat
-    padding: 50px 0px 50px 0px;
+    background-repeat: no-repeat padding: 50px 0px 50px 0px;
 }
 
 #lefty-profile {
@@ -318,7 +339,7 @@ table {
 .about-contain {
     padding: 50px;
     background: rgba(225, 225, 225, 0.3);
-    color:white;
+    color: white;
 }
 
 .fix-ball {
@@ -335,10 +356,11 @@ table {
 } */
 
 footer {
-    bottom: -60px;
+    bottom: 0;
     /* height: 60px; */
     position: relative;
     width: 100%;
+    margin-top:30px;
 }
 
 .social-links-f>ul li {
@@ -357,11 +379,12 @@ footer {
     height: 25px;
     margin-top: 50px;
 }
-.logo-s:hover{
-    width:35px;
-    height: 35px;
 
+.logo-s:hover {
+    width: 35px;
+    height: 35px;
 }
+
 a {
     text-decoration: none;
 }
@@ -495,10 +518,7 @@ a:hover {
     margin-top: 30px;
 }
 
-.down {
-   
-    
-}
+.down {}
 
 #news {
     margin-top: -500px;
@@ -578,13 +598,12 @@ a:hover {
 
 .shop {
     padding: 50px;
-    width:100%;
-    height: 595px;
+    width: 100%;
+    height: 800px;
     background: rgba(225, 225, 225, 0.3);
     font-family: Luckiest Guy, cursive;
     display: block;
     position: relative;
-
 }
 
 .shop::after {
@@ -605,6 +624,7 @@ a:hover {
 }
 
 .sponsor-shop {
+    height: 900px;
     margin-top: 50px;
     padding: 50px 50px 20px 50px;
     /* min-height: 595px; */
@@ -711,8 +731,9 @@ a:hover {
     font-family: Open sans;
     float: left;
     background-color: rgba(225, 225, 225, 0.5);
-    width: 700px;
+    width: 70%;
     margin: 25px 50px;
+    /* padding-left: 300px; */
 }
 
 #contact {
@@ -729,10 +750,11 @@ a:hover {
     height: 100%;
     width: 100%;
 }
-.event-sec{
-    margin-top:75px;
+
+.event-sec {
+    margin-top: 75px;
     background-color: rgba(0, 0, 0, 0.3);
-    padding:10px 0px 10px 0px !important;
+    padding: 10px 0px 10px 0px !important;
     width: 100 !important;
 }
 
@@ -761,9 +783,54 @@ a:hover {
     /* background-size: cover; */
     left: 0
 }
-.vid{
+
+.sponsor-border {
+    padding: 0px 20px 0px 20px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 10pt;
+    border-right: 1px #ffffff solid;
+}
+
+.vid {
     padding-left: 0;
     padding-right: 0;
+    border: solid 1px #fff;
+    background-color: black;
+    box-shadow: 0 0 50px rgba(225, 225, 225, 0.6);
+}
+
+.shadow-box {
+    width: 100%;
+    background-image: url(/static/dream_app/images/OLO2ED0.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 200px; */
+}
+
+.sha {
+    background-image: url(/static/dream_app/images/OLO2ED0.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#shadow {
+    border-bottom: 100px solid rgba(0, 0, 0, 0.9);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#trapezoid {
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    height: 0;
+    width: 100px;
 }
 
 .vcenter {
@@ -820,6 +887,7 @@ a:hover {
 #event_list {
     background-color: rgba(225, 225, 225, 0.5)
 }
+
 .contactus {
     color: white;
 }
@@ -831,27 +899,43 @@ a:hover {
 .contact-bar {
     font-family: Open, sans-serif;
     color: white;
-    margin-top: 100px;
-
+    margin-top: 25px;
+    border-left: 2px solid white;
+}
+.contact-bar a:link{
+    color:white;
+}
+.contact-bar a:visited{
+    color:white;
+}
+.contact-bar a:hover{
+    color:red;
 }
 
-.contact-bar h1{
+
+.contact-bar h1 {
     border-bottom: 2px white solid;
     font-size: 30pt;
 }
 
 .contact-bar h4 {
     font-size: 18pt;
-    margin-top:50px;
+    margin-top: 50px;
     font-weight: bolder
-
 }
-.contact-message{
+
+.contact-message {
     color: white;
     font-size: 14pt;
     font-family: Open, sans-serif;
 }
+
 .contact-bar p {
     font-size: 14pt
 }
 
+@media screen and (max-width: 1175px){
+    .contact-bar{
+        border: unset;
+    }
+}

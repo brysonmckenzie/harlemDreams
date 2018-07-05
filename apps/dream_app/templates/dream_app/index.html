@@ -1,10 +1,10 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
 <style>
-  .sexy-line{
+  .sexy-line {
     /* margin: 25px 0; */
     height: 2px;
     background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(#1981c6), to(#034787  ), color-stop(50%, white));
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#1981c6), to(#034787), color-stop(50%, white));
     width: 100%;
     display: block;
     float: right;
@@ -12,36 +12,36 @@
   }
 </style>
 <div class="container-fluid">
-    <div class="row sub-row">
-        <div class="col-sm-6 col-md-6 social  d-none d-sm-block" style="font-family: Arial, Helvetica, sans-serif">
-            <div class="phone-f vcenter">
-                <i class="fa fa-phone" style="color: white;"></i>
-                <span id="phone">(702) 608-3191</span>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-6 social d-none d-sm-block">
-            <ul id="top-social" class="vcenter2">
-                <li>
-                    <img src="{% static 'dream_app/images/instagram.png' %}" alt="">
-                    </a>
-                    <a href="https://twitter.com/theharlemdreams" target="_blank">
-                </li>
-                <li>
-                    <a href="http://instagram.com/theharlemdreams" target="_blank">
-                        <img src="{% static 'dream_app/images/twitter.png' %}" style="margin-left: 10px;" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246" target="_blank">
-                        <img src="{% static 'dream_app/images/facebook.png' %}" alt="">
-                    </a>
-                </li>
-
-            </ul>
-        </div>
+  <div class="row sub-row">
+    <div class="col-sm-6 col-md-6 social  d-none d-sm-block" style="font-family: Arial, Helvetica, sans-serif">
+      <div class="phone-f vcenter">
+        <i class="fa fa-phone" style="color: white;"></i>
+        <span id="phone">(702) 608-3191</span>
+      </div>
     </div>
+    <div class="col-sm-6 col-md-6 social d-none d-sm-block">
+      <ul id="top-social" class="vcenter2">
+        <li>
+          <img src="{% static 'dream_app/images/instagram.png' %}" alt="">
+          </a>
+          <a href="https://twitter.com/theharlemdreams" target="_blank">
+        </li>
+        <li>
+          <a href="http://instagram.com/theharlemdreams" target="_blank">
+            <img src="{% static 'dream_app/images/twitter.png' %}" style="margin-left: 10px;" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246" target="_blank">
+            <img src="{% static 'dream_app/images/facebook.png' %}" alt="">
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
 </div>
-<div class="container" ></div>
+<div class="container"></div>
 <div class="col-lg-12" id="woodgrain-backdrop" style="margin-top: -1px;">
   <img id="dreams_logo" class="center" src="{% static 'dream_app/images/logo2.png' %}" alt="Harlem Dream Logo">
 </div>
@@ -62,8 +62,15 @@
       <!-- <img class="fix-ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt=""> -->
     </div>
   </div>
+  <div class="row clearfix">
+    <div class="col-sm-3 sha d-none d-sm-block"></div>
+    <div class="col-sm-6 shadow-box d-none d-sm-block">
+      <div id="shadow"></div>
+    </div>
+    <div class="col-sm-3 sha d-none d-sm-block"></div>
+  </div>
   <div class="row">
-    <div class="col-sm-12 back-vid"></div>
+    <div class="col-sm-12 back-vid d-none d-sm-block"></div>
   </div>
 </div>
 </div>
@@ -90,9 +97,12 @@
     </div>
   </div>
   <div class="row" style="margin-top: -25px;">
-    <div class="col-sm-4">
-      <img id="hoop" class="center-block" src="{% static 'dream_app/images/hoop.png' %}" alt="">
-      <img id="springz" class="center-block" src="{% static 'dream_app/images/springz2.png' %}" alt="">
+    <div class="col-sm-4 ">
+      <div class="basket">
+
+      </div>
+      <!-- <img id="hoop" class="center-block" src="{% static 'dream_app/images/hoop.png' %}" alt=""> -->
+      <img id="springz" class="center-block d-none d-sm-block" src="{% static 'dream_app/images/springz3.png' %}" alt="">
     </div>
 
     <!-- LITTLE BIGSHOTS KID -->
@@ -142,12 +152,12 @@
 
         <img id="lefty" class="center-block" src="{% static 'dream_app/images/lefty.png' %}" alt="">
         <h1 style=" text-align: center; font-family: 'Luckiest Guy', cursive; color:white;">#42 Lefty Williams</h1>
-          <p style="font-weight: bold; color: white; text-align: center; font-family: 'Krona One', sans-serif; font-size:13pt">Position: Showman</p>
-          <br>
+        <p style="font-weight: bold; color: white; text-align: center; font-family: 'Krona One', sans-serif; font-size:13pt">Position: Showman</p>
+        <br>
         </p>
         <div class="sexy-line"></div>
+      </div>
     </div>
-  </div>
   </div>
 
 
@@ -210,7 +220,7 @@
             </div>
           </li>
         </ul>
-        <div id="shadow" class="shadow" style="display: block;"></div>
+        <!-- <div id="shadow" class="shadow" style="display: block;"></div> -->
         <!-- <div id="nav-arrows" class="nav-arrows">
       <a href="#">Next</a>
       <a href="#">Previous</a>

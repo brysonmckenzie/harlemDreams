@@ -19,63 +19,70 @@
         </div>
     </div>
 </div>
-<div class="row" style="padding:0px;">
-    <div class="col-sm-12" style="border-right: 2px white solid;">
-        <div class="row">
-            <div class="col-sm-12 contact-message" style="padding: 0px 50px 0px 50px">
-                <p>We the Harlem Dreams truly appreciate our fans and support. Feel free to contact us for any help or questions
-                    that you may have. We look forward to hearing from you or seeing you at one of our future events. Thank
-                    you for visiting the Harlem Dreams website and we look forward to getting back to you soon.</p>
+<div class="container-fluid">
+    <div class="row" style="padding:0px;">
+        <div class="col-sm-12" >
+            <div class="row">
+                <div class="col-sm-12 contact-message" style="padding: 0px 50px 0px 50px">
+                    <p>We the Harlem Dreams truly appreciate our fans and support. Feel free to contact us for any help or questions
+                        that you may have. We look forward to hearing from you or seeing you at one of our future events.
+                        Thank you for visiting the Harlem Dreams website and we look forward to getting back to you soon.</p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-7" id="contact">
-                <form action="/process" method="post">
-                    <div class="form-group ">
+            <div class="row" style="padding-right:;">
+                <div class="col-sm-8" style="padding-right: 45px;">
+                    <div id="contact">
+                        <form action="/process" method="post">
+                            <div class="form-group ">
 
-                        {% csrf_token %}
+                                {% csrf_token %}
 
-                        <label for="name ">Name</label>
-                        <br>
-                        <input class="form-control " type="text " name="client_name">
-                        <br>
-                        <label for="subject ">Subject</label>
-                        <br>
-                        <input class="form-control " type="text " name="client_subject">
-                        <br>
-                        <label for="email ">Email</label>
-                        <br>
-                        <input class="form-control " type="text " name="client_email">
-                        <br>
-                        <label for="message ">Message</label>
-                        <br>
-                        <textarea name="client_message" class="form-control " id=" " cols="10" rows="10 ">
+                                <label for="name ">Name</label>
+                                <br>
+                                <input class="form-control " type="text " name="client_name">
+                                <br>
+                                <label for="subject ">Subject</label>
+                                <br>
+                                <input class="form-control " type="text " name="client_subject">
+                                <br>
+                                <label for="email ">Email</label>
+                                <br>
+                                <input class="form-control " type="text " name="client_email">
+                                <br>
+                                <label for="message ">Message</label>
+                                <br>
+                                <textarea name="client_message" class="form-control " id=" " cols="10" rows="10 ">
                     </textarea>
-                        <br>
-                        <button>Submit</button>
+                                <br>
+                                <button>Submit</button>
 
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
+                <div class="col-sm-4 contact-bar">
+                    <h1>Contact Us</h1>
+                    <h4>Phone</h4>
+                    <p>
+                        <a href="tel:7026083191">
+                            <i class="fa fa-phone" style="color: white;"></i> (702) 608-3191</a>
+                    </p>
+                    <h4>Email</h4>
+                    <p>
+                        <a href="mailto:info@harlemdreams.net">
+                            <i class="fa fa-envelope" style="color: white;"></i> info@harlemdreams.net</a>
+                    </p>
+                </div>
+                <div class="sexy-line"></div>
             </div>
-            <div class="col-sm-4 contact-bar">
-                <h1>Contact Us</h1>
-                <h4>Phone</h4>
-                <p>
-                    <i class="fa fa-phone" style="color: white;"></i> (702) 608-3191</p>
-                <h4>Email</h4>
-                <p>
-                    <i class="fa fa-envelope" style="color: white;"></i> info@harlemdreams.net</p>
-            </div>
-            <div class="sexy-line"></div>
-        </div>
-        <div class="row ">
-            <div class="col-sm-12" style="margin-bottom: -30px;">
-                <img src="{% static 'dream_app/images/logo2.png' %} " style="z-index: -1; display: block; margin-left: auto;margin-right:auto; margin-top: 25px"
-                    width="40px" alt=" ">
+            <div class="row ">
+                <div class="col-sm-12 d-none d-sm-block" style="margin-bottom: 25px;">
+                    <img src="{% static 'dream_app/images/logo2.png' %} " style="z-index: -1; display: block; margin-left: auto;margin-right:auto; margin-top: 25px"
+                        width="40px" alt=" ">
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 
 {% endblock %}

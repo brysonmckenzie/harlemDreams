@@ -123,7 +123,7 @@
         display: none;
     }
     #springz {
-        display: none;
+        /* display: none; */
     }
     #hoop {
         display: none;
@@ -186,5 +186,46 @@
         padding: 30px 0px 30px 0px !important;
         text-align: center;
     }
-}
+    .vid{
+        margin-bottom: 50px;
+    }
+    .sponsor-border{
+        border: unset;
+    }
+    .contact-bar{
+        padding: 0px 30px 0px 30px;
+        margin-top: unset;
+    }
+    .contact-message{
+        margin-bottom: 40px;
+    }
+    #contact{
+        padding: 25px 10px 0px 10px;
+        margin: 0px 15px 30px 15px;
+    }
+    .hd-media-content{
+        border: 0;
+    }
+    #woodgrain-backdrop{
+        background-image: unset;
+    }
+    #dreams_logo{
+        width:60%;
+        height:60%
+    }
 
+}
+@media screen and (max-width: 1173px) and (min-width: 576px){
+    .contact-bar{
+        padding: 0px 0px 0px 0px;
+        margin-left: 50px;
+        margin-top: unset;  
+        /* border: 0; */
+    }
+ 
+}
+@media screen and (max-width: 920px){
+    #contact{
+        width: 100% !important;
+    }
+}

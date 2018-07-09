@@ -173,6 +173,9 @@
         text-align: center;
         margin-bottom: 5px !important;
     }
+    .cj-btn-box{
+        padding: 0px 0px 5px 0px;
+    }
     .mazu {
         display: block;
         margin-left: auto;

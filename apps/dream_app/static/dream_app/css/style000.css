@@ -118,7 +118,7 @@ a.nav-link {
 
 
 #springz {
-    width: 100%;
+    width: 40rem;
     position: absolute;
     /* top: -400px;
     left: -400px; */
@@ -197,7 +197,7 @@ a.nav-link {
 
 #lefty {
     width: 85%;
-    margin-top: 55px;
+    margin-top: 100 px;
     /* margin-bottom: 200px; */
     /* position: absolute; */
     /* top: 150px; */
@@ -356,7 +356,7 @@ table {
 } */
 
 footer {
-    bottom: 0;
+    bottom: -85px;
     /* height: 60px; */
     position: relative;
     width: 100%;
@@ -486,8 +486,10 @@ a:hover {
     margin-bottom: 70px;
 }
 
+
+
 #left-fanbox {
-    margin-top: 40px;
+    margin-top: 100px;
     height: 100%;
     padding-top: 15px;
     z-index: 1;
@@ -496,10 +498,7 @@ a:hover {
     z-index: 1500;
 }
 
-.cj-btn-box {
-    /* height:50px; */
-    padding: 25px;
-}
+
 
 #left-fanbox>h1 {
     font-family: Luckiest Guy, cursive;
@@ -518,7 +517,6 @@ a:hover {
     margin-top: 30px;
 }
 
-.down {}
 
 #news {
     margin-top: -500px;
@@ -712,19 +710,23 @@ a:hover {
 .cj-txt p {
     width: 100%;
     margin-top: 75px;
-    font-size: 18pt;
+    font-size: 20pt;
     position: relative;
     right: 50px;
     top: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Krona One', sans-serif
 }
 
 #cj-btn {
-    background-color: #011F4B;
-    padding: 15px 70px 15px 70px;
+    /* background-color: black; */
+    padding: 15px 10px 15px 10px;
     border-radius: 5px;
-    font-size: 13pt;
+    font-size: 20pt;
     /* margin-bottom: 50px; */
     text-align: center;
+    font-family: 'Krona One', sans-serif;
 }
 
 #contact {

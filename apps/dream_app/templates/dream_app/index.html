@@ -1,4 +1,5 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <style>
   .sexy-line {
     /* margin: 25px 0; */
@@ -10,6 +11,8 @@
     float: right;
 
   }
+  
+  
 </style>
 <div class="container-fluid">
   <div class="row sub-row">
@@ -22,30 +25,30 @@
     <div class="col-sm-6 col-md-6 social d-none d-sm-block">
       <ul id="top-social" class="vcenter2">
         <li>
-          <img src="{% static 'dream_app/images/instagram.png' %}" alt="">
-          </a>
-          <a href="https://twitter.com/theharlemdreams" target="_blank">
-        </li>
-        <li>
-          <a href="http://instagram.com/theharlemdreams" target="_blank">
-            <img src="{% static 'dream_app/images/twitter.png' %}" style="margin-left: 10px;" alt="">
-          </a>
-        </li>
-        <li>
           <a href="https://www.facebook.com/pages/The-Harlem-Dreams/372423599580246" target="_blank">
             <img src="{% static 'dream_app/images/facebook.png' %}" alt="">
           </a>
         </li>
-
+        <li>
+          <a href="http://instagram.com/theharlemdreams" target="_blank">
+            <img src="{% static 'dream_app/images/instagram.png' %}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/theharlemdreams" target="_blank">
+            <img src="{% static 'dream_app/images/twitter.png' %}" style="margin-left: 10px;" alt="">
+          </a>
+        </li>
       </ul>
     </div>
   </div>
 </div>
-<div class="container"></div>
-<div class="col-lg-12" id="woodgrain-backdrop" style="margin-top: -1px;">
-  <img id="dreams_logo" class="center" src="{% static 'dream_app/images/logo2.png' %}" alt="Harlem Dream Logo">
-</div>
-</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12" id="woodgrain-backdrop" style="margin-top: -1px;">
+      <img id="dreams_logo" class="center" src="{% static 'dream_app/images/logo2.png' %}" alt="Harlem Dream Logo">
+    </div>
+  </div>
 </div>
 <div class="container-fluid hd-media-content">
   <div class="row" style="height: 400px;">
@@ -74,7 +77,7 @@
   </div>
 </div>
 </div>
-<di v class="container-fluid ">
+<div class="container-fluid ">
   <div class="row">
     <div class="col-sm-4">
     </div>
@@ -98,7 +101,7 @@
   </div>
   <div class="row" style="margin-top: -25px;">
     <div class="col-sm-4 ">
-      <div class="basket">
+      <div class="basket d-none d-sm-block">
 
       </div>
       <!-- <img id="hoop" class="center-block" src="{% static 'dream_app/images/hoop.png' %}" alt=""> -->
@@ -131,15 +134,16 @@
         <div class="col-sm-6 col-md-6 center2">
           <div class="row">
             <div class="cj-txt col-md-12 ">
-              <P style="font-family: 'Krona One', sans-serif; text-align:center; font-size: ">
+              <P style="text-align:center; margin-bottom:100px;">
                 Brand Ambassador CJ on NBC Hit Show Little Big Shots With Steve Harvey</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 cj-btn-box ;">
-          <a id="cj-btn" class="center2" target="_blank" href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be">Click Here!</a>
+          <div class="row">
+              <div class="col-sm-12 cj-btn-box ;">
+                <a id="cj-btn" class="" target="_blank" href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be"> <i style="color: red;" class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
+              </div>
+            </div>
+      
         </div>
       </div>
 
@@ -152,9 +156,9 @@
 
         <img id="lefty" class="center-block" src="{% static 'dream_app/images/lefty.png' %}" alt="">
         <h1 style=" text-align: center; font-family: 'Luckiest Guy', cursive; color:white;">#42 Lefty Williams</h1>
-        <p style="font-weight: bold; color: white; text-align: center; font-family: 'Krona One', sans-serif; font-size:13pt">Position: Showman</p>
+        <!-- <p style="font-weight: bold; color: white; text-align: center; font-family: 'Krona One', sans-serif; font-size:13pt">Position: Showman</p>
         <br>
-        </p>
+        </p> -->
         <div class="sexy-line"></div>
       </div>
     </div>
@@ -236,119 +240,93 @@
     </div> -->
       </div>
     </div>
-
   </div>
-  <div class="container-fluid center3 d-none d-sm-block">
+</div>
+<!-- <div class="container-fluid center3 d-none d-sm-block">
     <div class="row">
       <div class="col-sm-2"></div>
-      <div class="col-sm  -8">
+      <div class="col-sm-8">
         <img id="team-pic" class="center" src="{% static 'dream_app/images/team_shot.png' %}" alt="Dream Team Shot">
       </div>
       <div class="col-sm-2"></div>
     </div>
-  </div>
+  </div> -->
 
+<script type="text/javascript">
 
-  <!-- <div class="container-fluid counter">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1 style="margin-top:20px; text-align: center;font-family: 'Luckiest Guy', cursive;">Visitors</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 center-block">
-      <div align="center">
-        <a href="http://www.amazingcounters.com">
-          <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221763&c=9665602" alt="AmazingCounters.com">
-        </a>
-      </div>
-    </div>
-  </div>
-</div> -->
+  $(function () {
 
+    var Page = (function () {
 
+      var $navArrows = $('#nav-arrows').hide(),
+        $navDots = $('#nav-dots').hide(),
+        $nav = $navDots.children('span'),
+        $shadow = $('#shadow').hide(),
+        slicebox = $('#sb-slider').slicebox({
+          onReady: function () {
 
-
-  <!-- /wrapper -->
-
-
-
-
-  <script type="text/javascript">
-
-    $(function () {
-
-      var Page = (function () {
-
-        var $navArrows = $('#nav-arrows').hide(),
-          $navDots = $('#nav-dots').hide(),
-          $nav = $navDots.children('span'),
-          $shadow = $('#shadow').hide(),
-          slicebox = $('#sb-slider').slicebox({
-            onReady: function () {
-
-              $navArrows.show();
-              $navDots.show();
-              $shadow.show();
-
-            },
-            onBeforeChange: function (pos) {
-
-              $nav.removeClass('nav-dot-current');
-              $nav.eq(pos).addClass('nav-dot-current');
-
-            }
-          }),
-
-          init = function () {
-
-            initEvents();
+            $navArrows.show();
+            $navDots.show();
+            $shadow.show();
 
           },
-          initEvents = function () {
+          onBeforeChange: function (pos) {
 
-            // add navigation events
-            $navArrows.children(':first').on('click', function () {
+            $nav.removeClass('nav-dot-current');
+            $nav.eq(pos).addClass('nav-dot-current');
 
-              slicebox.next();
+          }
+        }),
+
+        init = function () {
+
+          initEvents();
+
+        },
+        initEvents = function () {
+
+          // add navigation events
+          $navArrows.children(':first').on('click', function () {
+
+            slicebox.next();
+            return false;
+
+          });
+
+          $navArrows.children(':last').on('click', function () {
+
+            slicebox.previous();
+            return false;
+
+          });
+
+          $nav.each(function (i) {
+
+            $(this).on('click', function (event) {
+
+              var $dot = $(this);
+
+              if (!slicebox.isActive()) {
+
+                $nav.removeClass('nav-dot-current');
+                $dot.addClass('nav-dot-current');
+
+              }
+
+              slicebox.jump(i + 1);
               return false;
 
             });
 
-            $navArrows.children(':last').on('click', function () {
+          });
 
-              slicebox.previous();
-              return false;
+        };
 
-            });
+      return { init: init };
 
-            $nav.each(function (i) {
+    })();
 
-              $(this).on('click', function (event) {
+    Page.init();
 
-                var $dot = $(this);
-
-                if (!slicebox.isActive()) {
-
-                  $nav.removeClass('nav-dot-current');
-                  $dot.addClass('nav-dot-current');
-
-                }
-
-                slicebox.jump(i + 1);
-                return false;
-
-              });
-
-            });
-
-          };
-
-        return { init: init };
-
-      })();
-
-      Page.init();
-
-    });
-  </script> {% endblock %}
+  });
+</script> {% endblock %}

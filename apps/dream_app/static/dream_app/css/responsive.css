@@ -3,13 +3,14 @@
         display: none;
     }
 }
+
 @media screen and (min-width:996px) {
     .nav-link {
         margin-left: 40px;
     }
-
 }
-.k{
+
+.k {
     margin: 0px 0px 10px;
 }
 
@@ -26,13 +27,13 @@
     .blue {
         font-size: 9px;
     }
-    #cj{
-        position:absolute; 
-        bottom:470px; 
-        right:5px;
-        color:#2974b2;
-        font-size:50px
-     }
+    #cj {
+        position: absolute;
+        bottom: 470px;
+        right: 5px;
+        color: #2974b2;
+        font-size: 50px
+    }
 }
 
 @media screen and (max-width:560px) {
@@ -40,7 +41,7 @@
         diplay: none;
     }
     .vid {
-        margin-top: 70px;
+        margin: 70px 5px 0px 5px;
     }
     .harlem-media {
         /* background-image: url('/static/dream_app/images/OLO2ED0.jpg');
@@ -77,9 +78,7 @@
     .nav-item {
         width: 100%
     }
-    #team-shot {
-
-    }
+    #team-shot {}
     #footer-logo {
         width: 20%;
         display: block;
@@ -104,18 +103,17 @@
     .blue {
         background-color: #2974B2;
     }
-    .team-box{
+    .team-box {
         width: 200px;
         height: 70px;
     }
-    #cj{
-        position:absolute; 
-        bottom:470px; 
-        right:50px;
-        color:#2974b2;
-        font-size:50px
-     }
-   
+    #cj {
+        position: absolute;
+        bottom: 470px;
+        right: 50px;
+        color: #2974b2;
+        font-size: 50px
+    }
 }
 
 @media screen and (max-width:1160px) {
@@ -136,12 +134,10 @@
     #news {
         font-size: 25px;
     }
-
 }
 
-
-@media screen and (max-width: 1570px) and (min-width: 1200px){
-    .cj-txt p{
+@media screen and (max-width: 1570px) and (min-width: 1200px) {
+    .cj-txt p {
         width: 100%;
         margin-top: 75px;
         font-size: 14pt;
@@ -150,8 +146,9 @@
         top: 20px;
     }
 }
-@media screen and (max-width: 1200px) and (min-width: 561px){
-    .cj-txt p{
+
+@media screen and (max-width: 1200px) and (min-width: 561px) {
+    .cj-txt p {
         width: 100%;
         margin-top: 0px;
         font-size: 10pt;
@@ -161,71 +158,85 @@
         /* top: 20px; */
     }
 }
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 576px) {
     .cj-txt p {
         margin-top: 20px !important;
         font-size: 8pt;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         /* padding: 50px; */
         display: block;
         margin-left: 0 auto;
         margin-right: 0 auto;
         position: unset;
-        
+        font-family: 'Krona One', sans-serif;
+        text-align: center;
+        margin-bottom: 5px !important;
     }
-    .mazu{
+    .mazu {
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
         margin-bottom: 40px;
-
     }
-    #no-event{
-        font-size:12pt;
+    #no-event {
+        font-size: 12pt;
         padding: 30px 0px 30px 0px !important;
         text-align: center;
     }
-    .vid{
+    .vid {
         margin-bottom: 50px;
     }
-    .sponsor-border{
+    .sponsor-border {
         border: unset;
     }
-    .contact-bar{
+    .contact-bar {
         padding: 0px 30px 0px 30px;
         margin-top: unset;
     }
-    .contact-message{
+    .contact-message {
         margin-bottom: 40px;
     }
-    #contact{
+    #contact {
         padding: 25px 10px 0px 10px;
         margin: 0px 15px 30px 15px;
     }
-    .hd-media-content{
+    .hd-media-content {
         border: 0;
     }
-    #woodgrain-backdrop{
+    #woodgrain-backdrop {
         background-image: unset;
     }
-    #dreams_logo{
-        width:60%;
-        height:60%
+    #dreams_logo {
+        /* width: 60%; */
+        height: 100%
     }
-
+    #cj-btn {
+        border-radius: 5px;
+        font-size: 18pt;
+        margin-bottom: 25px;
+        text-align: center;
+        font-family: 'Krona One', sans-serif;
+        display: block;
+    }
 }
-@media screen and (max-width: 1173px) and (min-width: 576px){
-    .contact-bar{
+
+@media screen and (max-width: 1173px) and (min-width: 576px) {
+    .contact-bar {
         padding: 0px 0px 0px 0px;
         margin-left: 50px;
-        margin-top: unset;  
+        margin-top: unset;
         /* border: 0; */
     }
- 
 }
-@media screen and (max-width: 920px){
-    #contact{
+
+@media screen and (max-width: 920px) {
+    #contact {
         width: 100% !important;
     }
+}
+@media screen and (max-width: 1230px) and (min-width: 576px) {
+    #springz{
+        width: 24rem !important;    }
 }

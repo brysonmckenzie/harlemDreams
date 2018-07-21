@@ -125,12 +125,11 @@ a.nav-link {
     z-index: 500;
 }
 
-#team-pic {500px;
+/* #team-pic {500px;
     width: 100%;
     margin-top: 50px;
-    /* margin-bottom: -30px; */
     padding: 0;
-}
+} */
 
 #social-links>ul li {
     display: inline;

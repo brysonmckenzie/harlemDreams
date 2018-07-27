@@ -1039,4 +1039,6 @@ a:hover {
     margin-bottom: 50px;
 }
 
-
+.player-profile img{
+    border: 10px rgba(225, 225, 225, 0.7) solid;
+}

@@ -1013,7 +1013,7 @@ a:hover {
 }
 
 .player-img {
-    border: 10px rgba(225, 225, 225, 0.7) solid;
+    /* border: 10px rgba(225, 225, 225, 0.7) solid; */
     /* background: white; */
 }
 
@@ -1040,5 +1040,5 @@ a:hover {
 }
 
 .player-profile img{
-    border: 10px rgba(225, 225, 225, 0.7) solid;
+    /* border: 10px rgba(225, 225, 225, 0.7) solid; */
 }

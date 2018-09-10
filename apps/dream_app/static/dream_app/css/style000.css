@@ -366,11 +366,12 @@ table {
 } */
 
 footer {
+    /* bottom: 0px; */
     bottom: -85px;
     /* height: 60px; */
     position: relative;
     width: 100%;
-    margin-top:30px;
+    margin-top:1cpx;
 }
 
 .social-links-f>ul li {
@@ -1054,7 +1055,7 @@ a:hover {
     background: rgba(0, 0, 0, 0.5);
     padding: 50px;
     text-align: center;
-    margin-bottom: -114px;
+    /* margin-bottom: -114px; */
     /* width: 100%; */
 }
 .founder h4{

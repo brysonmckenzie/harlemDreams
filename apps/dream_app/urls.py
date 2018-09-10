@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^job_process$', views.job_process),
     url(r'^process$', views.process_contact),
     url(r'^sponsors$', views.sponsors),
+    url(r'^founders$', views.founder),
 ]

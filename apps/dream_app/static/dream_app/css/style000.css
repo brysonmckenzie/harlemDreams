@@ -349,7 +349,7 @@ table {
 .about-contain {
     padding: 50px;
     background: rgba(225, 225, 225, 0.3);
-    color: white;
+    color: black;
 }
 
 .fix-ball {
@@ -907,9 +907,6 @@ a:hover {
     color: white;
 }
 
-.contactus h1 {
-    border-bottom: 2px solid white;
-}
 
 .contact-bar {
     font-family: Open, sans-serif;
@@ -929,7 +926,7 @@ a:hover {
 
 
 .contact-bar h1 {
-    border-bottom: 2px white solid;
+    /* border-bottom: 2px white solid; */
     font-size: 30pt;
 }
 
@@ -962,9 +959,7 @@ a:hover {
     margin-top: 30px
     /* float: right; */
 }
-</style>
 
-<style>
 .star-l {
     width: 350px;
     float: left;
@@ -1041,4 +1036,33 @@ a:hover {
 
 .player-profile img{
     /* border: 10px rgba(225, 225, 225, 0.7) solid; */
+}
+.about-bheader{
+    background-image: url('/static/dreams_app/images/white_hoop.jpg')
+}
+
+.founder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+    /* width: 100%; */
+}
+.founder h4{
+    color: white;
+    background: black;
+    /* text-align: center; */
+    padding: 50px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 30pt;
+}
+.founder p{
+    color: white;
+}
+.founder-pic{
+    /* background: black; */
+    /* padding:50px; */
+    width:500px;
 }

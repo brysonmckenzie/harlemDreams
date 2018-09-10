@@ -75,6 +75,10 @@ def sponsors(request):
     
     return render(request, 'dream_app/sponsors.html')
 
+def founder(request):
+
+    return render(request, 'dream_app/founders.html')
+
 def process_contact(request):
     
     if request.method == 'POST': 
@@ -101,6 +105,6 @@ def process_contact(request):
 
         send_mail(server_subject, server_message, from_email, [server_email])
 
-        print '***** New Contact Info has Arrived *****'
+        print ('***** New Contact Info has Arrived *****')
 
         return redirect('/')

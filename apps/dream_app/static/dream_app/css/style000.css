@@ -638,9 +638,9 @@ a:hover {
     margin-top: 50px;
     padding: 50px 50px 20px 50px;
     /* min-height: 595px; */
-    background: rgba(0,0,0,0.7);
+    background: white;
     font-family: Luckiest Guy, cursive;
-    color: white;
+    color: black;
 }
 
 .shop-cs {
@@ -804,7 +804,7 @@ a:hover {
     padding: 0px 20px 0px 20px;
     font-family: 'Krona One', sans-serif;
     font-size: 10pt;
-    border-right: 1px #ffffff solid;
+    border-right: 1px #000000 solid;
 }
 .sponsor-border2 {
     padding: 0px 20px 0px 20px;
@@ -1052,7 +1052,7 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     padding: 50px;
     text-align: center;
     /* margin-bottom: -114px; */

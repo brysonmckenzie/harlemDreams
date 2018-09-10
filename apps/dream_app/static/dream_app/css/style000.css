@@ -805,6 +805,12 @@ a:hover {
     font-size: 10pt;
     border-right: 1px #ffffff solid;
 }
+.sponsor-border2 {
+    padding: 0px 20px 0px 20px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 10pt;
+    /* border-right: 1px #ffffff solid; */
+}
 
 .vid {
     padding-left: 0;
@@ -1048,11 +1054,12 @@ a:hover {
     background: rgba(0, 0, 0, 0.5);
     padding: 50px;
     text-align: center;
+    margin-bottom: -114px;
     /* width: 100%; */
 }
 .founder h4{
     color: white;
-    background: black;
+    background: rgba(0,0,50,0.5);
     /* text-align: center; */
     padding: 50px;
     font-family: 'Rock Salt', cursive;
@@ -1065,4 +1072,8 @@ a:hover {
     /* background: black; */
     /* padding:50px; */
     width:500px;
+}
+.dreams-font{
+    font-family: 'Rock Salt', cursive;
+    color: white
 }

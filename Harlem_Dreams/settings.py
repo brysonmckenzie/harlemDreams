@@ -25,7 +25,8 @@ SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'harlemdreams.net',
+ALLOWED_HOSTS = [ 
+        'harlemdreams.net',
 		'www.harlemdreams.net',
 		'www.theharlemdreams.net',
 		'theharlemdreams.net',
@@ -139,7 +140,30 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # SMTP
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'p3plcpnl0122.prod.phx3.secureserver.net'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'brysdolla@gmail.com'
-EMAIL_HOST_PASSWORD = 'Kujo1776!'
+EMAIL_HOST_USER = 'contact@harlemdreams.net'
+EMAIL_HOST_PASSWORD = 'Longbeach2018'
+
+#reCAPTCHA
+
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LcHqXAUAAAAAAUE04nczeIVXmHxCv4C-_uo85Wj'
+
+
+
+
+# NEWSLETTER
+
+
+NEWSLETTER_CONFIRM_EMAIL = False
+
+NEWSLETTER_RICHTEXT_WIDGET = "imperavi.widget.ImperaviWidget"
+# Using django-tinymce
+NEWSLETTER_RICHTEXT_WIDGET = "tinymce.widgets.TinyMCE"
+
+# Amount of seconds to wait between each email. Here 100ms is used.
+NEWSLETTER_EMAIL_DELAY = 0.1
+# Amount of seconds to wait between each batch. Here one minute is used.
+NEWSLETTER_BATCH_DELAY = 60
+# Number of emails in one batch
+NEWSLETTER_BATCH_SIZE = 100

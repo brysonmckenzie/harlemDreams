@@ -103,8 +103,9 @@ def process_contact(request):
         #     from_email, 
         #     [to_email], fail_silently=true)
 
-        send_mail(server_subject, server_message, from_email, [server_email])
+        send_mail(server_subject, server_message, server_email, ['contact@harlemdreams.net'], fail_silently=False,)
 
         print ('***** New Contact Info has Arrived *****')
+        print (""" Success! Email Worked! YAY!!!!! Good JOB BRO!!!  """)
 
         return redirect('/')

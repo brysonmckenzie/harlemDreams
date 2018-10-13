@@ -1,5 +1,5 @@
 .har-nav {
-    background-color: #011F4B;
+    background-color: #2974B2;
     opacity: 0.7;
 }
 .quote{
@@ -389,6 +389,7 @@ footer {
     width: 25px;
     height: 25px;
     margin-top: 50px;
+    color: white;
 }
 
 .logo-s:hover {
@@ -601,7 +602,7 @@ a:hover {
 }
 
 #harlem-group3 {
-    background-image: url('/static/dream_app/images/white_hoop.jpg');
+    background-image: url('/static/dream_app/images/white_hoop2.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -1083,4 +1084,13 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+.mid {
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 900;
+}
+.parah p{
+    text-align:center;
+
 }

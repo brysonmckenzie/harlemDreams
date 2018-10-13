@@ -12,6 +12,28 @@
     }
 </style>
 
+<script>
+
+    function validateForm() {
+        var x = document.forms["contact-frm"]["client_name"].value;
+        if (z == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        var y = document.forms["contact-frm"]["client_name"].value;
+        if (y == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        var z = document.forms["contact-frm"]["client_name"].value;
+        if (z == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+    
+    </script>
+
 <div class="container-fluid" style="padding:50px 50px 10px 35px;">
     <div class="row">
         <!-- <div class="col-sm-12 contactus" style="margin-bottom: 0px">
@@ -32,29 +54,32 @@
             <div class="row" style="padding-right:;">
                 <div class="col-sm-8" style="padding-right: 45px;">
                     <div id="contact">
-                        <form action="/process" method="post">
+                        <form name="contact-frm" action="/process" method="post" onsubmit="return validateForm()">
                             <div class="form-group ">
 
                                 {% csrf_token %}
 
                                 <label for="name ">Name</label>
                                 <br>
-                                <input class="form-control " type="text " name="client_name">
+                                <input class="form-control " type="text " name="client_name" required>
                                 <br>
                                 <label for="subject ">Subject</label>
                                 <br>
-                                <input class="form-control " type="text " name="client_subject">
+                                <input class="form-control " type="text " name="client_subject" required>
                                 <br>
                                 <label for="email ">Email</label>
                                 <br>
-                                <input class="form-control " type="text " name="client_email">
+                                <input class="form-control " type="text " name="client_email" required>
                                 <br>
                                 <label for="message ">Message</label>
                                 <br>
-                                <textarea name="client_message" class="form-control " id=" " cols="10" rows="10 ">
+                                <textarea name="client_message" class="form-control " id=" " cols="10" rows="10" required>
                     </textarea>
                                 <br>
                                 <button>Submit</button>
+
+                                <script src='https://www.google.com/recaptcha/api.js'></script>
+                <div style="margin-top: 25px;" class="g-recaptcha" data-sitekey="6LcHqXAUAAAAACeJbh02UC3iajXx9znDQVdolwlb"></div>
 
                             </div>
                         </form>
@@ -70,9 +95,10 @@
                     <h4>Email</h4>
                     <p>
                         <a href="mailto:info@harlemdreams.net">
-                            <i class="fa fa-envelope" style="color: white;"></i> info@harlemdreams.net</a>
+                            <i class="fa fa-envelope" style="color: white;"></i> contact@harlemdreams.net</a>
                     </p>
                 </div>
+                
                 <div class="sexy-line"></div>
             </div>
             <div class="row ">
@@ -84,5 +110,6 @@
         </div>
     </div>
 </div>
+
 
 {% endblock %}

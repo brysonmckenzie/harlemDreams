@@ -15,7 +15,7 @@ class Event(models.Model):
     address = models.CharField(max_length=30)
     state = models.CharField(max_length=30)
     time = models.CharField(max_length=30)
-    desc = models.TextField(max_length=30)
+    description = models.TextField(max_length=200)
     location = models.CharField(max_length=50)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now = True)

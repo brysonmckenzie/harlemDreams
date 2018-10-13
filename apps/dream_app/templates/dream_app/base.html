@@ -26,14 +26,14 @@
     <meta name="theme-color" content="#ffffff"> {% load staticfiles %}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122942864-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122942864-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-122942864-1');
-</script>
+        gtag('config', 'UA-122942864-1');
+    </script>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -79,6 +79,12 @@
 </head>
 
 <body>
+    <style>
+        .foot-bord {
+            background: rgba(0, 0, 0, 0.7   );
+        }
+    </style>
+
     <div class="container-fluid foot-bord">
         <nav class="navbar navbar-expand-lg navbar-dark indigo">
             <a href="/">
@@ -219,11 +225,11 @@
                         <!-- <li><a href="#">Reviews</a></li> -->
                     </ul>
                 </div>
-                <div class="col-sm-3 footer-links social-links-f ">
+                <div  class="col-sm-3 footer-links social-links-f ">
                     <ul>
                         <li>
                             <a href="https://twitter.com/theharlemdreams" target="_blank">
-                                <img class="logo-s" src="{% static 'dream_app/images/twitter.png' %}" alt="https://twitter.com/theharlemdreams" />
+                                <img  class="logo-s" src="{% static 'dream_app/images/twitter.png' %}" alt="https://twitter.com/theharlemdreams" />
                             </a>
                         </li>
                         <li>
@@ -246,7 +252,7 @@
                         <img style="background: rgb(225,225,225); padding:5px;" class="mazu" src="{% static 'dream_app/images/txt2give.png' %}" alt="">
                     </a>
                 </div>
-                  
+
             </div>
         </div>
         <div class="footer-copy" style="padding:0px 20px 0px 20px">
@@ -254,11 +260,13 @@
             <div class="row">
                 <div class="col-sm-4">
                     <p class="footer-sz" style="display:inline; color:white">©
-                        <script>document.write(new Date().getFullYear());</script> Harlem Dreams</p>
+                        <script>document.write(new Date().getFullYear());</script> Harlem Dreams
+                    </p>
                 </div>
                 <div class="col-sm-4">
                     <a href="http://www.brysonmckenzie.com">
-                        <p class="footer-sz blue" style="text-align: center; color: white;">Designed by Six Eleven Solutions, LLC &#169;</p>
+                        <p class="footer-sz blue" style="text-align: center; color: white;">Designed by Six Eleven Solutions,
+                            LLC &#169;</p>
                     </a>
                 </div>
                 <div class="col-sm-4"></div>

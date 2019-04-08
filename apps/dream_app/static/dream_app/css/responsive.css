@@ -37,6 +37,11 @@
 }
 
 @media screen and (max-width:560px) {
+    .video-header {
+        text-align: center;
+        font-size: 18pt;
+    }
+
     .hide-2 {
         diplay: none;
     }

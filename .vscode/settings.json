@@ -1,4 +1,5 @@
 {
     "python.linting.pylintEnabled": false,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "harlemenv/bin/python3.6"
 }

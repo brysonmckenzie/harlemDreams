@@ -36,14 +36,17 @@
     </script>
 
     <!-- bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="{% static '/dream_app/css/style000.css' %} ">
     <link rel="stylesheet" type="text/css" href="{% static 'dream_app/css/slicebox.css'%}" />
@@ -64,7 +67,16 @@
     <script type="text/javascript" src="{% static 'dream_app/javascript/modernizr.custom.46884.js' %}"></script>
     <script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
 
+    <!-- modal video pop up -->
+    <!-- <script type="text/javascript" src="{% static 'dream_app/javascript/modal.js' %}"></script> -->
+
+
+
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+
+
     <script type="text/javascript" src="{% static 'dream_app/javascript/jquery.slicebox.js' %}"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
@@ -81,7 +93,7 @@
 <body>
     <style>
         .foot-bord {
-            background: rgba(0, 0, 0, 0.7   );
+            background: rgba(0, 0, 0, 0.7);
         }
     </style>
 
@@ -90,8 +102,8 @@
             <a href="/">
                 <img src="{% static 'dream_app/images/logo2.png'%}" alt="logo" style="width:50px;">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
@@ -186,7 +198,8 @@
                 <div class="col-sm-2">
                     <h2 class="logo">
                         <a href="/" target="_blank">
-                            <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/logo2.png' %}" style alt="Harlem Dreams Logo">
+                            <img id="footer-logo" class="center-block" src="{% static 'dream_app/images/logo2.png' %}"
+                                style alt="Harlem Dreams Logo">
                         </a>
                     </h2>
                 </div>
@@ -196,9 +209,9 @@
                         <li>
                             <a href="/">Home</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="/newsletter">Newsletter</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="/events">Events</a>
                         </li>
@@ -228,11 +241,12 @@
                         <!-- <li><a href="#">Reviews</a></li> -->
                     </ul>
                 </div>
-                <div  class="col-sm-3 footer-links social-links-f ">
+                <div class="col-sm-3 footer-links social-links-f ">
                     <ul>
                         <li>
                             <a href="https://twitter.com/theharlemdreams" target="_blank">
-                                <img  class="logo-s" src="{% static 'dream_app/images/twitter.png' %}" alt="https://twitter.com/theharlemdreams" />
+                                <img class="logo-s" src="{% static 'dream_app/images/twitter.png' %}"
+                                    alt="https://twitter.com/theharlemdreams" />
                             </a>
                         </li>
                         <li>
@@ -252,7 +266,8 @@
                         <img class="mazu" src="{% static 'dream_app/images/mazu.jpg' %}" alt="">
                     </a>
                     <a href="https://txt2give.co/" target="_blank">
-                        <img style="background: rgb(225,225,225); padding:5px;" class="mazu" src="{% static 'dream_app/images/txt2give.png' %}" alt="">
+                        <img style="background: rgb(225,225,225); padding:5px;" class="mazu"
+                            src="{% static 'dream_app/images/txt2give.png' %}" alt="">
                     </a>
                 </div>
 
@@ -267,10 +282,15 @@
                     </p>
                 </div>
                 <div class="col-sm-4">
-                    <a href="http://www.brysonmckenzie.com">
+                    <!-- <a href="http://www.brysonmckenzie.com">
                         <p class="footer-sz blue" style="text-align: center; color: white;">Designed by Six Eleven Solutions,
                             LLC &#169;</p>
-                    </a>
+                    </a> -->
+
+                    <p class="footer-sz blue" style="text-align: center; color: white;">Designed by Six Eleven
+                        Solutions,
+                        LLC &#169;</p>
+
                 </div>
                 <div class="col-sm-4"></div>
 

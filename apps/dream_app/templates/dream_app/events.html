@@ -2,83 +2,70 @@
 <style>
     body {
         height: 100%;
+        width: 100%;
+        background-image: url(/static/dream_app/images/full_court.jpg);
+        background-size: cover
     }
 </style>
 <div class="container">
     <div class="row ">
 
-        <div class="col-sm-12 text-center" style="color:#214F74; font-family: Luckiest Guy, cursive; margin-top: 30px; margin-bottom: 30px;"><span style="font-size:35pt; color: white" class="dreams-font">The Harlem Dreams</span>
+        <div class="col-sm-12 text-center"
+            style="color:#214F74; font-family: Luckiest Guy, cursive; margin-top: 30px; margin-bottom: 30px;"><span
+                style="font-size:35pt; color: white" class="dreams-font">The Harlem Dreams</span>
             <h1>Coming to a city Near you</h1>
         </div>
     </div>
     {% if events|length != 0 %} {% for e in events %}
-    <div class="row push">
+    <div class="row">
         <div class="event-box">
             <div class="container">
-                <div class="row">
-                    <div id="date-border">
-                        <div class="col-sm-12 text-center style2" style="padding: 2px 0px 2px 0px">
-                            {{e.date}}
+                <div class="row" style="height:400px">
+                    <div class="col-sm-6">
+                        <div class="event-text">
+                            <table class="table" style="color: white">
+                                <h3 class="text-center" style="padding: 2rem 0 0 0; color: white;">Harlem Dreams VS.
+                                    {{e.opponent}}
+                                </h3>
+                                <tbody>
+                                    <tr>
+                                        <td>Location:</td>
+                                        <td>{{e.location}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date:</td>
+                                        <td>{{e.date}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Time:</td>
+                                        <td>{{e.time}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address:</td>
+                                        <td>{{e.address}}<br>
+                                            {{e.city}}, {{e.state}}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- <p class="text-center">{{e.description}}</!-->
                         </div>
                     </div>
-                </div>
-                <div class="row" style="height: 100px;">
-                    <div class="col-sm-4 text-center">
-                        <div class="row vcenter">
-                            <div class="col-sm-4">
-                                <img class="k" src="{% static 'dream_app/images/blue-logo.png'%}" alt="logo" style="width:70px;" />
-                            </div>
-                            <div class="col-sm-8 style2">
-                                <h3 class="vcenter">Harlem Dreams</h3>
-
-                            </div>
+                    <div class="col-sm-6" style="max-height: 400px;">
+                        <div class="img-container">
+                            <img class="img-fluid  v-center" style="width: 50%; height: 50%;" src="{% static 'dream_app/images/omw2fyb.jpg' %}" alt="">
                         </div>
-                    </div>
-                    <div class="col-sm-4 text-center  style1" style="font-size: 50px; padding:20px;">
-                        <span class="">VS.</span>
-                    </div>
-                    <div class="col-sm-4 text text-center">
-                        <div class="row vcenter">
-                            <div class="col-sm-4">
-                                <img class="k" src="{% static 'dream_app/images/mad_ball.png'%}" alt="logo" style="width:70px;" />
-                            </div>
-                            <div class="col-sm-8 style2">
-                                <h3 class="vcenter">{{ e.opponent }}</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row time-location">
-                    <div class="col-sm-4" id="hoop-left">
-                    </div>
-                    <div class="col-sm-4 time-location style2 text-center half-court">
-                        <div class=" l-center">
-                            <h1>{{e.location}} </h1>
-                            <h1>@ {{e.time}}</h1>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4" id="hoop-right">
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-sm-12" style="padding:25px;">
-                    <p class="vcenter event-desc" style=" font-family: 'Krona One', sans-serif; padding: 25px;"> {{e.address}}<br> &emsp; &emsp; &emsp; &emsp; &nbsp; &nbsp;{{e.city}}, {{e.state}}</p>
-                    <br>
-                    <br>
-                    <div style="color: white; " class="event-description">
-                        {{e.description}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
     {% endfor %}{% else %}
-    <div style="font-family: 'Krona One', sans-serif; font-size: 16pt; color: #000;" id="no-event">{{no_event}}</div>
+    <div class="container-fluid" style="font-family: 'Krona One', sans-serif; font-size: 16pt; color: #000;"
+        id="no-event">
+        {{no_event}}</div>
     {% endif %}
 </div>
 <!-- <script language="javascript">

@@ -1,5 +1,9 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+
 <style>
   .sexy-line {
     /* margin: 25px 0; */
@@ -9,11 +13,15 @@
     width: 100%;
     display: block;
     float: right;
+
   }
-  
-  
+
+  body {
+    overflow-y: hidden;
+
+  }
 </style>
-<div class="container-fluid">
+<div class="container-fluid boc">
   <div class="row sub-row">
     <div class="col-sm-6 col-md-6 social  d-none d-sm-block" style="font-family: Arial, Helvetica, sans-serif">
       <div class="phone-f vcenter">
@@ -42,26 +50,41 @@
     </div>
   </div>
 </div>
-<div class="container-fluid">
+
+<div class="vid-modal">
+  <span id="vexit"><i class="fa fa-window-close ex" aria-hidden="true"></i></span>
+  <div class="vid-box">
+    <iframe id="front-video"
+      src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="container-fluid header-box">
+
+
+
   <div class="row">
     <div class="col-lg-12" id="woodgrain-backdrop" style="margin-top: -1px;">
       <img id="dreams_logo" class="center" src="{% static 'dream_app/images/logo2.png' %}" alt="Harlem Dream Logo">
     </div>
   </div>
 </div>
-<div class="container-fluid hd-media-content">
+
+
+
+<!-- <div class="container-fluid hd-media-content">
   <div class="row" style="height: 100%;">
     <div class="col-sm-3 b-background d-none d-sm-block">
-      <!-- <img class="fix-ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt=""> -->
     </div>
     <div class="col-sm-6 vid">
 
-      <iframe width="100%" height="500px" src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
+      <iframe width="100%" height="500px"
+        src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     </div>
     <div class="col-sm-3 d-none d-sm-block b-background">
-      <!-- <img class="fix-ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt=""> -->
     </div>
   </div>
   <div class="row clearfix">
@@ -74,8 +97,11 @@
   <div class="row">
     <div class="col-sm-12 back-vid d-none d-sm-block"></div>
   </div>
-</div>
-</div>
+</div> -->
+
+
+
+
 <div class="container-fluid ">
   <div class="row">
     <div class="col-sm-4">
@@ -103,7 +129,8 @@
 
       </div>
       <!-- <img id="hoop" class="center-block" src="{% static 'dream_app/images/hoop.png' %}" alt=""> -->
-      <img id="springz" class="center-block d-none d-sm-block" src="{% static 'dream_app/images/springz3.png' %}" alt="">
+      <img id="springz" class="center-block d-none d-sm-block" src="{% static 'dream_app/images/springz3.png' %}"
+        alt="">
     </div>
 
     <!-- LITTLE BIGSHOTS KID -->
@@ -137,11 +164,13 @@
             </div>
           </div>
           <div class="row">
-              <div class="col-sm-12 cj-btn-box ;">
-                <a id="cj-btn" class="" target="_blank" href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be"> <i style="color: red;" class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
-              </div>
+            <div class="col-sm-12 cj-btn-box ;">
+              <a id="cj-btn" class="" target="_blank"
+                href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be"> <i style="color: red;"
+                  class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
             </div>
-      
+          </div>
+
         </div>
       </div>
 
@@ -297,4 +326,29 @@
     })();
     Page.init();
   });
-</script> {% endblock %}
+</script>
+<script type="text/javascript">
+  var exitBtn = document.getElementById("vexit");
+  var flow = document.querySelector("body")
+  var modal = document.querySelector(".vid-modal")
+
+  $(window).on('beforeunload', function () {
+    $('body').hide();
+    $(window).scrollTop(0);
+  });
+
+
+  exitBtn.onclick = function () {
+
+    modal.style.display = "none";
+    flow.style.overflowY = "scroll";
+
+
+  }
+
+
+
+
+</script>
+
+{% endblock %}

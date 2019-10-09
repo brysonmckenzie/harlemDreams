@@ -2,21 +2,23 @@
     background-color: #2974B2;
     opacity: 0.7;
 }
-.quote{
+
+.quote {
     font-size: 20pt !important;
     font-weight: bolder !important;
 }
-.quote::before{
+
+.quote::before {
     content: open-quote;
 }
-.quote::after{
+
+.quote::after {
     content: close-quote;
 }
 
-
 .back-vid {
     /* background-image: url(/static/dream_app/images/OLO2ED0.jpg); */
-    background-image: url(/static/dream_app/images/full_court.jpg);
+    /* background-image: url(/static/dream_app/images/full_court2.jpg); */
     background-color: gray;
     background-size: cover;
     padding-bottom: 25px;
@@ -45,7 +47,8 @@ body {
     background-size: cover;
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
-    overflow-x: hidden
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 
 .foot-bord {
@@ -87,7 +90,7 @@ a.nav-link {
     margin-bottom: 30px;
 }
 
-.basket{
+.basket {
     width: 100%;
     height: 100%;
     background-image: url(/static/dream_app/images/hoop.png);
@@ -100,22 +103,24 @@ a.nav-link {
     right: 0;
     z-index: -1;
 }
+
 /* .basket::after{
     content: '';
     background-image: url(/static/dream_app/images/springz3.png);
     background-repeat: no-repeat;
     /* background-position: center; */
-    background-size: 200%;
-    background-attachment: absolute ;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-} */
 
-.social-l {
+background-size: 200%;
+background-attachment: absolute;
+z-index: 1000;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
+}
+
+*/ .social-l {
     float: left;
 }
 
@@ -126,8 +131,6 @@ a.nav-link {
 #social>p {
     display: inline;
 }
-
-
 
 #springz {
     width: 30rem;
@@ -208,7 +211,7 @@ a.nav-link {
 
 #lefty {
     width: 85%;
-    margin-top: 100 px;
+    margin-top: 3.1rem;
     /* margin-bottom: 200px; */
     /* position: absolute; */
     /* top: 150px; */
@@ -217,12 +220,17 @@ a.nav-link {
 
 .event-desc::before {
     content: "Address:";
-    color: white;
+    color: Black;
 }
 
 .event-description {
     text-align: center;
     font-family: 'Krona One', sans-serif;
+    margin-top: 4rem;
+    padding: 0 2rem 0 2rem;
+    /* color: black; */
+    text-align: center;
+    background: #FCFCFD
 }
 
 #pre-header>h1 {
@@ -234,8 +242,6 @@ a.nav-link {
     width: 10%;
     display: inline;
 }
-
-
 
 .db {
     list-style: none;
@@ -257,11 +263,14 @@ a.nav-link {
 
 #woodgrain-backdrop {
     /* background-image: url('/static/dream_app/images/OLO2ED0.jpg'); */
-    background-image: url(/static/dream_app/images/full_court.jpg);
+    background-image: url(/static/dream_app/images/full_court3.jpg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    background-repeat: no-repeat padding: 50px 0px 50px 0px;
+    background-repeat: no-repeat;
+    padding: 50px 0px 50px 0px;
+    height: 800px;
+    border-bottom: 3px white solid;
 }
 
 #lefty-profile {
@@ -353,6 +362,7 @@ table {
     padding: 50px;
     background: rgba(225, 225, 225, 0.3);
     color: black;
+    margin: 0 16rem;
 }
 
 .fix-ball {
@@ -374,7 +384,7 @@ footer {
     /* height: 60px; */
     position: relative;
     width: 100%;
-    margin-top:1cpx;
+    margin-top: 1cpx;
 }
 
 .social-links-f>ul li {
@@ -497,7 +507,7 @@ a:hover {
     margin-bottom: 70px;
 }
 
-
+/* We change this when working on the modal Aug 13th, 2019... from 1500 to 1003 */
 
 #left-fanbox {
     margin-top: 100px;
@@ -507,10 +517,8 @@ a:hover {
     z-index: 1;
     font-family: 'Luckiest Guy', cursive;
     background: white;
-    z-index: 1500;
+    z-index: 1003;
 }
-
-
 
 #left-fanbox>h1 {
     font-family: Luckiest Guy, cursive;
@@ -528,7 +536,6 @@ a:hover {
 #left-fanbox>p {
     margin-top: 30px;
 }
-
 
 #news {
     margin-top: -500px;
@@ -722,7 +729,6 @@ a:hover {
 .video-media {
     display: block;
     margin-bottom: 40px;
-
 }
 
 .cj-txt p {
@@ -736,7 +742,6 @@ a:hover {
     text-align: center;
     font-family: 'Krona One', sans-serif;
     padding-bottom: 40px;
-    
 }
 
 #cj-btn {
@@ -768,9 +773,10 @@ a:hover {
 }
 
 .event-box {
-    background-color: rgba(1, 42, 179, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     height: 100%;
     width: 100%;
+    margin-bottom: 5rem;
 }
 
 .event-sec {
@@ -812,6 +818,7 @@ a:hover {
     font-size: 10pt;
     border-right: 1px #000000 solid;
 }
+
 .sponsor-border2 {
     padding: 0px 20px 0px 20px;
     font-family: 'Krona One', sans-serif;
@@ -922,23 +929,24 @@ a:hover {
     color: white;
 }
 
-
 .contact-bar {
     font-family: Open, sans-serif;
     color: white;
     margin-top: 25px;
     border-left: 2px solid white;
 }
-.contact-bar a:link{
-    color:white;
-}
-.contact-bar a:visited{
-    color:white;
-}
-.contact-bar a:hover{
-    color:red;
+
+.contact-bar a:link {
+    color: white;
 }
 
+.contact-bar a:visited {
+    color: white;
+}
+
+.contact-bar a:hover {
+    color: red;
+}
 
 .contact-bar h1 {
     /* border-bottom: 2px white solid; */
@@ -960,7 +968,8 @@ a:hover {
 .contact-bar p {
     font-size: 14pt
 }
-.cj-btn-box{
+
+.cj-btn-box {
     padding: 0px 0px 50px 0px;
 }
 
@@ -1005,14 +1014,12 @@ a:hover {
     background-image: url('/static/dream_app/images/springz-player.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .player-img3 {
     background-image: url('/static/dream_app/images/pope-player.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .player-white {
@@ -1022,8 +1029,8 @@ a:hover {
 }
 
 .player-img {
-    /* border: 10px rgba(225, 225, 225, 0.7) solid; */
-    /* background: white; */
+    border: 10px rgba(225, 225, 225, 0.7) solid;
+    background: white;
 }
 
 .player-profile {
@@ -1035,88 +1042,179 @@ a:hover {
     font-size: 16pt;
     font-weight: 400;
 }
-.player-profile h2{
+
+.player-profile h2 {
     font-size: 30pt;
 }
+
 .boot {
     margin-bottom: 50px;
 }
 
-.roster h1{
+.roster h1 {
     border-bottom: 2px solid white;
     color: white;
     margin-bottom: 50px;
 }
 
-.player-profile img{
+.player-profile img {
     /* border: 10px rgba(225, 225, 225, 0.7) solid; */
 }
-.about-bheader{
+
+.about-bheader {
     background-image: url('/static/dreams_app/images/white_hoop.jpg')
 }
 
-.founder{
+.founder {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 50px
+    background: rgba(225, 225, 225, 0.9);
+    padding: 1rem;
     text-align: center;
-    /* margin-bottom: -114px; */
-    /* width: 100%; */
 }
-.founder h4{
+
+.founder h4 {
     color: white;
-    background: rgba(0,0,50,0.5);
-    /* text-align: center; */
-    padding: 50px;
+    background: rgb(44, 113, 184);
+    text-align: center;
+    padding: .4rem;
     font-family: 'Rock Salt', cursive;
-    font-size: 30pt;
+    font-size: 1.3rem;
+    /* vertical-align: bottom; */
+    margin-bottom: 0;
 }
-.founder p{
-    color: white;
+
+.founder p {
+    color: rgba(0, 0, 0, 0.5);
 }
-.founder-pic{
-    /* background: black; */
-    /* padding:50px; */
-    width:500px;
+
+.founder-pic {
+    background: white;
+    /* padding: 50px; */
+    /* width: 50%; */
+    display: block;
+    margin: auto;
+    margin-right: 1rem;
+    float: left;
 }
-.dreams-font{
+
+.dreams-font {
     font-family: 'Rock Salt', cursive;
-    color: white
+    color: inherit;
 }
+
 #topball {
-    width:300px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+
 .mid {
     text-align: center;
     font-size: 25pt;
     font-weight: 900;
 }
-.parah p{
-    text-align:center;
 
+.parah p {
+    text-align: center;
 }
 
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-    }
-    
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    }
+}
 
-    .video-header {
-        text-align: center;
-    }
+.video-header {
+    text-align: center;
+}
+
+/* modal section */
+
+.vid-modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 1000px;
+    height: 500px;
+    top: 250px;
+    left: 50%;
+    margin: 0 auto;
+    z-index: 1002;
+    transform: translateX(-50%);
+    /* display: initial; */
+    /* aug 21 still working on modal display */
+    display: initial;
+}
+
+/* old video box */
+
+.vid-box {
+    /* width: 700px; */
+    /* height: 400px; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* z-index: 1003; */
+    /* padding: 100px; */
+    /* margin: 0 auto; */
+    /* top: 50%; */
+    /* vertical-align: middle; */
+}
+
+.vid-box {
+    /* width: 700px; */
+    /* height: 400px; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    /* vertical-align: middle; */
+}
+
+#front-video {
+    width: 50rem;
+    height: 25rem;
+}
+
+#vexit {
+    z-index: 1005;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#teamDream {
+    position: relative;
+    bottom: 0;
+}
+
+.pic-size {
+    width: 15rem;
+}
+
+.event-hoop {
+    
+}
+
+.v-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(50%,-50%);
+    transform: translate(50%,-50%);
+  }

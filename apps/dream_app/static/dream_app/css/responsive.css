@@ -18,8 +18,10 @@
     .hide {
         display: none;
     }
+  
     #dreams_logo {
-        width: 50%;
+        width: 15rem;
+        height: 15rem;
     }
     .footer-sz {
         font-size: 4pt;
@@ -34,16 +36,73 @@
         color: #2974b2;
         font-size: 50px
     }
+    #cj-btn {
+        /* background-color: black; */
+        padding: 15px 10px 15px 0px;
+        border-radius: 5px;
+        font-size: 10pt;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'Krona One', sans-serif;
+    }
+    #left-fanbox {
+        margin-top: 100px;
+        height: 100%;
+        padding-top: 15px;
+        /* padding-bottom: 30px; */
+        z-index: 1;
+        font-family: 'Luckiest Guy', cursive;
+        background: white;
+        z-index: 1003;
+    }
+    .cj-txt p {
+        /* touched 032920 // for better mobile resonsiveness bbm001 */
+        /* margin-top: 20px !important; */
+        font-size: 8pt;
+        /* margin: 0 auto; */
+        /* padding: 50px; */
+        display: block;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        position: unset;
+        font-family: 'Krona One', sans-serif;
+        text-align: center;
+        margin-bottom: 5px !important;
+    }
+    .cj-btn-box {
+        padding: 0px 0px 5px 0px;
+    }
+
+    /* .vid-modal {
+        
+        display: none;
+    } */
+    .team-play {
+        /* margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; */
+        height: 8rem;
+    }
+
 }
 
 @media screen and (max-width:560px) {
+    .min-center {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+    }
+   
+    
     .video-header {
         text-align: center;
         font-size: 18pt;
     }
-
     .hide-2 {
-        diplay: none;
+        display: none;
     }
     .vid {
         margin: 70px 5px 0px 5px;
@@ -55,8 +114,8 @@
         margin-top: 30px;
     }
     #dreams_logo {
-        width: 40%;
-        height: 40%
+        width: 15rem;
+        height: 15rem;
     }
     #pre-header {
         background-color: white
@@ -119,6 +178,18 @@
         color: #2974b2;
         font-size: 50px
     }
+
+    .eventab {
+        font-size: 15pt;
+    }
+
+    #left-fanbox {
+        margin: 0;
+    }
+    .vid-modal {
+        width: 490px;
+    }
+  
 }
 
 @media screen and (max-width:1160px) {
@@ -144,11 +215,12 @@
 @media screen and (max-width: 1570px) and (min-width: 1200px) {
     .cj-txt p {
         width: 100%;
-        margin-top: 75px;
-        font-size: 14pt;
-        position: relative;
-        right: 50px;
-        top: 20px;
+        margin-top: 0px;
+        font-size: 17pt;
+        /* position: relative; */
+        /* right: 0px; */
+        padding-bottom: 0;
+        margin-top: 20px;
     }
 }
 
@@ -157,17 +229,18 @@
         width: 100%;
         margin-top: 0px;
         font-size: 10pt;
-        position: relative;
-        right: 0px;
+        /* position: relative; */
+        /* right: 0px; */
         padding-bottom: 20px;
-        /* top: 20px; */
+        /* padding-right: 100px; */
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .cj-txt p {
         margin-top: 20px !important;
-        font-size: 8pt;
+        font-size: 12pt;
         /* margin: 0 auto; */
         /* padding: 50px; */
         display: block;
@@ -176,9 +249,25 @@
         position: unset;
         font-family: 'Krona One', sans-serif;
         text-align: center;
-        margin-bottom: 5px !important;
+        margin-bottom: -30px !important;
     }
-    .cj-btn-box{
+
+    .eventab {
+        padding: 0px 30px;
+    }
+
+    .team-play {
+        height: -webkit-fill-available;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .event-box {
+        padding-top:20px
+    }
+
+    
+    .cj-btn-box {
         padding: 0px 0px 5px 0px;
     }
     .mazu {
@@ -214,11 +303,11 @@
         border: 0;
     }
     #woodgrain-backdrop {
-        background-image: unset;
+        /* background-image: unset; */
     }
     #dreams_logo {
-        /* width: 60%; */
-        height: 100%
+        width: 15rem;
+    height: 15rem;
     }
     #cj-btn {
         border-radius: 5px;
@@ -228,7 +317,7 @@
         font-family: 'Krona One', sans-serif;
         display: block;
     }
-    .player-profile{
+    .player-profile {
         border-left: 0px solid white;
     }
     .player-profile h2 {
@@ -241,6 +330,14 @@
         margin-left: auto;
         margin-right: auto;
     }
+    #cs {
+     
+        padding: 50px;
+    }
+    /* #front-video {
+        width: 16rem;
+        height: 14rem;
+    } */
 }
 
 @media screen and (max-width: 1173px) and (min-width: 576px) {
@@ -257,30 +354,44 @@
         width: 100% !important;
     }
 }
+
 @media screen and (max-width: 1230px) and (min-width: 576px) {
-    #springz{
-        width: 20rem !important;    }
+    #springz {
+        width: 20rem !important;
+    }
 }
-@media screen and (max-width: 1175px){
-    .contact-bar{
+
+@media screen and (max-width: 1175px) {
+    .contact-bar {
         border: unset;
     }
 }
-@media screen and (max-width: 1200px){
-    .player-profile{
-        border: 0;
 
+@media screen and (max-width: 1200px) {
+    .player-profile {
+        border: 0;
     }
-    .player-profile h2{
+    .player-profile h2 {
         margin-top: 20px;
         text-align: center;
-
     }
 }
-@media screen and (max-width: 992px) and (min-width: 576px){
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
     .player-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }    
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 992px) {
+
+    /* #front-video {
+        width: 36rem;
+        height: 25rem;
+    }
+    .vid-modal {
+        width: 615px;
+    } */
 }

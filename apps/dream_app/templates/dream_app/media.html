@@ -1,15 +1,26 @@
 {% extends 'dream_app/base.html'%}{% block body %}{% load staticfiles %}
+<style>
+    body {
+        background-image: url(/static/dream_app/images/white_hoop.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+        /* background: white; */
+    }
+</style>
+
 
 <div class="container-fluid" style="margin-top:100px; margin-bottom: 50px;">
     <div class="row">
         <div class="col-sm-12">
             <h2
-                style="margin-top:25px; font-family: 'Luckiest Guy', cursive; text-align: center; font-size:35pt; color:#214F74;">
-                The <span class="dreams-font">Harlem Dreams</span> Media</h2>
+                style="margin-top:25px; font-family: 'Bebas Neue', sans-serif; text-align: center; font-size:35pt; color:rgba(33, 79, 116, 0.7);">
+                <!-- #214f74 same as rgba(33, 79, 166, 0.7) -->
+                <span class="dreams-font">Harlem Dreams</span> Media</h2>
         </div>
     </div>
-</div>    
-    <!-- <div class="row">
+</div>
+<!-- <div class="row">
         <div class="col-md-12 col-xm-12">
             <ul class="list-group" style="margin-top: 20px;">
                 <li class="video-media list-group-item border-0"><iframe width="100%" height="500px" controls=0&amp;showinfo=0;autoplay=1"
@@ -19,11 +30,13 @@
         </div>
     </div> -->
 
-  
+
 <div class="container">
     <h1 class="video-header">Harlem Dreams 2019 Promo</h1>
-        <div class="video-container"><iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;" frameborder="0" allowfullscreen ></iframe></div>
-    </div>
+    <div class="video-container"><iframe width="853" height="480"
+            src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;" frameborder="0"
+            allowfullscreen></iframe></div>
+</div>
 </div>
 
 {% endblock %}

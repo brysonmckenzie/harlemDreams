@@ -1,11 +1,10 @@
 from django.shortcuts import render, redirect, HttpResponse
 
-from .models import Event
+from .models import Event, Video, Roster
 
 from .models import NewsletterUser
 
 from .forms import NewsletterUserSignUpForm
-
 
 from django.core.mail import send_mail
 
@@ -18,6 +17,8 @@ def index(request):
     context = {
         'message': event_message
     }
+
+    video = Video.objects.all()
 
     return render(request, 'dream_app/index.html', context)
 
@@ -74,7 +75,12 @@ def newsletter(request):
 
 def players(request):
 
-    return render(request, 'dream_app/players.html')
+    context = {
+        'players': Roster.objects.all(),
+        
+    }
+
+    return render(request, 'dream_app/players.html', context)
 
 
 def contact(request):

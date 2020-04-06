@@ -36,13 +36,13 @@
 }
 
 .sub-row {
-    height: 50px;
+    /* height: 50px; */
     /* position: relative; */
     /* top: 100px; */
 }
 
 body {
-    background: url('/static/dream_app/images/blue-back.jpg');
+    background: url('/static/dream_app/images/cloud_blue.jpg');
     background-position: top;
     background-size: cover;
     /* background-repeat: no-repeat; */
@@ -60,7 +60,7 @@ body {
     width: 100%;
     height: 50px;
     padding: 0px 30px 0px 30px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-top: -2px;
 }
 
@@ -110,7 +110,7 @@ a.nav-link {
     background-repeat: no-repeat;
     /* background-position: center; */
 
-background-size: 200%;
+/* background-size: 200%;
 background-attachment: absolute;
 z-index: 1000;
 top: 0;
@@ -118,7 +118,7 @@ left: 0;
 bottom: 0;
 right: 0;
 position: absolute;
-}
+} */
 
 */ .social-l {
     float: left;
@@ -262,14 +262,16 @@ position: absolute;
 }
 
 #woodgrain-backdrop {
-    /* background-image: url('/static/dream_app/images/OLO2ED0.jpg'); */
+    /* background-image: url(/static/dream_app/images/OLO2ED0.jpg); */
     background-image: url(/static/dream_app/images/full_court3.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
-    width: 100%;
+    background-position: center;
+    /* width: 100%; */
+    /* height: 750px; */
     background-repeat: no-repeat;
     padding: 50px 0px 50px 0px;
-    height: 800px;
+    min-height: 800px;
     border-bottom: 3px white solid;
 }
 
@@ -360,10 +362,10 @@ table {
 
 .about-contain {
     padding: 50px;
-    background: rgba(225, 225, 225, 0.3);
+    background: rgba(3, 28, 37, 0.6);
     color: black;
-    margin: 0 16rem;
-}
+    margin: 50px 0px;
+}   
 
 .fix-ball {
     /* margin: 0 auto; */
@@ -424,7 +426,7 @@ a:hover {
 }
 
 .counter {
-    margin-top: 90PX;
+    margin-top: 90px;
 }
 
 /* new */
@@ -439,12 +441,13 @@ a:hover {
 }
 
 .nav-link {
-    color: #2974B2 !important;
+    color: #84b0d4 !important;
     /* margin-right: 70px; */
     font-family: Open Sans;
     font-size: 1.5em;
     font-weight: 700;
     text-transform: capitalize;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .navbar-toggler {
@@ -616,7 +619,7 @@ a:hover {
 .shop {
     padding: 50px;
     width: 100%;
-    height: 800px;
+    height: 439px;
     background: rgba(225, 225, 225, 0.3);
     font-family: Luckiest Guy, cursive;
     display: block;
@@ -776,7 +779,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.9);
     height: 100%;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .event-sec {
@@ -971,6 +974,7 @@ a:hover {
 
 .cj-btn-box {
     padding: 0px 0px 50px 0px;
+    text-align: center;
 }
 
 .sexy-line {
@@ -1028,13 +1032,20 @@ a:hover {
     /* padding-top: 50px; */
 }
 
-.player-img {
+/* .player-img {
     border: 10px rgba(225, 225, 225, 0.7) solid;
     background: white;
+} */
+
+.player-img {
+    border: 10px rgba(206, 206, 206, 0.7) solid;
+    background: white;
+    box-shadow: #000000 0 49;
+    box-shadow: -10px 10px rgb(0, 0, 0, 0.3);
 }
 
 .player-profile {
-    color: white;
+    color: #424242;
     border-left: white 1px solid;
 }
 
@@ -1053,10 +1064,27 @@ a:hover {
 
 .roster h1 {
     border-bottom: 2px solid white;
-    color: white;
+    color: black;
     margin-bottom: 50px;
+    text-align: center;
 }
 
+.player-profile > h2{
+    color: #224058;
+    border-bottom: 1px solid white;
+    margin-bottom: 19px;
+    font-size: 45pt;
+    background: rgba(245, 245, 245, 0.7);
+}
+
+.player-profile > p{
+    /* color: #224058; */
+    border-bottom: 1px solid white;
+    margin-bottom: 19px;
+    /* font-size: 45pt; */
+    background: rgba(245, 245, 245, 0.7);
+    padding: 1px;
+}
 .player-profile img {
     /* border: 10px rgba(225, 225, 225, 0.7) solid; */
 }
@@ -1069,14 +1097,15 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(225, 225, 225, 0.9);
+    background: rgba(2, 8, 37, 0.58);
     padding: 1rem;
     text-align: center;
+    color: white;
 }
 
 .founder h4 {
     color: white;
-    background: rgb(44, 113, 184);
+    background: rgba(3, 28, 37, 0.7);
     text-align: center;
     padding: .4rem;
     font-family: 'Rock Salt', cursive;
@@ -1086,7 +1115,7 @@ a:hover {
 }
 
 .founder p {
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .founder-pic {
@@ -1127,6 +1156,9 @@ a:hover {
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+    /* box-shadow: 15px 15px rgba(0,0,0, 0.2); */
+    margin-top: 50px;
+    border: 10px solid #214F74;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
@@ -1136,11 +1168,13 @@ a:hover {
     width: 100%;
     height: 100%;
 }
-
 .video-header {
     text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background: #204f74e6;
+    padding: 20px 0px;
+    color: aliceblue;
 }
-
 /* modal section */
 
 .vid-modal {
@@ -1207,14 +1241,174 @@ a:hover {
     width: 15rem;
 }
 
-.event-hoop {
-    
-}
+.event-hoop {}
 
 .v-center {
     margin: 0;
     position: absolute;
     top: 50%;
-    -ms-transform: translate(50%,-50%);
-    transform: translate(50%,-50%);
-  }
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+
+.event-sub {
+    background: #214F74;
+    width: 100%;
+    padding: 20px 0px;
+    color: white;
+    box-shadow: 0px 5px rgba(0,0,0,0.5);
+
+}
+
+.calender-box {
+    background: #ffffff;
+    width: 80px;
+    height: 100%;
+    margin-top: 20px;
+    /* float: left; */
+}
+
+.cal-content {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%)
+}
+
+.month {
+    height: 20px;
+    background: red;
+    text-align: center;
+}
+
+.date {
+    position: relative;
+    padding: 0.3rem;
+}
+
+.vs-img {
+    /* width: 10rem; */
+    height: 100%;
+    border: 10px solid rgba(58, 71, 80, 0.5);
+}
+
+.opp {
+    /* display: flex; */
+}
+
+.team-play-vs {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 50pt;
+    color: rgba(245, 245, 245, 0.7);
+
+}
+
+/* .team-play-vs {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+} */
+
+.team-play {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 20rem;
+}
+
+.ads {
+    background: rgb(54, 63, 128, 0.5);
+    width: 100%;
+    height: 50%;
+}
+
+.eventdesc>p {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    padding: 2.0rem;
+    font-size: 1.5rem;
+}
+
+.year {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+.t-font {
+    font-size: 1.5rem;
+}
+
+.min-center {
+    list-style-type: none;
+    padding: 0;
+}
+
+.empty {
+    background: rgba(3, 28, 37, 0.6);
+    padding: 50px 0px;
+}
+
+.empty-img {
+    opacity: 0.7;
+    width: 19.8rem;
+}
+
+.white {
+    color: white;
+}
+
+#cs {
+    font-family: 'Krona One', sans-serif;
+    font-size: 20pt;
+    color: rgb(239, 237, 237);
+    text-align: center;
+    background: rgba(3, 28, 37, 0.6);
+    padding: 200px;
+}
+
+.foot-bord {
+    background: rgba(3, 28, 37, 0.8);
+}
+
+/* .nav-top > li > a {
+    font-family: 'Bebas Neue', sans-serif;
+} */
+
+.hi > li > a {
+    color: white;
+    font-size: 13pt;
+    font-family: 'Bebas Neue',sans-serif;
+}
+
+
+.about-intro{
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(225, 225, 225, 0.8);
+}
+
+
+.foot-title {
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 17pt;
+}
+
+#founder-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40pt;
+}

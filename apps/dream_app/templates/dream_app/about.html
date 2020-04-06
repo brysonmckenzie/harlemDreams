@@ -20,38 +20,49 @@
     }
 
     body {
-        background-image: url(/static/dream_app/images/12213.jpg);
+        background-image: url(/static/dream_app/images/white_hoop.jpg);
         background-size: cover;
         background-position: center;
     }
+
+
+    @media screen and (max-width:560px) {
+        .left-col {
+            text-align: center;
+        }
+    }
 </style>
 
-<div class="container-fluid" style="font-family: Open sans;">
-    <div class="row">
+<div class="container" style="font-family: Open sans;">
+    <!-- <div class="row">
         <div style="padding: 30px;" class="col-sm-12">
             <h1 style="text-align: center; color:#2974B2;font-family:'Luckiest Guy', cursive; ">About the <span
                     style="color: rgb(12, 12, 112)" class="dreams-font">Harlem Dreams</span></h1>
             <hr>
         </div>
-    </div>
-    <div class="row">
+    </div> -->
+    <!-- <div class="row">
         <div class="col-md-12">
             <img id="topball" src="{% static 'dream_app/images/dream-ball.png' %}" alt="">
         </div>
+    </div> -->
+    <div class="row">
+        <div class="col-sm-12 about-intro">
+            <h1> The Harlem Dreams are led by Entrepreneur Ray K. Morris and Funnyman, showman Harold “Lefty”
+                Williams. We’re an exhibition
+                show basketball team that tours all over the world. Every show includes incredible athleticism,
+                entertainment
+                and comedy.
+            </h1>
+        </div>
     </div>
     <div class="row">
-        <div class="container-fluid about-contain">
+
+        <div class="about-contain" style="color: white;">
+            
             <div class="row ">
                 <!-- <img  style="filter:opacity()" width="100%"" height="500px" src=" {% static 'dream_app/images/team_shot.png' %}" alt=""> -->
                 <div class="col-sm-12 left-col" style="font-size: 20pt; padding: 0px 50px 0px 50px">
-                    The Harlem Dreams are led by Entrepreneur Ray K. Morris and Funnyman, showman Harold “Lefty”
-                    Williams. We’re an exhibition
-                    show basketball team that tours all over the world. Every show includes incredible athleticism,
-                    entertainment
-                    and comedy.
-
-                    <br>
-                    <br>
 
                     <h4 class="mid">Harlem Dreams Mission</h4>
                     <p>Promote professional achievement, entertainment, comedy, strong leadership capability,

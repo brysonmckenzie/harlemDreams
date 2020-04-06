@@ -17,14 +17,22 @@ class Event(models.Model):
     time = models.TimeField(auto_now=False, auto_now_add=False)
     description = models.TextField(max_length=200)
     location = models.CharField(max_length=50)
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='events', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now = True)
     
 
     def __str__(self):
         return(self.opponent + " vs The Harlem Dreams")
-        
+
+class Video(models.Model):
+    video_link_name = models.CharField(max_length=20)
+    link = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now = True)
+    
+    def __str__(self):
+        return(self.video_link_name)
 
     
 
@@ -33,3 +41,16 @@ class Message(models.Model):
     message = models.TextField(max_length=300)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now = True)
+
+
+class Roster(models.Model):
+    image = models.ImageField(upload_to='roster')
+    number = models.CharField(max_length=3)
+    name = models.CharField(max_length=50)
+    bio = models.TextField(max_length=1000)
+    quote = models.TextField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now = True)
+
+    def __str__(self):
+        return(self.name)

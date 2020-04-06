@@ -13,8 +13,13 @@
     width: 100%;
     display: block;
     float: right;
-
   }
+
+
+  .horizontal-line {
+    border: white solid 5px;
+  }
+
 
   body {
     overflow-y: hidden;
@@ -51,14 +56,39 @@
   </div>
 </div>
 
-<div class="vid-modal">
-  <span id="vexit"><i class="fa fa-window-close ex" aria-hidden="true"></i></span>
-  <div class="vid-box">
-    <iframe id="front-video"
-      src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+<!-- Harlems Dreams MEME --- Beginning -->
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="vid-modal">
+      <span id="vexit"><i class="fa fa-window-close ex" aria-hidden="true"></i></span>
+      <div class="vid-box">
+        <iframe id="front-video"
+          src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
+      <!-- additional info for app advertisement. -->
+
+      <div class="horizontal-line"></div>
+      <div class="ads">
+
+      </div>
+    </div>
+
   </div>
 </div>
+
+
+
+
+<!-- Harlems Dreams MEME --- End -->
 
 <div class="container-fluid header-box">
 
@@ -153,31 +183,31 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 d-none d-xl-block">
+        <div class="col-sm-6 d-none d-lg-block">
           <img class="center5" src="{% static 'dream_app/images/left-fanboy.png' %}" alt="">
         </div>
-        <div class="col-sm-6 col-md-6 center2">
-          <div class="row">
-            <div class="cj-txt col-md-12 ">
-              <P style="text-align:center; margin-bottom:100px;">
-                Brand Ambassador CJ on NBC Hit Show Little Big Shots With Steve Harvey</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 cj-btn-box ;">
-              <a id="cj-btn" class="" target="_blank"
-                href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be"> <i style="color: red;"
-                  class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
-            </div>
-          </div>
-
+        <!-- <div class="col-sm-12 col-md-12 center2"> -->
+        <!-- <div class="row"> -->
+        <!-- Cj Brand Ambassordor fix 3-29-20 -->
+        <div class="cj-txt col-md-6 col-lg-6 ">
+          <P style="text-align:center; margin-bottom:100px;">
+            Brand Ambassador CJ on NBC Hit Show Little Big Shots With Steve Harvey</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 cj-btn-box ;">
+          <a id="cj-btn" class="" target="_blank" href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be">
+            <i style="color: red;" class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
         </div>
       </div>
 
 
-
-
     </div>
+
+
+
+
+
     <div class="col-sm-4" style="padding:0px 20px 0px 5px;">
       <div id="lefty-profile ">
 
@@ -190,73 +220,74 @@
       </div>
     </div>
   </div>
+</div>
 
 
-  <div class="container event-sec">
-    <div class="row">
-      <div class="col-sm-12">
-        <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
-          <li>
-            <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
-            <div class="sb-description">
-              <h3>Dreams on Fox News 26</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank">
-              <img src="{% static 'dream_app/images/2.jpg' %}" alt="image2" />
-            </a>
-            <div class="sb-description">
-              <h3>Dreamers Ready for the Show Case</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank">
-              <img src="{% static 'dream_app/images/3.jpg' %}" alt="image3" />
-            </a>
-            <div class="sb-description">
-              <h3>Hanging Out With the Team</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank">
-              <img src="{% static 'dream_app/images/4.jpg' %}" alt="image4" />
-            </a>
-            <div class="sb-description">
-              <h3>Lefty Talking To Campers</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank">
-              <img src="{% static 'dream_app/images/1.jpg' %}" alt="image5" />
-            </a>
-            <div class="sb-description">
-              <h3>Springz Ready for Take-Off</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
-              <img src="{% static 'dream_app/images/6.jpg' %}" alt="image6" />
-            </a>
-            <div class="sb-description">
-              <h3>The Dream Showing Off Tricks</h3>
-            </div>
-          </li>
-          <li>
-            <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank">
-              <img src="{% static 'dream_app/images/7.jpg' %}" alt="image7" />
-            </a>
-            <div class="sb-description">
-              <h3>Family Photo with Springz</h3>
-            </div>
-          </li>
-        </ul>
-        <!-- <div id="shadow" class="shadow" style="display: block;"></div> -->
-        <!-- <div id="nav-arrows" class="nav-arrows">
+<div class="container event-sec">
+  <div class="row">
+    <div class="col-sm-12">
+      <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
+        <li>
+          <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
+          <div class="sb-description">
+            <h3>Dreams on Fox News 26</h3>
+          </div>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank">
+            <img src="{% static 'dream_app/images/2.jpg' %}" alt="image2" />
+          </a>
+          <div class="sb-description">
+            <h3>Dreamers Ready for the Show Case</h3>
+          </div>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank">
+            <img src="{% static 'dream_app/images/3.jpg' %}" alt="image3" />
+          </a>
+          <div class="sb-description">
+            <h3>Hanging Out With the Team</h3>
+          </div>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank">
+            <img src="{% static 'dream_app/images/4.jpg' %}" alt="image4" />
+          </a>
+          <div class="sb-description">
+            <h3>Lefty Talking To Campers</h3>
+          </div>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank">
+            <img src="{% static 'dream_app/images/1.jpg' %}" alt="image5" />
+          </a>
+          <div class="sb-description">
+            <h3>Springz Ready for Take-Off</h3>
+          </div>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
+            <img src="{% static 'dream_app/images/6.jpg' %}" alt="image6" />
+          </a>
+          <div class="sb-description">
+            <h3>The Dream Showing Off Tricks</h3>
+          </div>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank">
+            <img src="{% static 'dream_app/images/7.jpg' %}" alt="image7" />
+          </a>
+          <div class="sb-description">
+            <h3>Family Photo with Springz</h3>
+          </div>
+        </li>
+      </ul>
+      <!-- <div id="shadow" class="shadow" style="display: block;"></div> -->
+      <!-- <div id="nav-arrows" class="nav-arrows">
       <a href="#">Next</a>
       <a href="#">Previous</a>
     </div> -->
-        <!-- <div id="nav-dots" class="nav-dots">
+      <!-- <div id="nav-dots" class="nav-dots">
       <span class="nav-dot-current"></span>
       <span></span>
       <span></span>
@@ -265,9 +296,9 @@
       <span></span>
       <span></span>
     </div> -->
-      </div>
     </div>
   </div>
+</div>
 </div>
 <!-- <div class="container-fluid center3 d-none d-sm-block">
     <div class="row">

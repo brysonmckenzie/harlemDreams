@@ -1,5 +1,15 @@
 {% extends 'dream_app/base.html' %}{% block body %}{% load staticfiles %}
 
+<style>
+body {
+    background-image: url(/static/dream_app/images/white_hoop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+</style>
+
+
 
 <div class="container">
     <div class="row">
@@ -10,8 +20,8 @@
     <div class="row">
         <div class="col-sm-12 shop">
             <div class="row">
-                <div class="col-sm-12">
-                    <p style="font-family: 'Krona One', sans-serif; font-size: 16pt; color: #000;">Coming Soon!</p>
+                <div class="col-md-12">
+                    <p id="cs" style="font-family: 'Krona One', sans-serif;">Coming Soon!</p>
                 </div>
             </div>
         </div>

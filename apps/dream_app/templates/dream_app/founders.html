@@ -1,9 +1,10 @@
 {% extends 'dream_app/base.html'%}{% block body %}{% load staticfiles %}
 <style>
     body {
-        background-image: url(/static/dream_app/images/12213.jpg);
+        background-image: url(/static/dream_app/images/white_hoop.jpg);
         background-size: cover;
         background-position: center;
+        overflow-x: hidden;
         /* background: white; */
     }
 
@@ -12,16 +13,19 @@
     }
 </style>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-md-12" ">
+        <div class="col-xs-12" id="founder-title" >
+            Founders of the Harlem Dreams
+        </div>
+        <!-- <div class="col-xs-12" ">
             <h1 style=" margin-top: 2rem; text-align: center; font-family: 'Luckiest Guy' , cursive; color:
             darkblue; ">Founders of the <span class=" dreams-font">Harlem Dreams</span></h1>
             <hr>
-        </div>
+        </div> -->
     </div>
-    <div class="row" style="margin: 0px 14rem 0px 14rem;">
-        <div class="col-md-12 founder">
+    <div class="row"">
+        <div class="col-sm-12 founder">
             <div class="founder-pic">
                 <img class="pic-size" src="{%static 'dream_app/images/rayk.png'%}" alt="">
                 <h4>Ray K . Morris</h4>
@@ -101,7 +105,7 @@
             </p>
         </div>
     </div>
-    <div class="row" style="margin: 0 14rem 0 14rem;">
+    <div class="row" ">
         <div class="col-md-12 founder">           
             <div class="founder-pic">
                 <img class="pic-size" src="{%static 'dream_app/images/left_founder.png'%}" alt="">

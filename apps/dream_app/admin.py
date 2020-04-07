@@ -1,11 +1,11 @@
 from django.contrib import admin
 from django.contrib.admin import ModelAdmin, actions
-from .models import (NewsletterUser, Event, Video, Roster)
+from .models import (NewsletterUser, Event, Video, Player, Photo)
 
 
 class AdminSite(admin.AdminSite):
-    site_title = 'Harlem Dreams Basketball'
-
+    site_title = ('Harlem Dreams Basketball'
+)
 
     
 
@@ -26,13 +26,13 @@ class VideoAdmin(admin.ModelAdmin):
     #     print("success")
     #     video.delete()
 
-class RosterAdmin(admin.ModelAdmin):
-
-    class Meta:
-        list_display = ("__unicode__",)
-
-
-    admin.site.register(Roster)
+class PlayerAdmin(admin.ModelAdmin):
 
     
 
+    admin.site.register(Player)
+
+class PhotoAdmin(admin.ModelAdmin):
+
+    admin.site.register(Photo)
+    

@@ -6,7 +6,7 @@ urlpatterns = [
     url(r'^about$', views.about),
     url(r'^shop$', views.shop),
     url(r'^events$', views.events),
-    url(r'^players$', views.players),
+    url(r'^players$', views.team),
     url(r'^contact-page$', views.contact),
     url(r'^careers$', views.jobs),
     url(r'^job_process$', views.job_process),
@@ -14,5 +14,4 @@ urlpatterns = [
     url(r'^sponsors$', views.sponsors),
     url(r'^founders$', views.founder),
     url(r'^media$', views.media),
-    url(r'^newsletter$', views.newsletter_signup)
 ]

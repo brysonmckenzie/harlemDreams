@@ -18,6 +18,7 @@ class Event(models.Model):
     description = models.TextField(max_length=200)
     location = models.CharField(max_length=50)
     image = models.ImageField(upload_to='events', blank=True)
+    hd_event_logo = models.ImageField(upload_to='events/hd_logo_main', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now = True)
     
@@ -34,21 +35,28 @@ class Video(models.Model):
     def __str__(self):
         return(self.video_link_name)
 
+class Photo(models.Model):
+    name =  models.CharField(max_length=30)
+    image = models.ImageField(upload_to='carousel')
+    description =  models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now = True)
+    
+    def __str__(self):
+        return(self.name + " - " + self.description)
     
 
 
-class Message(models.Model):
-    message = models.TextField(max_length=300)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now = True)
 
 
-class Roster(models.Model):
+
+class Player(models.Model):
     image = models.ImageField(upload_to='roster')
     number = models.CharField(max_length=3)
     name = models.CharField(max_length=50)
     bio = models.TextField(max_length=1000)
-    quote = models.TextField(max_length=100)
+    position = models.CharField(max_length=20, blank=True)
+    quote = models.TextField(max_length=1000)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now = True)
 

@@ -2,20 +2,23 @@
     background-color: #2974B2;
     opacity: 0.7;
 }
-.quote{
+
+.quote {
     font-size: 20pt !important;
     font-weight: bolder !important;
 }
-.quote::before{
+
+.quote::before {
     content: open-quote;
 }
-.quote::after{
+
+.quote::after {
     content: close-quote;
 }
 
-
 .back-vid {
-    background-image: url(/static/dream_app/images/OLO2ED0.jpg);
+    /* background-image: url(/static/dream_app/images/OLO2ED0.jpg); */
+    /* background-image: url(/static/dream_app/images/full_court2.jpg); */
     background-color: gray;
     background-size: cover;
     padding-bottom: 25px;
@@ -33,18 +36,19 @@
 }
 
 .sub-row {
-    height: 50px;
+    /* height: 50px; */
     /* position: relative; */
     /* top: 100px; */
 }
 
 body {
-    background: url('/static/dream_app/images/blue-back.jpg');
+    background: url('/static/dream_app/images/cloud_blue.jpg');
     background-position: top;
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
-    overflow-x: hidden
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 
 .foot-bord {
@@ -56,7 +60,7 @@ body {
     width: 100%;
     height: 50px;
     padding: 0px 30px 0px 30px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-top: -2px;
 }
 
@@ -86,7 +90,7 @@ a.nav-link {
     margin-bottom: 30px;
 }
 
-.basket{
+.basket {
     width: 100%;
     height: 100%;
     background-image: url(/static/dream_app/images/hoop.png);
@@ -99,22 +103,24 @@ a.nav-link {
     right: 0;
     z-index: -1;
 }
+
 /* .basket::after{
     content: '';
     background-image: url(/static/dream_app/images/springz3.png);
     background-repeat: no-repeat;
     /* background-position: center; */
-    background-size: 200%;
-    background-attachment: absolute ;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
+
+/* background-size: 200%;
+background-attachment: absolute;
+z-index: 1000;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
 } */
 
-.social-l {
+*/ .social-l {
     float: left;
 }
 
@@ -125,8 +131,6 @@ a.nav-link {
 #social>p {
     display: inline;
 }
-
-
 
 #springz {
     width: 30rem;
@@ -207,7 +211,7 @@ a.nav-link {
 
 #lefty {
     width: 85%;
-    margin-top: 100 px;
+    margin-top: 3.1rem;
     /* margin-bottom: 200px; */
     /* position: absolute; */
     /* top: 150px; */
@@ -216,12 +220,17 @@ a.nav-link {
 
 .event-desc::before {
     content: "Address:";
-    color: white;
+    color: Black;
 }
 
 .event-description {
     text-align: center;
     font-family: 'Krona One', sans-serif;
+    margin-top: 4rem;
+    padding: 0 2rem 0 2rem;
+    /* color: black; */
+    text-align: center;
+    background: #FCFCFD
 }
 
 #pre-header>h1 {
@@ -233,8 +242,6 @@ a.nav-link {
     width: 10%;
     display: inline;
 }
-
-
 
 .db {
     list-style: none;
@@ -255,11 +262,17 @@ a.nav-link {
 }
 
 #woodgrain-backdrop {
-    background-image: url('/static/dream_app/images/OLO2ED0.jpg');
-    background-attachment: fixed;
+    /* background-image: url(/static/dream_app/images/OLO2ED0.jpg); */
+    background-image: url(/static/dream_app/images/full_court3.jpg);
+    /* background-attachment: fixed; */
     background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat padding: 50px 0px 50px 0px;
+    background-position: center;
+    /* width: 100%; */
+    /* height: 750px; */
+    background-repeat: no-repeat;
+    padding: 50px 0px 50px 0px;
+    min-height: 800px;
+    border-bottom: 3px white solid;
 }
 
 #lefty-profile {
@@ -336,7 +349,8 @@ table {
 }
 
 .b-background {
-    background-image: url('/static/dream_app/images/OLO2ED0.jpg');
+    /* background-image: url('/static/dream_app/images/OLO2ED0.jpg'); */
+    background-image: url(/static/dream_app/images/full_court.jpg);
     background-size: cover;
     /* position: static; */
     background-attachment: fixed
@@ -348,9 +362,10 @@ table {
 
 .about-contain {
     padding: 50px;
-    background: rgba(225, 225, 225, 0.3);
+    background: rgba(3, 28, 37, 0.8);
     color: black;
-}
+    margin: 50px 0px;
+}   
 
 .fix-ball {
     /* margin: 0 auto; */
@@ -371,7 +386,7 @@ footer {
     /* height: 60px; */
     position: relative;
     width: 100%;
-    margin-top:1cpx;
+    margin-top: 1cpx;
 }
 
 .social-links-f>ul li {
@@ -397,10 +412,6 @@ footer {
     height: 35px;
 }
 
-a {
-    text-decoration: none;
-}
-
 a:hover {
     text-decoration: none;
 }
@@ -415,7 +426,7 @@ a:hover {
 }
 
 .counter {
-    margin-top: 90PX;
+    margin-top: 90px;
 }
 
 /* new */
@@ -430,12 +441,13 @@ a:hover {
 }
 
 .nav-link {
-    color: #2974B2 !important;
+    color: #84b0d4 !important;
     /* margin-right: 70px; */
     font-family: Open Sans;
     font-size: 1.5em;
     font-weight: 700;
     text-transform: capitalize;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .navbar-toggler {
@@ -498,7 +510,7 @@ a:hover {
     margin-bottom: 70px;
 }
 
-
+/* We change this when working on the modal Aug 13th, 2019... from 1500 to 1003 */
 
 #left-fanbox {
     margin-top: 100px;
@@ -508,10 +520,8 @@ a:hover {
     z-index: 1;
     font-family: 'Luckiest Guy', cursive;
     background: white;
-    z-index: 1500;
+    z-index: 1003;
 }
-
-
 
 #left-fanbox>h1 {
     font-family: Luckiest Guy, cursive;
@@ -529,7 +539,6 @@ a:hover {
 #left-fanbox>p {
     margin-top: 30px;
 }
-
 
 #news {
     margin-top: -500px;
@@ -606,17 +615,15 @@ a:hover {
     background-size: cover;
     background-position: center;
 }
-
 .shop {
-    padding: 50px;
+    /* padding: 50px; */
     width: 100%;
-    height: 800px;
-    background: rgba(225, 225, 225, 0.3);
+    height: 399px;
+    /* background: rgba(225, 225, 225, 0.3); */
     font-family: Luckiest Guy, cursive;
     display: block;
     position: relative;
 }
-
 .shop::after {
     content: '';
     background-image: url(/static/dream_app/images/logo2.png);
@@ -639,11 +646,10 @@ a:hover {
     margin-top: 50px;
     padding: 50px 50px 20px 50px;
     /* min-height: 595px; */
-    background: white;
+    background: rgba(245, 245, 245, .70);
     font-family: Luckiest Guy, cursive;
     color: black;
 }
-
 .shop-cs {
     /* position: relative; */
     top: 50%;
@@ -720,36 +726,41 @@ a:hover {
     font-family: Open sans;
 }
 
+.video-media {
+    display: block;
+    margin-bottom: 40px;
+}
+
 .cj-txt p {
     width: 100%;
     margin-top: 75px;
-    font-size: 12pt;
+    font-size: 23pt;
     position: relative;
     right: 50px;
     top: 40px;
     /* margin-bottom: 100px; */
     text-align: center;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     padding-bottom: 40px;
-    
 }
 
 #cj-btn {
     /* background-color: black; */
     padding: 15px 10px 15px 0px;
     border-radius: 5px;
-    font-size: 20pt;
+    font-size: 35pt;
     /* margin-bottom: 50px; */
     text-align: center;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 10px;
 }
-
 #contact {
-    font-family: Open sans;
+    font-family: 'Bebas Neue', sans-serif;
     float: left;
     background-color: rgba(225, 225, 225, 0.5);
     width: 70%;
     margin: 25px 50px;
+    font-size: 14pt;
     /* padding-left: 300px; */
 }
 
@@ -763,9 +774,11 @@ a:hover {
 }
 
 .event-box {
-    background-color: rgba(1, 42, 179, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     height: 100%;
     width: 100%;
+    margin-bottom: 10rem;
+    border: 1px solid white;
 }
 
 .event-sec {
@@ -807,6 +820,7 @@ a:hover {
     font-size: 10pt;
     border-right: 1px #000000 solid;
 }
+
 .sponsor-border2 {
     padding: 0px 20px 0px 20px;
     font-family: 'Krona One', sans-serif;
@@ -824,20 +838,22 @@ a:hover {
 
 .shadow-box {
     width: 100%;
-    background-image: url(/static/dream_app/images/OLO2ED0.jpg);
+    /* background-image: url(/static/dream_app/images/OLO2ED0.jpg); */
+    background-image: url(/static/dream_app/images/full_court.jpg);
     background-size: cover;
     background-attachment: fixed;
     /* height: 200px; */
 }
 
 .sha {
-    background-image: url(/static/dream_app/images/OLO2ED0.jpg);
+    /* background-image: url(/static/dream_app/images/OLO2ED0.jpg); */
+    background-image: url(/static/dream_app/images/full_court.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 #shadow {
-    border-bottom: 100px solid rgba(0, 0, 0, 0.9);
+    /* border-bottom: 100px solid rgba(0, 0, 0, 0.9);
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     height: 0;
@@ -845,7 +861,7 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 25px; */
 }
 
 #trapezoid {
@@ -915,23 +931,24 @@ a:hover {
     color: white;
 }
 
-
 .contact-bar {
-    font-family: Open, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
     margin-top: 25px;
     border-left: 2px solid white;
 }
-.contact-bar a:link{
-    color:white;
-}
-.contact-bar a:visited{
-    color:white;
-}
-.contact-bar a:hover{
-    color:red;
+
+.contact-bar a:link {
+    color: white;
 }
 
+.contact-bar a:visited {
+    color: white;
+}
+
+.contact-bar a:hover {
+    color: red;
+}
 
 .contact-bar h1 {
     /* border-bottom: 2px white solid; */
@@ -946,15 +963,17 @@ a:hover {
 
 .contact-message {
     color: white;
-    font-size: 14pt;
-    font-family: Open, sans-serif;
+    font-size: 16pt;
+    font-family: 'Bebas Neues', sans-serif;
 }
 
 .contact-bar p {
     font-size: 14pt
 }
-.cj-btn-box{
+
+.cj-btn-box {
     padding: 0px 0px 50px 0px;
+    text-align: center;
 }
 
 .sexy-line {
@@ -992,21 +1011,18 @@ a:hover {
     background-image: url('/static/dream_app/images/lefty-player.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
 } */
 
 .player-img2 {
     background-image: url('/static/dream_app/images/springz-player.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .player-img3 {
     background-image: url('/static/dream_app/images/pope-player.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .player-white {
@@ -1015,82 +1031,414 @@ a:hover {
     /* padding-top: 50px; */
 }
 
+/* .player-img {
+    border: 10px rgba(225, 225, 225, 0.7) solid;
+    background: white;
+} */
+
 .player-img {
-    /* border: 10px rgba(225, 225, 225, 0.7) solid; */
-    /* background: white; */
+    border: 10px rgba(206, 206, 206, 0.7) solid;
+    background: white;
+    box-shadow: #000000 0 49;
+    box-shadow: -10px 10px rgb(0, 0, 0, 0.3);
 }
 
 .player-profile {
-    color: white;
+    color: #424242;
     border-left: white 1px solid;
 }
 
 .player-profile p {
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: 400;
 }
-.player-profile h2{
+
+.player-profile h2 {
     font-size: 30pt;
 }
+
 .boot {
     margin-bottom: 50px;
 }
 
-.roster h1{
+.roster h1 {
     border-bottom: 2px solid white;
-    color: white;
+    color: black;
     margin-bottom: 50px;
+    text-align: center;
 }
 
-.player-profile img{
+.player-profile > h2{
+    color: #224058;
+    border-bottom: 1px solid white;
+    margin-bottom: 19px;
+    font-size: 45pt;
+    background: rgba(245, 245, 245, 0.7);
+}
+
+.player-profile > p{
+    /* color: #224058; */
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    /* font-size: 45pt; */
+    background: rgba(245, 245, 245, 0.7);
+    padding: 5px;
+}
+.player-profile img {
     /* border: 10px rgba(225, 225, 225, 0.7) solid; */
 }
-.about-bheader{
+
+.about-bheader {
     background-image: url('/static/dreams_app/images/white_hoop.jpg')
 }
 
-.founder{
+.founder {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 50px;
+    background: rgba(2, 8, 37, 0.8);
+    padding: 2rem;
     text-align: center;
-    /* margin-bottom: -114px; */
-    /* width: 100%; */
-}
-.founder h4{
-    color: white;
-    background: rgba(0,0,50,0.5);
-    /* text-align: center; */
-    padding: 50px;
-    font-family: 'Rock Salt', cursive;
-    font-size: 30pt;
-}
-.founder p{
     color: white;
 }
-.founder-pic{
-    /* background: black; */
-    /* padding:50px; */
-    width:500px;
-}
-.dreams-font{
+
+.founder h4 {
+    color: white;
+    background: rgba(0, 0, 0, 0.51);
+    text-align: center;
+    padding: 0.7rem;
     font-family: 'Rock Salt', cursive;
-    color: white
+    font-size: 1.5rem;
+    /* vertical-align: bottom; */
+    margin-bottom: 0;
 }
+
+.founder p {
+    color: white;
+}
+
+.founder-pic {
+    background: white;
+    /* padding: 50px; */
+    /* width: 50%; */
+    display: block;
+    margin: auto;
+    margin-right: 1rem;
+    float: left;
+}
+
+.dreams-font {
+    font-family: 'Bebas Neue' sans-serif;
+    color: inherit;
+    letter-spacing: 10px;
+}
+
 #topball {
-    width:300px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+
 .mid {
     text-align: center;
     font-size: 25pt;
     font-weight: 900;
 }
-.parah p{
-    text-align:center;
 
+.parah p {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    /* box-shadow: 15px 15px rgba(0,0,0, 0.2); */
+    margin-top: 50px;
+    border: 10px solid #214F74;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-header {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background: #204f74e6;
+    padding: 20px 0px;
+    color: aliceblue;
+}
+/* modal section */
+
+.vid-modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 1000px;
+    height: 500px;
+    top: 250px;
+    left: 50%;
+    margin: 0 auto;
+    z-index: 1002;
+    transform: translateX(-50%);
+    /* display: initial; */
+    display: initial;
+    border: 10px solid #29263c;
+}
+/* old video box */
+
+.vid-box {
+    /* width: 700px; */
+    /* height: 400px; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* z-index: 1003; */
+    /* padding: 100px; */
+    /* margin: 0 auto; */
+    /* top: 50%; */
+    /* vertical-align: middle; */
+}
+
+.vid-box {
+    /* width: 700px; */
+    /* height: 400px; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    /* vertical-align: middle; */
+}
+
+#front-video {
+    width: 50rem;
+    height: 25rem;
+}
+
+#vexit {
+    z-index: 1005;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#teamDream {
+    position: relative;
+    bottom: 0;
+}
+
+.pic-size {
+    width: 15rem;
+    border: #304963 solid 10px;
+}
+
+.event-hoop {}
+
+.v-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+
+.event-sub {
+    background: #141b21;
+    width: 100%;
+    padding: 20px 0px;
+    color: white;
+    box-shadow: 0px 5px rgba(0,0,0,0.5);
+    font-family: 'Bebas Neue';
+    letter-spacing: 10px;
+    /* margin: 0 auto; */
+}
+
+.calender-box {
+    background: #ffffff;
+    width: 80px;
+    height: 100%;
+    margin-top: 20px;
+    /* float: left; */
+}
+
+.cal-content {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%)
+}
+
+.month {
+    height: 20px;
+    background: red;
+    text-align: center;
+}
+
+.date {
+    position: relative;
+    padding: 0.3rem;
+}
+
+.vs-img {
+    /* width: 10rem; */
+    height: 100%;
+    /* border: 10px solid rgba(58, 71, 80, 0.5); */
+}
+
+.opp {
+    /* display: flex; */
+}
+
+.team-play-vs {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 50pt;
+    color: rgba(245, 245, 245, 0.7);
+
+}
+
+/* .team-play-vs {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+} */
+
+.team-play {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 20rem;
+}
+
+.ads {
+    background: rgb(54, 63, 128, 0.5);
+    width: 100%;
+    height: 50%;
+}
+
+.eventdesc>p {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    padding: 2.0rem;
+    font-size: 24pt;
+    /* width: 900px; */
+    margin: auto;
+}
+
+.year {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.t-font {
+    font-size: 1.5rem;
+}
+
+.min-center {
+    list-style-type: none;
+    padding: 0;
+}
+
+.empty {
+    background: rgba(3, 28, 37, 0.6);
+    padding: 50px 0px;
+}
+
+.empty-img {
+    opacity: 0.7;
+    width: 19.8rem;
+}
+
+.white {
+    color: white;
+}
+
+#cs {
+    font-family: 'Krona One', sans-serif;
+    font-size: 30pt;
+    color: rgb(239, 237, 237);
+    text-align: center;
+    background: rgba(3, 28, 37, 0.8);
+    padding: 180px;
+}
+
+.foot-bord {
+    background: rgba(3, 28, 37, 0.8);
+}
+
+/* .nav-top > li > a {
+    font-family: 'Bebas Neue', sans-serif;
+} */
+
+.hi > li > a {
+    color: white;
+    font-size: 13pt;
+    font-family: 'Bebas Neue',sans-serif;
+}
+
+
+.about-intro{
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(225, 225, 225, 0.8);
+}
+
+
+.foot-title {
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 17pt;
+}
+
+#founder-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48pt;
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 0 auto;
+}
+#showman {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+    /* border: whitesmoke 10px ridge;
+    display: inline-block; */
+}
+
+.founder-font {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22pt;
+    margin-top: 40px;
+}
+.founder-bold{
+    color: rgb(51, 55, 80 );
+    background: rgba(245,245,245,0.5);
+    margin-bottom: 20px;
+    font-size: 24pt;
+    padding: 0px 20px;
+    font-weight: bolder;
 }

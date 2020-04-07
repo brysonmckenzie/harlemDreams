@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, HttpResponse
 
-from .models import Event, Video, Roster
+from .models import Event, Video, Player, Photo
 
 from .models import NewsletterUser
 
@@ -15,7 +15,8 @@ def index(request):
     event_message = 'Join us, check Events for more information'
 
     context = {
-        'message': event_message
+        'message': event_message,
+        'pictures' : Photo.objects.all()
     }
 
     video = Video.objects.all()
@@ -73,10 +74,10 @@ def newsletter(request):
     return render(request, 'dream_app/newsletter.html')
 
 
-def players(request):
+def team(request):
 
     context = {
-        'players': Roster.objects.all(),
+        'players': Player.objects.all(),
         
     }
 

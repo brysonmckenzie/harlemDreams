@@ -362,7 +362,7 @@ table {
 
 .about-contain {
     padding: 50px;
-    background: rgba(3, 28, 37, 0.6);
+    background: rgba(3, 28, 37, 0.8);
     color: black;
     margin: 50px 0px;
 }   
@@ -615,17 +615,15 @@ a:hover {
     background-size: cover;
     background-position: center;
 }
-
 .shop {
-    padding: 50px;
+    /* padding: 50px; */
     width: 100%;
-    height: 439px;
-    background: rgba(225, 225, 225, 0.3);
+    height: 399px;
+    /* background: rgba(225, 225, 225, 0.3); */
     font-family: Luckiest Guy, cursive;
     display: block;
     position: relative;
 }
-
 .shop::after {
     content: '';
     background-image: url(/static/dream_app/images/logo2.png);
@@ -648,11 +646,10 @@ a:hover {
     margin-top: 50px;
     padding: 50px 50px 20px 50px;
     /* min-height: 595px; */
-    background: white;
+    background: rgba(245, 245, 245, .70);
     font-family: Luckiest Guy, cursive;
     color: black;
 }
-
 .shop-cs {
     /* position: relative; */
     top: 50%;
@@ -737,13 +734,13 @@ a:hover {
 .cj-txt p {
     width: 100%;
     margin-top: 75px;
-    font-size: 12pt;
+    font-size: 23pt;
     position: relative;
     right: 50px;
     top: 40px;
     /* margin-bottom: 100px; */
     text-align: center;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     padding-bottom: 40px;
 }
 
@@ -751,18 +748,19 @@ a:hover {
     /* background-color: black; */
     padding: 15px 10px 15px 0px;
     border-radius: 5px;
-    font-size: 20pt;
+    font-size: 35pt;
     /* margin-bottom: 50px; */
     text-align: center;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 10px;
 }
-
 #contact {
-    font-family: Open sans;
+    font-family: 'Bebas Neue', sans-serif;
     float: left;
     background-color: rgba(225, 225, 225, 0.5);
     width: 70%;
     margin: 25px 50px;
+    font-size: 111pt;
     /* padding-left: 300px; */
 }
 
@@ -780,6 +778,7 @@ a:hover {
     height: 100%;
     width: 100%;
     margin-bottom: 10rem;
+    border: 1px solid white;
 }
 
 .event-sec {
@@ -933,7 +932,7 @@ a:hover {
 }
 
 .contact-bar {
-    font-family: Open, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
     margin-top: 25px;
     border-left: 2px solid white;
@@ -964,8 +963,8 @@ a:hover {
 
 .contact-message {
     color: white;
-    font-size: 14pt;
-    font-family: Open, sans-serif;
+    font-size: 16pt;
+    font-family: 'Bebas Neues', sans-serif;
 }
 
 .contact-bar p {
@@ -1050,7 +1049,7 @@ a:hover {
 }
 
 .player-profile p {
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: 400;
 }
 
@@ -1080,10 +1079,10 @@ a:hover {
 .player-profile > p{
     /* color: #224058; */
     border-bottom: 1px solid white;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     /* font-size: 45pt; */
     background: rgba(245, 245, 245, 0.7);
-    padding: 1px;
+    padding: 5px;
 }
 .player-profile img {
     /* border: 10px rgba(225, 225, 225, 0.7) solid; */
@@ -1097,19 +1096,19 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(2, 8, 37, 0.58);
-    padding: 1rem;
+    background: rgba(2, 8, 37, 0.8);
+    padding: 2rem;
     text-align: center;
     color: white;
 }
 
 .founder h4 {
     color: white;
-    background: rgba(3, 28, 37, 0.7);
+    background: rgba(0, 0, 0, 0.51);
     text-align: center;
-    padding: .4rem;
+    padding: 0.7rem;
     font-family: 'Rock Salt', cursive;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     /* vertical-align: bottom; */
     margin-bottom: 0;
 }
@@ -1129,8 +1128,9 @@ a:hover {
 }
 
 .dreams-font {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Bebas Neue' sans-serif;
     color: inherit;
+    letter-spacing: 10px;
 }
 
 #topball {
@@ -1188,10 +1188,9 @@ a:hover {
     z-index: 1002;
     transform: translateX(-50%);
     /* display: initial; */
-    /* aug 21 still working on modal display */
     display: initial;
+    border: 10px solid #29263c;
 }
-
 /* old video box */
 
 .vid-box {
@@ -1239,6 +1238,7 @@ a:hover {
 
 .pic-size {
     width: 15rem;
+    border: #304963 solid 10px;
 }
 
 .event-hoop {}
@@ -1252,12 +1252,14 @@ a:hover {
 }
 
 .event-sub {
-    background: #214F74;
+    background: #141b21;
     width: 100%;
     padding: 20px 0px;
     color: white;
     box-shadow: 0px 5px rgba(0,0,0,0.5);
-
+    font-family: 'Bebas Neue';
+    letter-spacing: 10px;
+    /* margin: 0 auto; */
 }
 
 .calender-box {
@@ -1288,7 +1290,7 @@ a:hover {
 .vs-img {
     /* width: 10rem; */
     height: 100%;
-    border: 10px solid rgba(58, 71, 80, 0.5);
+    /* border: 10px solid rgba(58, 71, 80, 0.5); */
 }
 
 .opp {
@@ -1338,12 +1340,15 @@ a:hover {
     text-align: center;
     color: white;
     padding: 2.0rem;
-    font-size: 1.5rem;
+    font-size: 24pt;
+    /* width: 900px; */
+    margin: auto;
 }
 
 .year {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
+    color: white;
 }
 
 .t-font {
@@ -1371,11 +1376,11 @@ a:hover {
 
 #cs {
     font-family: 'Krona One', sans-serif;
-    font-size: 20pt;
+    font-size: 30pt;
     color: rgb(239, 237, 237);
     text-align: center;
-    background: rgba(3, 28, 37, 0.6);
-    padding: 200px;
+    background: rgba(3, 28, 37, 0.8);
+    padding: 180px;
 }
 
 .foot-bord {
@@ -1410,5 +1415,30 @@ a:hover {
 
 #founder-title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 40pt;
+    font-size: 48pt;
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 0 auto;
+}
+#showman {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+    /* border: whitesmoke 10px ridge;
+    display: inline-block; */
+}
+
+.founder-font {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22pt;
+    margin-top: 40px;
+}
+.founder-bold{
+    color: rgb(51, 55, 80 );
+    background: rgba(245,245,245,0.5);
+    margin-bottom: 20px;
+    font-size: 24pt;
+    padding: 0px 20px;
+    font-weight: bolder;
 }

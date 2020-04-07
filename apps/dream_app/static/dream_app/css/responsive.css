@@ -18,6 +18,14 @@
     .hide {
         display: none;
     }
+    #cs {
+        font-family: 'Krona One', sans-serif;
+        font-size: 30pt;
+        color: rgb(239, 237, 237);
+        text-align: center;
+        background: rgba(3, 28, 37, 0.8);
+        padding: 140px;
+    }
   
     #dreams_logo {
         width: 15rem;
@@ -189,6 +197,27 @@
     .vid-modal {
         width: 490px;
     }
+    .founder-pic {
+    background: white;
+    /* padding: 50px; */
+    /* width: 50%; */
+    display: block;
+    margin: auto;
+    margin-right: 1rem;
+    float: left;
+}.founder-pic {
+    /* background: white; */
+    /* padding: 50px; */
+    /* width: 50%; */
+    display: inline-block;
+    /* margin: auto; */
+    /* margin-right: 1rem; */
+    float: none;
+}
+#front-video {
+    width: 28rem;
+    height: 23rem;
+}
   
 }
 
@@ -221,6 +250,10 @@
         /* right: 0px; */
         padding-bottom: 0;
         margin-top: 20px;
+    }
+
+    .founder-bold {
+        display: inline-block;
     }
 }
 

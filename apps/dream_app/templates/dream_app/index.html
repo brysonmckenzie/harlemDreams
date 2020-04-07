@@ -76,7 +76,7 @@
 
       <!-- additional info for app advertisement. -->
 
-      <div class="horizontal-line"></div>
+      
       <div class="ads">
 
       </div>
@@ -197,7 +197,7 @@
       <div class="row">
         <div class="col-sm-12 cj-btn-box ;">
           <a id="cj-btn" class="" target="_blank" href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be">
-            <i style="color: red;" class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
+            <i style="color: red; margin-right: 20px;" class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
         </div>
       </div>
 
@@ -209,10 +209,13 @@
 
 
     <div class="col-sm-4" style="padding:0px 20px 0px 5px;">
-      <div id="lefty-profile ">
+        <!-- <div class="row"> -->
+      <div id="lefty-profile" style="padding: 0px 20px 0px 20px">
 
         <img id="lefty" class="center-block" src="{% static 'dream_app/images/lefty.png' %}" alt="">
-        <h1 style=" text-align: center; font-family: 'Luckiest Guy', cursive; color:white;">#42 Lefty Williams</h1>
+        <h1 style=" text-align: center; font-family: 'Bebas Neue', sans-serif; color:white;">#42 Lefty Williams</h1>
+        <br>
+        <p id="showman" >  Showman</p>
         <!-- <p style="font-weight: bold; color: white; text-align: center; font-family: 'Krona One', sans-serif; font-size:13pt">Position: Showman</p>
         <br>
         </p> -->
@@ -227,6 +230,16 @@
   <div class="row">
     <div class="col-sm-12">
       <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
+        {% for pic in pictures %}
+        <li>
+          <img src="{{ pic.image.url }}" alt="image1" />
+          <div class="sb-description">
+            <h3> {{pic.description}} </h3>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <!-- <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
         <li>
           <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
           <div class="sb-description">
@@ -281,7 +294,7 @@
             <h3>Family Photo with Springz</h3>
           </div>
         </li>
-      </ul>
+      </ul> -->
       <!-- <div id="shadow" class="shadow" style="display: block;"></div> -->
       <!-- <div id="nav-arrows" class="nav-arrows">
       <a href="#">Next</a>

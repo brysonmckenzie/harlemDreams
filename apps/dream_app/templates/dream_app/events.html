@@ -24,10 +24,12 @@
     #no-event {
         height: 700px;
         padding: 50px;
-        font-family: 'Krona One', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 32pt;
         background-color: rgba(255, 255, 255, 0.3);
         position: relative;
         display: block;
+        text-align: center;
 
     }
 
@@ -70,7 +72,7 @@
         <div class="event-box">
             <div class="row eventab" style="height:400px; ">
                 <div class="col-sm-5 ">
-                    <img class="img-fluid vs-img team-play" src="{{e.hd_event_logo.url}}" alt="">
+                    <img class="img-fluid vs-img team-play" src="{{ e.hd_event_logo.url }}" alt="">
                 </div>
                 <div class="col-sm-2 mx-auto">
                     <h2 class="text-center align-middle team-play-vs">VS</h2>
@@ -108,9 +110,7 @@
 
                         <h1 class="date text-center" style="font-size: 2rem;"> {{e.date | date:"d"}}
                         </h1>
-                        <!-- <h2 class="text-center"
-                            style="color:red; font-size: 0.8rem; font-weight: bolder; margin-top: -5px;">
-                            {{e.date | date:"Y"}}</h2> -->
+                       
                     </div>
                     <div class="year">
                         <h3>{{e.date | date:"Y"}}</h3>
@@ -154,17 +154,11 @@
 
 
 {% endfor %}{% else %}
-<div class="container-fluid" style="font-family: 'Krona One', sans-serif; font-size: 16pt; color: #000;" id="no-event">
+<div class="container-fluid"  id="no-event">
     {{no_event}}</div>
 {% endif %}
 </div>
-<!-- <script language="javascript">
-    function autoResizeDiv() {
-        document.getElementById('no-event').style.height = window.innerHeight + 'px';
-    }
-    window.onresize = autoResizeDiv;
-    autoResizeDiv();
-</script> -->
+
 
 {% endblock %}
 

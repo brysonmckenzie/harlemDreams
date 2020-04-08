@@ -1361,7 +1361,7 @@ a:hover {
 }
 
 .empty {
-    background: rgba(3, 28, 37, 0.6);
+    background: rgba(3, 28, 37, 0.8);
     padding: 50px 0px;
 }
 
@@ -1375,7 +1375,7 @@ a:hover {
 }
 
 #cs {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 30pt;
     color: rgb(239, 237, 237);
     text-align: center;

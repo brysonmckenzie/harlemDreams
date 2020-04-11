@@ -51,9 +51,9 @@ body {
     /* overflow-y: hidden; */
 }
 
-.foot-bord {
+/* .foot-bord {
     background: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .social {
     background-color: #95989A;
@@ -676,7 +676,7 @@ a:hover {
 }
 
 .left-col {
-    padding: 0px 50px 0px 50px;
+    /* padding: 0px 50px 0px 50px; */
     font-size: 20px;
 }
 
@@ -760,7 +760,7 @@ a:hover {
     background-color: rgba(225, 225, 225, 0.5);
     width: 70%;
     margin: 25px 50px;
-    font-size: 111pt;
+    font-size: 11pt;
     /* padding-left: 300px; */
 }
 
@@ -966,7 +966,9 @@ a:hover {
     font-size: 16pt;
     font-family: 'Bebas Neues', sans-serif;
 }
-
+.contact-message > p{
+font-family: 'Bebas Neue', sans-serif;
+}
 .contact-bar p {
     font-size: 14pt
 }
@@ -1063,7 +1065,7 @@ a:hover {
 
 .roster h1 {
     border-bottom: 2px solid white;
-    color: black;
+    color: #214F74;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -1131,6 +1133,7 @@ a:hover {
     font-family: 'Bebas Neue' sans-serif;
     color: inherit;
     letter-spacing: 10px;
+    background: whitesmoke
 }
 
 #topball {
@@ -1204,6 +1207,12 @@ a:hover {
     /* margin: 0 auto; */
     /* top: 50%; */
     /* vertical-align: middle; */
+}
+
+#modal-font {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .vid-box {
@@ -1398,7 +1407,7 @@ a:hover {
 }
 
 
-.about-intro{
+.about-intro {
     padding: 0;
     margin-top: 50px;
     text-align: center;
@@ -1406,6 +1415,9 @@ a:hover {
     background: rgba(225, 225, 225, 0.8);
 }
 
+.about-intro > h1 {
+    font-size: 20pt;
+}
 
 .foot-title {
     color: #fff;
@@ -1419,6 +1431,7 @@ a:hover {
     text-align: center;
     letter-spacing: 10px;
     margin: 0 auto;
+    background: rgba(245,245,245,0.7);
 }
 #showman {
     font-family: 'Bebas Neue', sans-serif;
@@ -1441,4 +1454,8 @@ a:hover {
     font-size: 24pt;
     padding: 0px 20px;
     font-weight: bolder;
+}
+
+.vid-a {
+
 }

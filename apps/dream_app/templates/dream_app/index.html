@@ -69,14 +69,15 @@
     <div class="vid-modal">
       <span id="vexit"><i class="fa fa-window-close ex" aria-hidden="true"></i></span>
       <div class="vid-box">
+          <h1 id="modal-font">Harlem Dreams Basketball</h1>
         <iframe id="front-video"
           src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
-          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
       </div>
 
       <!-- additional info for app advertisement. -->
 
-      
+
       <div class="ads">
 
       </div>
@@ -197,7 +198,8 @@
       <div class="row">
         <div class="col-sm-12 cj-btn-box ;">
           <a id="cj-btn" class="" target="_blank" href="https://www.youtube.com/watch?v=bdZo8Q341ek&feature=youtu.be">
-            <i style="color: red; margin-right: 20px;" class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click Here!</a>
+            <i style="color: red; margin-right: 20px;" class="fab fa-youtube" aria-hidden="true">&nbsp;</i>Click
+            Here!</a>
         </div>
       </div>
 
@@ -209,13 +211,13 @@
 
 
     <div class="col-sm-4" style="padding:0px 20px 0px 5px;">
-        <!-- <div class="row"> -->
+      <!-- <div class="row"> -->
       <div id="lefty-profile" style="padding: 0px 20px 0px 20px">
 
         <img id="lefty" class="center-block" src="{% static 'dream_app/images/lefty.png' %}" alt="">
         <h1 style=" text-align: center; font-family: 'Bebas Neue', sans-serif; color:white;">#42 Lefty Williams</h1>
         <br>
-        <p id="showman" >  Showman</p>
+        <p id="showman"> Showman</p>
         <!-- <p style="font-weight: bold; color: white; text-align: center; font-family: 'Krona One', sans-serif; font-size:13pt">Position: Showman</p>
         <br>
         </p> -->
@@ -229,7 +231,7 @@
 <div class="container event-sec">
   <div class="row">
     <div class="col-sm-12">
-      <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
+      <!-- <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
         {% for pic in pictures %}
         <li>
           <img src="{{ pic.image.url }}" alt="image1" />
@@ -238,8 +240,8 @@
           </div>
         </li>
         {% endfor %}
-      </ul>
-      <!-- <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
+      </ul> -->
+      <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
         <li>
           <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
           <div class="sb-description">
@@ -295,12 +297,12 @@
           </div>
         </li>
       </ul> -->
-      <!-- <div id="shadow" class="shadow" style="display: block;"></div> -->
-      <!-- <div id="nav-arrows" class="nav-arrows">
+      <div id="shadow" class="shadow" style="display: block;"></div> -->
+       <div id="nav-arrows" class="nav-arrows">
       <a href="#">Next</a>
       <a href="#">Previous</a>
-    </div> -->
-      <!-- <div id="nav-dots" class="nav-dots">
+    </div> 
+      <div id="nav-dots" class="nav-dots">
       <span class="nav-dot-current"></span>
       <span></span>
       <span></span>
@@ -308,12 +310,11 @@
       <span></span>
       <span></span>
       <span></span>
-    </div> -->
+    </div>
     </div>
   </div>
 </div>
-</div>
-<!-- <div class="container-fluid center3 d-none d-sm-block">
+</div> <div class="container-fluid center3 d-none d-sm-block">
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8">
@@ -321,7 +322,7 @@
       </div>
       <div class="col-sm-2"></div>
     </div>
-  </div> -->
+  </div>
 
 <script type="text/javascript">
   $(function () {

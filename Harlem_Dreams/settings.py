@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -74,7 +74,6 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
             ],
         },
     },
@@ -93,16 +92,16 @@ DATABASES = {
    }
 }
 
-# DATABASES = {
-#      'default': {
-#          'ENGINE': 'django.db.backends.postgresql',
-#          'NAME': 'hdreamsdb',
-#          'USER': 'admin',
-#          'PASSWORD': 'bluemonkey',
-#          'HOST': 'localhost',
-#          'PORT': '5432',
-#      }
-#  }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'hdreamsdb',
+         'USER': 'admin',
+         'PASSWORD': 'bluemonkey',
+         'HOST': 'localhost',
+         'PORT': '5432',
+     }
+ }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -165,18 +164,4 @@ EMAIL_HOST_PASSWORD = 'Longbeach2018'
 GOOGLE_RECAPTCHA_SECRET_KEY = '6LcHqXAUAAAAAAUE04nczeIVXmHxCv4C-_uo85Wj'
 
 
-# NEWSLETTER
 
-
-# NEWSLETTER_CONFIRM_EMAIL = False
-
-# NEWSLETTER_RICHTEXT_WIDGET = "imperavi.widget.ImperaviWidget"
-# # Using django-tinymce
-# NEWSLETTER_RICHTEXT_WIDGET = "tinymce.widgets.TinyMCE"
-
-# # Amount of seconds to wait between each email. Here 100ms is used.
-# NEWSLETTER_EMAIL_DELAY = 0.1
-# # Amount of seconds to wait between each batch. Here one minute is used.
-# NEWSLETTER_BATCH_DELAY = 60
-# # Number of emails in one batch
-# NEWSLETTER_BATCH_SIZE = 100

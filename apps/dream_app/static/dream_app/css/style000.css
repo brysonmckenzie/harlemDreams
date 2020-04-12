@@ -1122,7 +1122,7 @@ font-family: 'Bebas Neue', sans-serif;
 }
 
 .founder-pic {
-    background: white;
+    background: linear-gradient(180deg,#d0e0ea, #254F74);
     /* padding: 50px; */
     /* width: 50%; */
     display: block;
@@ -1135,7 +1135,7 @@ font-family: 'Bebas Neue', sans-serif;
     font-family: 'Bebas Neue' sans-serif;
     color: inherit;
     letter-spacing: 10px;
-    background: rgba(245, 245, 245, 0.6);
+    background: linear-gradient(-90deg, rgba(245,245,245,0.0),white, rgba(245,245,245,0.0));
 }
 
 #topball {
@@ -1249,7 +1249,7 @@ font-family: 'Bebas Neue', sans-serif;
 
 .pic-size {
     width: 15rem;
-    border: #304963 solid 10px;
+    border: whitesmoke solid 10px;
 }
 
 .event-hoop {}
@@ -1428,12 +1428,13 @@ font-family: 'Bebas Neue', sans-serif;
 }
 
 #founder-title {
+    color: #214F74;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 48pt;
     text-align: center;
     letter-spacing: 10px;
     margin: 0 auto;
-    background: rgba(245,245,245,0.7);
+    background: linear-gradient(-90deg, rgba(245,245,245,0.0),white, rgba(245,245,245,0.0));
 }
 #showman {
     font-family: 'Bebas Neue', sans-serif;

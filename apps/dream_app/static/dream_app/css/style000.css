@@ -1174,7 +1174,6 @@ font-family: 'Bebas Neue', sans-serif;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    /* box-shadow: 15px 15px rgba(0,0,0, 0.2); */
     margin-top: 50px;
     border: 10px solid #214F74;
 }
@@ -1189,7 +1188,7 @@ font-family: 'Bebas Neue', sans-serif;
 .video-header {
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
-    background: #204f74e6;
+    background: linear-gradient(90deg, transparent, #204f74e6, transparent);
     padding: 20px 0px;
     color: aliceblue;
 }
@@ -1427,7 +1426,8 @@ font-family: 'Bebas Neue', sans-serif;
     margin-top: 50px;
     text-align: center;
     padding: 20px;
-    background: rgba(225, 225, 225, 0.8);
+    background: linear-gradient(90deg, transparent, whitesmoke, transparent);
+    color: ;
 }
 
 .about-intro > h1 {

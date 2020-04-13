@@ -13,5 +13,5 @@ urlpatterns = [
     url(r'^process$', views.process_contact),
     url(r'^sponsors$', views.sponsors),
     url(r'^founders$', views.founder),
-    url(r'^dreamsmedia$', views.harlemedia),
+    url(r'^dreamsmedia$', views.media),
 ]

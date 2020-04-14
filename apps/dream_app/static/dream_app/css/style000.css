@@ -1085,12 +1085,12 @@ font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
 
-.player-profile > h2{
+.player-profile > h2 {
     color: #224058;
     border-bottom: 1px solid white;
     margin-bottom: 19px;
     font-size: 45pt;
-    background: rgba(245, 245, 245, 0.7);
+    background: linear-gradient(90deg, transparent, rgba(3,28,37,0.1));
 }
 
 .player-profile > p{

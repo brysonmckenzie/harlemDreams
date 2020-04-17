@@ -26,14 +26,14 @@ SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'localhost',
+    '107.180.89.232',
     'harlemdreams.net',
     'www.harlemdreams.net',
-    'www.theharlemdreams.net',
-    'theharlemdreams.net',
-    '107.180.89.232',
+    #'www.theharlemdreams.net',
+    #'theharlemdreams.net',
+    #'107.180.89.232',
     'theharlemdreams.com',
-    'www.theharlemdreams.com',
+    #'www.theharlemdreams.com',
 ]
 
 # Application definition
@@ -148,7 +148,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,  'commedia/') 
+MEDIA_ROOT = os.path.join(BASE_DIR,  'media/') 
 
 
 

@@ -33,8 +33,9 @@
     </div>
     {% else %}
 
-    {% for player in players %}
+    
     <div class="row boot">
+        {% for player in players %}
         <div class="col-lg-4">
             <img class="player-img" src="{{ player.image.url }}" width="300px" height="300px" alt="">
         </div>
@@ -51,10 +52,8 @@
 
             <div class="sexy-line"></div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-
-
     {% endif %}
 
 

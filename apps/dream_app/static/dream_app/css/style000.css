@@ -19,7 +19,8 @@
 .ray-quote {
     font-size: 1.9em !important;
     font-weight: bolder !important;
-    text-align: center; 
+    text-align: center;
+    color: #0a273e !important;
 }
 
 .ray-quote::before {

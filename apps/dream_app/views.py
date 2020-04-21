@@ -4,8 +4,6 @@ from .models import Event, Video, Player, Photo
 
 from .models import NewsletterUser
 
-from .forms import NewsletterUserSignUpForm
-
 from django.core.mail import send_mail
 
 from django.conf import settings
@@ -15,11 +13,12 @@ def index(request):
     event_message = 'Join us, check Events for more information'
 
     context = {
-        'message': event_message,
-        'pictures' : Photo.objects.all()
+        'message' : event_message,
+        'photos' : Photo.objects.all(),
+        'video' : Video.objects.all(),
     }
 
-    video = Video.objects.all()
+    
 
     return render(request, 'dream_app/index.html', context)
 
@@ -77,11 +76,10 @@ def newsletter(request):
 def team(request):
 
     context = {
-        'players': Player.objects.all(),
-        
+        'players' : Player.objects.all(),
     }
 
-    return render(request, 'dream_app/players.html', context)
+    return render(request, 'dream_app/team.html', context)
 
 
 def contact(request):

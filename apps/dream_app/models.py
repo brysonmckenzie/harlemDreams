@@ -51,12 +51,14 @@ class Photo(models.Model):
 
 
 class Player(models.Model):
-    image = models.ImageField(upload_to='roster')
-    number = models.CharField(max_length=3)
-    name = models.CharField(max_length=50)
-    bio = models.TextField(max_length=1000)
+    image = models.ImageField(upload_to='team')
+    number = models.CharField(max_length=3, blank=True)
+    show_number = models.BooleanField(default=True)
+    no_number_sign = models.BooleanField(default=True)
+    name = models.CharField(max_length=50, blank=True)
+    bio = models.TextField(max_length=1000, blank=True)
     position = models.CharField(max_length=20, blank=True)
-    quote = models.TextField(max_length=1000)
+    quote = models.TextField(max_length=1000, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now = True)
 

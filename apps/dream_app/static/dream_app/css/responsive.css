@@ -26,7 +26,6 @@
         background: rgba(3, 28, 37, 0.8);
         padding: 140px;
     }
-  
     #dreams_logo {
         width: 15rem;
         height: 15rem;
@@ -80,7 +79,6 @@
     .cj-btn-box {
         padding: 0px 0px 5px 0px;
     }
-
     /* .vid-modal {
         
         display: none;
@@ -94,7 +92,6 @@
         right: 0; */
         height: 8rem;
     }
-
 }
 
 @media screen and (max-width:560px) {
@@ -103,8 +100,6 @@
         list-style-type: none;
         padding: 0;
     }
-   
-    
     .video-header {
         text-align: center;
         font-size: 18pt;
@@ -186,42 +181,52 @@
         color: #2974b2;
         font-size: 50px
     }
-
     .eventab {
         font-size: 15pt;
     }
-
     #left-fanbox {
         margin: 0;
     }
     .vid-modal {
-        width: 490px;
+        width: 100%;
+        /* width: 490px; */
+        background:#031c25
     }
     .founder-pic {
-    background: white;
-    /* padding: 50px; */
-    /* width: 50%; */
-    display: block;
-    margin: auto;
-    margin-right: 1rem;
-    float: left;
-}.founder-pic {
-    /* background: white; */
-    /* padding: 50px; */
-    /* width: 50%; */
-    display: inline-block;
-    /* margin: auto; */
-    /* margin-right: 1rem; */
-    float: none;
-}
-#front-video {
-    width: 22rem;
-    height: 13rem;
-}
-#vexit{
-    right: 5rem;
-}
-  
+        background: white;
+        /* padding: 50px; */
+        /* width: 50%; */
+        display: block;
+        margin: auto;
+        margin-right: 1rem;
+        float: left;
+    }
+
+  body{
+        overflow-x: hidden !important;
+    }
+    .founder-pic {
+        /* background: white; */
+        /* padding: 50px; */
+        /* width: 50%; */
+        display: inline-block;
+        /* margin: auto; */
+        /* margin-right: 1rem; */
+        /* float: none; */
+    }
+    #front-video {
+        width: 22rem;
+        height: 13rem;
+    }
+    #vexit {
+        right: 5rem;
+    }
+    #founder-title {
+        font-size: 20pt;
+    }
+    .about-contain {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:1160px) {
@@ -254,7 +259,6 @@
         padding-bottom: 0;
         margin-top: 20px;
     }
-
     .founder-bold {
         display: inline-block;
     }
@@ -274,40 +278,39 @@
 }
 
 @media screen and (max-width: 576px) {
+    html {
+        overflow-x: hidden;
+    }
     .cj-txt p {
         margin-top: 20px !important;
-        font-size: 12pt;
+        font-size: 17pt;
         /* margin: 0 auto; */
         /* padding: 50px; */
         display: block;
         margin-left: 0 auto;
         margin-right: 0 auto;
         position: unset;
-        font-family: 'Krona One', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
         text-align: center;
         margin-bottom: -30px !important;
     }
-
     .eventab {
         padding: 0px 30px;
     }
-    .founder-font {
-        
-        font-size: 14pt;
-        
+    #modal-font {
+        font-size: 1.6rem;
     }
-
+    .founder-font {
+        font-size: 14pt;
+    }
     .team-play {
         height: -webkit-fill-available;
         font-size: 1.5rem;
         color: white;
     }
-
     .event-box {
-        padding-top:20px
+        padding-top: 20px
     }
-
-    
     .cj-btn-box {
         padding: 0px 0px 5px 0px;
     }
@@ -332,7 +335,8 @@
     .contact-bar {
         padding: 0px 30px 0px 30px;
         margin-top: unset;
-        text-align: center;;
+        text-align: center;
+        ;
     }
     .contact-message {
         margin-bottom: 40px;
@@ -349,7 +353,7 @@
     }
     #dreams_logo {
         width: 15rem;
-    height: 15rem;
+        height: 15rem;
     }
     #cj-btn {
         border-radius: 5px;
@@ -363,25 +367,32 @@
         border-left: 0px solid white;
     }
     .player-profile h2 {
-        /* font-size: 30pt; */
-        margin-top: 20px;
-        text-align: center;
+        background: linear-gradient(0deg, rgba(34, 64, 88, .5), transparent);
     }
     .player-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
+
+    .ray-quote {
+        font-size: 1.5em !important;
+    
+    }
+    
+ 
+
+
+
+
     #cs {
-     
-        padding: 50px;
+        padding: 100px;
     }
     /* #front-video {
         width: 16rem;
         height: 14rem;
     } */
-
-  
 }
 
 @media screen and (max-width: 1173px) and (min-width: 576px) {
@@ -430,7 +441,6 @@
 }
 
 @media screen and (min-width: 620px) and (max-width: 992px) {
-
     /* #front-video {
         width: 36rem;
         height: 25rem;
@@ -438,4 +448,17 @@
     .vid-modal {
         width: 615px;
     } */
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #vexit {
+        z-index: 1005;
+        position: fixed;
+        top: 0.15rem;
+        right: 7.2rem;
+        color: white;
+        font-size: 38px;
+        cursor: pointer;
+    }
 }

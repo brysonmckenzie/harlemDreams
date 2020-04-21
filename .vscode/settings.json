@@ -1,5 +1,5 @@
 {
     "python.linting.pylintEnabled": false,
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "harlemenv/bin/python3.6"
+    "python.pythonPath": "/Users/brysmck/.virtualenvs/untitled/bin/python"
 }

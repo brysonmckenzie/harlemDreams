@@ -23,17 +23,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'harlemdreams.net',
-    'www.harlemdreams.net',
-    'www.theharlemdreams.net',
-    'theharlemdreams.net',
     '107.180.89.232',
+    'harlemdreams.net',
+    'theharlemdreams.net',
     'theharlemdreams.com',
-    'www.theharlemdreams.com',
+    # 'www.harlemdreams.net',
+    # 'www.theharlemdreams.net',
+    # 'www.theharlemdreams.com',
+
+    
 ]
 
 # Application definition
@@ -49,7 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Imperavi (or tinymce) rich text editor is optional
     # 'imperavi',
-    'sorl.thumbnail',
+    # 'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
@@ -85,23 +87,23 @@ WSGI_APPLICATION = 'Harlem_Dreams.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-# }
-
 DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'hdreamsdb',
-         'USER': 'admin',
-         'PASSWORD': 'bluemonkey',
-         'HOST': 'localhost',
-         'PORT': '5432',
-     }
- }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#          'NAME': 'hdreamsdb',
+#          'USER': 'bryson',
+#          'PASSWORD': 'bluemonkey',
+#          'HOST': 'localhost',
+#          'PORT': '5432',
+#      }
+#  }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -148,7 +150,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,  'commedia/') 
+MEDIA_ROOT = os.path.join(BASE_DIR,  'media/') 
 
 
 

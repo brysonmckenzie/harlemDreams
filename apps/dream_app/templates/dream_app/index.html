@@ -1,8 +1,8 @@
 {% extends 'dream_app/base.html' %} {% block body %} {% load staticfiles %}
+
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
-
 
 <style>
   .sexy-line {
@@ -21,9 +21,9 @@
   }
 
 
-  body {
-    overflow-y: hidden;
 
+  html {
+    overflow-x: hidden;
   }
 </style>
 <div class="container-fluid boc">
@@ -69,18 +69,16 @@
     <div class="vid-modal">
       <span id="vexit"><i class="fa fa-window-close ex" aria-hidden="true"></i></span>
       <div class="vid-box">
-          <h1 id="modal-font">Harlem Dreams Basketball</h1>
+        <h1 id="modal-font">Harlem Dreams Basketball</h1>
         <iframe id="front-video"
           src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
-          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
       <!-- additional info for app advertisement. -->
 
 
-      <div class="ads">
 
-      </div>
     </div>
 
   </div>
@@ -104,52 +102,12 @@
 
 
 
-<!-- <div class="container-fluid hd-media-content">
-  <div class="row" style="height: 100%;">
-    <div class="col-sm-3 b-background d-none d-sm-block">
-    </div>
-    <div class="col-sm-6 vid">
-
-      <iframe width="100%" height="500px"
-        src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-    </div>
-    <div class="col-sm-3 d-none d-sm-block b-background">
-    </div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-sm-3 sha d-none d-sm-block"></div>
-    <div class="col-sm-6 shadow-box d-none d-sm-block">
-      <div id="shadow"></div>
-    </div>
-    <div class="col-sm-3 sha d-none d-sm-block"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 back-vid d-none d-sm-block"></div>
-  </div>
-</div> -->
-
-
-
 
 <div class="container-fluid ">
   <div class="row">
     <div class="col-sm-4">
     </div>
-    <!-- <div class="col-sm-4">
-      <div id="basket">
-        <ul class="db">
-          <li>
-            <img class="ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt="">
-          </li>
-          Welcome to the Harlem Dream
-          <li>
-            <img class="ball" src="{% static 'dream_app/images/dream-ball.png' %}" alt="">
-          </li>
-        </ul>
-      </div>
-    </div> -->
+
     <div class="col-sm-4">
 
     </div>
@@ -159,24 +117,10 @@
       <div class="basket d-none d-sm-block">
 
       </div>
-      <!-- <img id="hoop" class="center-block" src="{% static 'dream_app/images/hoop.png' %}" alt=""> -->
       <img id="springz" class="center-block d-none d-sm-block" src="{% static 'dream_app/images/springz3.png' %}"
         alt="">
     </div>
 
-    <!-- LITTLE BIGSHOTS KID -->
-
-    <!-- <div class="col-sm-4" id="left-fanbox">
-      <h1>SHOWTIME!</h1>
-      <p class="showtime" id="cj">"CJ"</p>
-      <P style="margin-left: 50px; font-family: 'Krona One', sans-serif;
-      "><span>C. </span><span>J. </span>On Steve Harvey's
-        <br>&nbsp;&nbsp;&nbsp; "Little Big Shots"</P>
-      <img class="center-block" src="{% static 'dream_app/images/left-fanboy.png' %}" alt="" />
-      <p class="center-block" id="news">
-        <a href="/newsletter">Join Our Newsletter!</a>
-      </p>
-    </div> -->
     <div class="col-sm-4" id="left-fanbox">
       <div class="row">
         <div class="col-sm-12">
@@ -187,9 +131,6 @@
         <div class="col-sm-6 d-none d-lg-block">
           <img class="center5" src="{% static 'dream_app/images/left-fanboy.png' %}" alt="">
         </div>
-        <!-- <div class="col-sm-12 col-md-12 center2"> -->
-        <!-- <div class="row"> -->
-        <!-- Cj Brand Ambassordor fix 3-29-20 -->
         <div class="cj-txt col-md-6 col-lg-6 ">
           <P style="text-align:center; margin-bottom:100px;">
             Brand Ambassador CJ on NBC Hit Show Little Big Shots With Steve Harvey</p>
@@ -227,102 +168,37 @@
   </div>
 </div>
 
-
+{% if photos|length != 0 %}
 <div class="container event-sec">
   <div class="row">
     <div class="col-sm-12">
+      {% for photo in photos %}
       <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
-        {% for pic in pictures %}
         <li>
-          <img src="{{ pic.image.url }}" alt="image1" />
+          <img src="{{ photo.image.url }}" alt="image1" />
           <div class="sb-description">
-            <h3> {{pic.description}} </h3>
+            <h3> {{ photo.description }} </h3>
           </div>
         </li>
-        {% endfor %}
       </ul>
-      <!-- <ul id="sb-slider" class="sb-slider" style="max-height: 500px; max-width: 700px; overflow: hidden;">
-        <li>
-          <img src="{% static 'dream_app/images/5.jpg' %}" alt="image1" />
-          <div class="sb-description">
-            <h3>Dreams on Fox News 26</h3>
-          </div>
-        </li>
-        <li>
-          <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank">
-            <img src="{% static 'dream_app/images/2.jpg' %}" alt="image2" />
-          </a>
-          <div class="sb-description">
-            <h3>Dreamers Ready for the Show Case</h3>
-          </div>
-        </li>
-        <li>
-          <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank">
-            <img src="{% static 'dream_app/images/3.jpg' %}" alt="image3" />
-          </a>
-          <div class="sb-description">
-            <h3>Hanging Out With the Team</h3>
-          </div>
-        </li>
-        <li>
-          <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank">
-            <img src="{% static 'dream_app/images/4.jpg' %}" alt="image4" />
-          </a>
-          <div class="sb-description">
-            <h3>Lefty Talking To Campers</h3>
-          </div>
-        </li>
-        <li>
-          <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank">
-            <img src="{% static 'dream_app/images/1.jpg' %}" alt="image5" />
-          </a>
-          <div class="sb-description">
-            <h3>Springz Ready for Take-Off</h3>
-          </div>
-        </li>
-        <li>
-          <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
-            <img src="{% static 'dream_app/images/6.jpg' %}" alt="image6" />
-          </a>
-          <div class="sb-description">
-            <h3>The Dream Showing Off Tricks</h3>
-          </div>
-        </li>
-        <li>
-          <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank">
-            <img src="{% static 'dream_app/images/7.jpg' %}" alt="image7" />
-          </a>
-          <div class="sb-description">
-            <h3>Family Photo with Springz</h3>
-          </div>
-        </li>
-      </ul>  -->
-      <div id="shadow" class="shadow" style="display: block;"></div>
-       <!-- <div id="nav-arrows" class="nav-arrows">
-      <a href="#">Next</a>
-      <a href="#">Previous</a>
-    </div>  -->
-      <!-- <div id="nav-dots" class="nav-dots">
-      <span class="nav-dot-current"></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div> -->
+      {% endfor %}
     </div>
   </div>
 </div>
-                            <!-- </div> <div class="container-fluid center3 d-none d-sm-block">
-                                <div class="row">
-                                  <div class="col-sm-2"></div>
-                                  <div class="col-sm-8">
-                                    <img id="team-pic" class="center" src="{% static 'dream_app/images/team_shot.png' %}" alt="Dream Team Shot">
-                                  </div>
-                                  <div class="col-sm-2"></div>
-                                </div>
-                              </div> -->
+
+{% else %}
+
+<div class="container center3  lg-tp">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" style="padding: 0px 30px">
+      <img id="team-pic" class="img-fluid" src="{% static 'dream_app/images/team_shot.png' %}" alt="Dream Team Shot">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
+{% endif %}
 
 <script type="text/javascript">
   $(function () {
@@ -391,9 +267,5 @@
 
   }
 
-
-
-
 </script>
-
 {% endblock %}

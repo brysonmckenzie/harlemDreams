@@ -26,6 +26,7 @@ SECRET_KEY = 'u18&d+)o1v$5@7xdhqivvbw!2u1&dlbwtqdc41+4s6=^m7q$dl'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+<<<<<<< HEAD
     'localhost',
     '107.180.89.232',
     'harlemdreams.net',
@@ -36,6 +37,16 @@ ALLOWED_HOSTS = [
     # 'www.theharlemdreams.com',
 
     
+=======
+    '107.180.89.232',
+    'harlemdreams.net',
+    'www.harlemdreams.net',
+    #'www.theharlemdreams.net',
+    #'theharlemdreams.net',
+    #'107.180.89.232',
+    'theharlemdreams.com',
+    #'www.theharlemdreams.com',
+>>>>>>> c2fd4acc39d8a2f9eaf60ea9c07ee7412f88feee
 ]
 
 # Application definition

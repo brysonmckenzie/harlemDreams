@@ -20,7 +20,9 @@
     font-size: 1.9em !important;
     font-weight: bolder !important;
     text-align: center;
-    color: #0a273e !important;
+    color: #4a8dd0 !important;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0px 80px;
 }
 
 .ray-quote::before {
@@ -1104,7 +1106,7 @@ a:hover {
     background: linear-gradient(-90deg, rgba(34, 64, 88, .5), transparent);
 }
 
-pyth .player-profile>p {
+.player-profile>p {
     /* color: #224058; */
     border-bottom: 1px solid white;
     margin-bottom: 20px;
@@ -1146,13 +1148,13 @@ pyth .player-profile>p {
 }
 
 .founder-pic {
-    background: linear-gradient(180deg, #d0e0ea, #254F74);
+    /* background: linear-gradient(180deg, #d0e0ea, #254F74); */
     /* padding: 50px; */
     /* width: 50%; */
-    display: block;
-    margin: auto;
-    margin-right: 1rem;
-    float: left;
+    /* display: block; */
+    /* margin: auto; */
+    /* margin-right: 1rem; */
+    /* float: left; */
 }
 
 .dreams-font {
@@ -1278,10 +1280,12 @@ pyth .player-profile>p {
 }
 
 .pic-size {
-    width: 15rem;
     border: whitesmoke solid 5px;
+    margin: 0px 15px 5px 0px;
+    width: 20rem;
+    background: linear-gradient(180deg, #ffffff, #254F74);
+    float: left;
 }
-
 .event-hoop {}
 
 .v-center {
@@ -1482,18 +1486,15 @@ pyth .player-profile>p {
 .founder-font {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 22pt;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .founder-bold {
     color: rgb(51, 55, 80);
     background: rgba(245, 245, 245, 0.5);
-    margin-bottom: 20px;
-    font-size: 24pt;
-    padding: 0px 20px;
+    padding: 0px 5px;
     font-weight: bolder;
 }
-
 .vid-a {}
 
 #team-pic {

@@ -42,7 +42,6 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     'apps.dream_app',
-    'apps.newsletters',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,9 +72,12 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
+                'django.core.context_processors.request',
+                'django.contrib.messages.context_processors.messages',
             ],
         },
     },
@@ -87,6 +89,17 @@ WSGI_APPLICATION = 'Harlem_Dreams.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#          'NAME': 'hdreamsdb',
+#          'USER': 'admin',
+#          'PASSWORD': 'bluemonkey',
+#          'HOST': 'localhost',
+#          'PORT': '5432',
+#      }
+#  }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -94,16 +107,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#      'default': {
-#          'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#          'NAME': 'hdreamsdb',
-#          'USER': 'bryson',
-#          'PASSWORD': 'bluemonkey',
-#          'HOST': 'localhost',
-#          'PORT': '5432',
-#      }
-#  }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -156,10 +159,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR,  'media/')
 
 # SMTP
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'p3plcpnl0122.prod.phx3.secureserver.net'
+EMAIL_HOST = 'a2nlvphout-v01.shr.prod.iad2.secureserver.net'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'contact@harlemdreams.net'
-EMAIL_HOST_PASSWORD = 'Longbeach2018'
+EMAIL_HOST_USER = 'info@harlemdreams.net'
+EMAIL_HOST_PASSWORD = 'longbeach2006!'
 
 # reCAPTCHA
 

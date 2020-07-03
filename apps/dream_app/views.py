@@ -1,8 +1,6 @@
 from django.shortcuts import render, redirect, HttpResponse
 
-from .models import Event, Video, Player, Photo
-
-from .models import NewsletterUser
+from .models import Event, Player, Photo, SiteLink, Notice
 
 from django.core.mail import send_mail
 
@@ -11,21 +9,21 @@ from django.conf import settings
 
 def index(request):
     event_message = 'Join us, check Events for more information'
+    home_notice = Notice.objects.all()
+    links = SiteLink.objects.all()
+    
+
+
+       
 
     context = {
         'message' : event_message,
         'photos' : Photo.objects.all(),
-        'video' : Video.objects.all(),
-    }
-
-    
+        'notice' : home_notice,
+          }
+       
 
     return render(request, 'dream_app/index.html', context)
-
-
-def jobs(request):
-
-    return render(request, 'dream_app/job-openings.html')
 
 
 def job_process(request):
@@ -68,23 +66,50 @@ def events(request):
     return render(request, 'dream_app/events.html', context)
 
 
-def newsletter(request):
-
-    return render(request, 'dream_app/newsletter.html')
-
-
 def team(request):
+
+    active_players = Player.objects.get()
+    hdp = Player.objects.all()
+
+    
+
+    for index in hdp:
+        print(index.active)
+        if index.active == True:
+            active_players = True
+        
+    print(active_players)
+
 
     context = {
         'players' : Player.objects.all(),
+        'active' : active_players,
     }
+
+    # print(hdp)
+
+
 
     return render(request, 'dream_app/team.html', context)
 
 
 def contact(request):
+    links = SiteLink.objects.all()
+    contact_phone = links.contact_page_phone
+    contact_email = links.contact_email
+    all_links = links.contact_phone.lengthls > 1
+    
+    context = {
+        'phone': contact_phone,
+        'email': contact_email,
+    }
 
-    return render(request, 'dream_app/contact.html')
+
+    if links.contact_phone.lenght > 1:
+        for index in contact_phone:
+            print (index)
+
+    return render(request, 'dream_app/contact.html', context)
 
 
 def sponsors(request):
@@ -112,17 +137,7 @@ def process_contact(request):
         server_message = request.POST['client_message']
         from_email = settings.EMAIL_HOST_USER
 
-        # Message.objects.create(
-        #         name = server_name,
-        #         subject = server_subject,
-        #         email = server_email,
-        #         message = server_message
-        #     )
 
-        # send_mail(server_subject,
-        #     server_message
-        #     from_email,
-        #     [to_email], fail_silently=true)
 
         send_mail(server_subject, server_message, server_email, [
                   'contact@harlemdreams.net'], fail_silently=False,)
@@ -132,35 +147,8 @@ def process_contact(request):
 
         return redirect('/')
 
-
-def newsletter_signup(request):
-    form = NewsletterUserSignUpForm(request.POST or None)
-
-    if form.is_valid():
-        instance = form.save(commit=False)
-        print("Sorry! this email alread exist")
-    else:
-        instance.save()
-
-    context = {
-        'form': form,
-    }
-    template = 'newsletters/signup.html'
-    return render(request, template, context)
+def notice(request):
+    
+    return redirect('/')
 
 
-def newsletter_unsubscribe(request):
-    form = NewsletterUserSignUpForm(request.POST or None)
-
-    if form.is_valid():
-        instance = form.save(commit=False)
-        if NewletterUser.objects.filter(email=instance.email).exist():
-            NewletterUser.objects.filter(email=instance.email).delete()
-        else:
-            print('Sorry but we did not find your email address')
-
-        context = {
-            "form": form,
-        }
-        template = "newsletter/unsubscribe.html"
-        return render(request, template, context)

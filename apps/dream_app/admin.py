@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.admin import ModelAdmin, actions
-from .models import (NewsletterUser, Event, Video, Player, Photo)
+from .models import (Event, Player, Photo, Notice, SiteLink)
 
 
 class AdminSite(admin.AdminSite):
@@ -16,8 +16,8 @@ class EventAdmin(admin.ModelAdmin):
         # model = Event
         admin.site.register(Event)
 
-class VideoAdmin(admin.ModelAdmin):
-    admin.site.register(Video)
+# class VideoAdmin(admin.ModelAdmin):
+#     admin.site.register(Video)
 
     # video = Video.object.all()
 
@@ -36,3 +36,23 @@ class PhotoAdmin(admin.ModelAdmin):
 
     admin.site.register(Photo)
     
+class Notice(admin.ModelAdmin):
+    admin.site.register(Notice)
+
+    # def has_add_permision(self, request):
+    #     base_add_persmission = super(SettingAdmin, self).has_add_permission(request)
+    #     if base_add_persmission:
+    #         #if there's already an entry, do not allow adding
+    #         count == Notice.object.all().count()
+    #         if count == 0:
+    #             return True
+    #         return False
+
+    def has_add_permission(self, *args, **kwargs):
+        return not Notice.objects.exists()
+
+class SiteLink(admin.ModelAdmin):
+    admin.site.register(SiteLink)
+
+    def has_add_permission(self, *args, **kwargs):
+        return False if self.SiteLink.objects.count() > 0 else super().has_add_permission(request)

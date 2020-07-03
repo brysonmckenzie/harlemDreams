@@ -57,15 +57,15 @@
 </div>
 <!-- Notices -->
 {% for n in notice%}
-{% if n.active == True %}
+    {% if n.active == True %}
 <div class="container-fluid hide-notice" style="color: {{n.color}}">
   <class class="row">
     <div class="col-sm-12 notice">
-
+      
       <span id="notice-exit"><i class="fa fa-window-close no-x" aria-hidden="true"></i></span>
       <h5>{{n.name}}</h5>
       <p style="text-align: center;">{{n.message}}</p>
-
+      
     </div>
 </div>
 {% endif%}
@@ -80,35 +80,23 @@
 <div class="container-fluid">
   <div class="row">
     <div class="vid-modal">
-
-
-
-
-
       <span id="vexit"><i class="fa fa-window-close ex" aria-hidden="true"></i></span>
       <div class="vid-box">
         <h1 id="modal-font">Harlem Dreams Basketball</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <iframe id="front-video"
+        <iframe id="front-video"
           src="https://www.youtube-nocookie.com/embed/Hua4MRTKmy0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1"
-          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
+
+      <!-- additional info for app advertisement. -->
+
+
+
     </div>
+
   </div>
 </div>
-<!-- additional info for app advertisement. -->
+
 
 
 
@@ -137,7 +125,7 @@
               <p id="dare-p">
                 Non-profit organization sponsored by the Harlem Dreams
               </p>
-              <button href="https://dare2dream.xyz/dare2dreamfounders/" id="specs-button" class="button center">Learn
+              <button href="https://www.facebook.com/leftywilliams42/" id="specs-button" class="button center">Learn
                 More</button>
             </div>
           </div>

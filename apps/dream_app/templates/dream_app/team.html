@@ -27,35 +27,39 @@
         </div>
     </div>
 
-    {% if players|length == 0 %}
+    {% if active == False %}
     <div class="empty">
         <img class="empty-img center" src="{% static 'dream_app/images/logo2.png' %}" alt="">
     </div>
-    {% else %}
-
-    {% for player in players %}
-    <div class="row boot">
-        <div class="col-lg-4">
-            <img class="player-img" src="{{ player.image.url }}" width="300px" height="300px" alt="">
-        </div>
-        <div class="col-lg-8 player-profile">
-
-            <h2 style="border-bottom: 1px solid white; margin-bottom: 20px;">
-                {% if player.no_number_sign != True %}<span>#</span>{% endif %}
-                {% if player.show_number == True%}{{ player.number }}{% endif %}
-                {{ player.name }}
-            </h2>
-            <p><i class="positon">Position: {{ player.position }}</p>
-            <p class="bio">{{ player.bio  }}</p>
-            <p class="quote">{{ player.quote }}</p>
-
-            <div class="sexy-line"></div>
-        </div>
-    </div>
-    {% endfor %}
-
-
+    
     {% endif %}
+        {% for player in players %}
+            <div class="row boot" >
+                <div class="col-lg-4">
+                    <img class="player-img" src="{{ player.image.url }}" width="300px" height="300px" alt="">
+                </div>
+                <div class="col-lg-8 player-profile">
+
+                    <h2 style="border-bottom: 1px solid white; margin-bottom: 20px;">
+                        {% if player.no_number_sign != True %}<span>#</span>{% endif %}
+                        {% if player.show_number == True%}{{ player.number }}{% endif %}
+                        {{ player.name }}
+                    </h2>
+                    <p><i class="positon">Position: {{ player.position }}</p>
+                    <p class="bio">{{ player.bio  }}</p>
+                    <p class="quote">{{ player.quote }}</p>
+                    <div class="sexy-line"></div>
+                </div>
+            </div>
+        {% endfor %}
+
+    
+    
+ 
+
+
+
+
 
 
 </div>

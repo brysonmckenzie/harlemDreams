@@ -62,7 +62,7 @@
         background: white;
         z-index: 1003;
     }
-    .cj-txt p {
+    /* .cj-txt p {
         /* touched 032920 // for better mobile resonsiveness bbm001 */
         /* margin-top: 20px !important; */
         font-size: 8pt;
@@ -75,7 +75,7 @@
         font-family: 'Krona One', sans-serif;
         text-align: center;
         margin-bottom: 5px !important;
-    }
+    } */
     .cj-btn-box {
         padding: 0px 0px 5px 0px;
     }
@@ -145,7 +145,6 @@
     .nav-item {
         width: 100%
     }
-    #team-shot {}
     #footer-logo {
         width: 20%;
         display: block;
@@ -188,9 +187,9 @@
         margin: 0;
     }
     .vid-modal {
-        width: 100%;
-        /* width: 490px; */
-        background:#031c25
+        margin: 0 auto;
+        width: 95%;
+        border: unset;
     }
     .founder-pic {
         /* background: white; */
@@ -201,12 +200,9 @@
         /* margin-right: 1rem; */
         /* float: left; */
     }
-
-
-
-  body{
+    /* body {
         overflow-x: hidden !important;
-    }
+    } */
     .founder-pic {
         /* background: white; */
         /* padding: 50px; */
@@ -217,8 +213,10 @@
         /* float: none; */
     }
     #front-video {
-        width: 22rem;
-        height: 13rem;
+        /* width: 450px; */
+        width: 20rem;
+        height: unset;
+        border: unset;
     }
     #vexit {
         right: 5rem;
@@ -270,18 +268,29 @@
     .cj-txt p {
         width: 100%;
         margin-top: 0px;
-        font-size: 10pt;
+        font-size: 17pt;
         /* position: relative; */
         /* right: 0px; */
         padding-bottom: 20px;
         /* padding-right: 100px; */
         margin-top: 20px;
     }
+    #cj-btn{
+        letter-spacing: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
     html {
         overflow-x: hidden;
+    }
+
+    #specs-button {
+        
+        font-size: 12pt;
+    }
+    .pad {
+      min-height: unset;
     }
     .cj-txt p {
         margin-top: 20px !important;
@@ -295,6 +304,11 @@
         font-family: 'Bebas Neue', sans-serif;
         text-align: center;
         margin-bottom: -30px !important;
+    }
+    .top-specs {
+        background: unset;
+        border-bottom:unset;
+        margin-bottom: 15px;
     }
     .eventab {
         padding: 0px 30px;
@@ -323,7 +337,6 @@
         margin-top: 40px;
         margin-bottom: 40px;
     }
-
     .pic-size {
         float: none;
         display: block;
@@ -331,10 +344,9 @@
         margin-right: auto;
         margin-bottom: 25px;
     }
-
-
-
-
+    #dare-p {
+        text-align: center;
+    }
     #no-event {
         font-size: 12pt;
         padding: 30px 0px 30px 0px !important;
@@ -369,13 +381,15 @@
         width: 15rem;
         height: 15rem;
     }
+
     #cj-btn {
         border-radius: 5px;
-        font-size: 18pt;
+        font-size: 30pt;
         margin-bottom: 25px;
         text-align: center;
-        font-family: 'Krona One', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
         display: block;
+        letter-spacing: 0px;
     }
     .player-profile {
         border-left: 0px solid white;
@@ -388,18 +402,10 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-
     .ray-quote {
         font-size: 1.5em !important;
         padding: 0;
     }
-    
- 
-
-
-
-
     #cs {
         padding: 100px;
     }
@@ -463,7 +469,6 @@
         width: 615px;
     } */
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #vexit {
